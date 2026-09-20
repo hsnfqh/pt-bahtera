@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    
+    --color-maritime-950: #061628;
+    --color-maritime-900: #0A2540;
+    --color-maritime-850: #0C2E52;
+    --color-maritime-800: #0C356A;
+    --color-maritime-700: #134B8A;
+    --color-maritime-600: #1B62B3;
+    
+    --color-gold-base: #FFB800;
+    --color-gold-light: #FFD700;
+    --color-gold-bright: #FFC000;
+    --color-gold-amber: #FFB800;
+    --color-gold-dark: #D97706;
+    --color-gold-header: #FFB800;
+    
+    --color-crimson-600: #DC2626;
+    --color-crimson-700: #B91C1C;
+}
+
+:root {
+    --bg-header-gold: linear-gradient(90deg, #FFB800 0%, #FFD700 50%, #FFA800 100%);
+    --bg-footer-gold: linear-gradient(180deg, #FFB800 0%, #FFD700 50%, #FFA800 100%);
+    --bg-maritime-body: #0A2540;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FFFFFF;
+    color: #0F172A;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #0F172A;
+}
+
+/* Headings Font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Gold Gradient and Solid Gold Text Classes */
+.text-gold {
+    color: #FFB800 !important;
+}
+
+.text-gold-light {
+    color: #FFD700 !important;
+}
+
+.text-gold-metallic {
+    background: linear-gradient(135deg, #FFF099 0%, #FFB800 50%, #FFD700 80%, #FFA800 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Gold Header and Footer Backgrounds */
+.bg-gold-header {
+    background: linear-gradient(90deg, #FFB800 0%, #FFD700 50%, #FFA800 100%);
+}
+
+.bg-gold-footer {
+    background: linear-gradient(180deg, #FFB800 0%, #FFD700 50%, #FFA800 100%);
+}
+
+/* Clean Corporate White Card (with Black Body Text) */
+.clean-white-card {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease-in-out;
+}
+
+.clean-white-card:hover {
+    border-color: #F59E0B;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2), 0 6px 8px -4px rgba(245, 158, 11, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Black text for content inside cards */
+.clean-white-card p,
+.clean-white-card span.content-text,
+.clean-white-card li,
+.clean-white-card label {
+    color: #0F172A;
+}
+
+/* Language Switcher Styling */
+[data-lang="id"] .lang-en-only {
+    display: none !important;
+}
+
+[data-lang="en"] .lang-id-only {
+    display: none !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0A2540;
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #F59E0B;
+}
+
+/* Smooth Scroll Reveal & Fade-in Animations (High-Impact & Silky) */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.fade-in-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.fade-in-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-scale {
+    opacity: 0;
+    transform: scale(0.92) translateY(30px);
+    transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.fade-in-scale.is-visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Stagger delay classes */
+.delay-75 { transition-delay: 75ms; }
+.delay-100 { transition-delay: 100ms; }
+.delay-150 { transition-delay: 150ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-250 { transition-delay: 250ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+
+/* Continuous LED Running Text (Marquee / Digital Running Text) */
+@keyframes runningTextScroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.running-marquee-track {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: runningTextScroll 16s linear infinite;
+    will-change: transform;
+}
+
+.running-marquee-track:hover {
+    animation-play-state: paused;
+}
