@@ -6,35 +6,27 @@
 <div class="bg-[#061838] text-slate-200 text-xs border-b border-white/10 relative z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-3">
         
-        <!-- Left: Verified Licensing & Contact Info -->
+        <!-- Left: Contact Info -->
         <div class="flex flex-wrap items-center gap-3 sm:gap-4 text-[11px] sm:text-xs">
-            <div class="inline-flex items-center text-[#FFB800] font-bold bg-white/5 px-2.5 py-1 rounded-md border border-[#FFB800]/30 overflow-hidden h-6 shadow-sm max-w-[280px] sm:max-w-[340px] md:max-w-[420px]">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2 animate-pulse flex-shrink-0 z-10"></span>
-                <div class="overflow-hidden relative w-full flex items-center">
-                    <div class="running-marquee-track text-[#FFB800]">
-                        <span class="inline-block pr-6 whitespace-nowrap">SIUKAK NO. 58.58-R/2024 &bull; SIUPPAK NO. 65.21/2016 &bull; RESMI KEMENHUB &amp; KEMENAKER RI &bull; IMO STCW &amp; MLC 2006 COMPLIANT &bull; 20+ TAHUN PENGALAMAN &bull;</span>
-                        <span class="inline-block pr-6 whitespace-nowrap">SIUKAK NO. 58.58-R/2024 &bull; SIUPPAK NO. 65.21/2016 &bull; RESMI KEMENHUB &amp; KEMENAKER RI &bull; IMO STCW &amp; MLC 2006 COMPLIANT &bull; 20+ TAHUN PENGALAMAN &bull;</span>
-                    </div>
-                </div>
-            </div>
-            <span class="text-white/20 hidden md:inline">|</span>
-            <span class="hidden md:inline-flex items-center text-slate-300 font-medium">
+            <a href="tel:080000000000" class="inline-flex items-center text-slate-300 font-medium hover:text-[#FFB800] transition">
                 <svg class="w-3.5 h-3.5 mr-1.5 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                +62 812-3456-7890
-            </span>
-            <span class="text-white/20 hidden lg:inline">|</span>
-            <span class="hidden lg:inline-flex items-center text-slate-300 font-medium">
-                <svg class="w-3.5 h-3.5 mr-1.5 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                info@bahterakeselamatan.co.id
-            </span>
+                080000000000
+            </a>
+            <span class="text-white/20 hidden sm:inline">|</span>
+            <div class="hidden sm:inline-flex items-center gap-1.5 text-slate-300 font-medium">
+                <svg class="w-3.5 h-3.5 mr-1 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <a href="mailto:pt_basn@outlook.co.id" class="hover:text-[#FFB800] transition">pt_basn@outlook.co.id</a>
+                <span class="text-white/25">/</span>
+                <a href="mailto:pt_basn@yahoo.co.id" class="hover:text-[#FFB800] transition">pt_basn@yahoo.co.id</a>
+            </div>
         </div>
 
         <!-- Right: Operational Hours & Language Switcher -->
         <div class="flex items-center space-x-4 text-[11px] sm:text-xs ml-auto">
             <span class="hidden sm:inline text-slate-300 font-medium">
                 <span class="text-[#FFB800] font-bold">&bull;</span>
-                <span class="lang-id-only">Senin &ndash; Jumat: 08:30 &ndash; 17:00 WIB</span>
-                <span class="lang-en-only">Mon &ndash; Fri: 08:30 &ndash; 17:00 WIB (UTC+7)</span>
+                <span class="lang-id-only">Senin &ndash; Jumat: 08:00 &ndash; 16:00 WIB</span>
+                <span class="lang-en-only">Mon &ndash; Fri: 08:00 &ndash; 16:00 WIB (UTC+7)</span>
             </span>
             
             <!-- Language Switcher Flags Pill -->
@@ -75,13 +67,13 @@
             <!-- Company Logo & Brand -->
             <a href="{{ route('home') }}" class="flex items-center space-x-3.5 group py-2 focus:outline-none">
                 <div class="w-12 h-12 flex-shrink-0 transition transform group-hover:scale-105 duration-200 bg-[#061838] p-2 rounded-2xl shadow-md border border-white/20 flex items-center justify-center">
-                    <img src="{{ asset('images/logo-emblem.svg') }}" alt="Logo PT. Bahtera Keselamatan Sentosa" class="w-full h-full object-contain">
+                    <img src="{{ asset('images/logo-emblem.svg') }}" alt="Logo PT. Bahtera Anugerah Sentosa" class="w-full h-full object-contain">
                 </div>
                 <div class="flex flex-col">
                     <div class="flex items-center space-x-1.5">
                         <span class="text-[10px] font-black tracking-wider px-1.5 py-0.5 rounded bg-red-600 text-white leading-none shadow-sm">PT</span>
                         <span class="text-base sm:text-lg font-black tracking-tight text-[#061838]">
-                            BAHTERA <span class="text-red-700">KESELAMATAN</span> SENTOSA
+                            BAHTERA <span class="text-red-700">ANUGERAH</span> SENTOSA
                         </span>
                     </div>
                     <span class="text-[10px] sm:text-[11px] font-extrabold text-[#061838]/90 tracking-wide">
@@ -122,13 +114,6 @@
                     <span class="lang-id-only">Hubungi Kami</span>
                     <span class="lang-en-only">Contact Us</span>
                 </a>
-
-                <!-- Apply Seafarer CTA -->
-                <a href="{{ route('contact') }}" class="ml-2 px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider bg-red-600 hover:bg-red-700 text-white shadow-md shadow-red-700/20 transition duration-200 transform hover:-translate-y-0.5 flex items-center gap-2 focus:outline-none">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-                    <span class="lang-id-only">Daftar Pelaut</span>
-                    <span class="lang-en-only">Apply Crew</span>
-                </a>
             </nav>
 
             <!-- Mobile Menu Toggle Button -->
@@ -163,12 +148,5 @@
             <span class="lang-id-only">Hubungi Kami</span>
             <span class="lang-en-only">Contact Us</span>
         </a>
-
-        <div class="pt-2">
-            <a href="{{ route('contact') }}" class="block text-center w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider bg-red-600 hover:bg-red-700 text-white shadow-md">
-                <span class="lang-id-only">Daftar Pelaut Sekarang (Upload PDF) &nearr;</span>
-                <span class="lang-en-only">Apply Seafarer Now (Upload PDF) &nearr;</span>
-            </a>
-        </div>
     </div>
 </header>

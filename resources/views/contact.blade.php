@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us & Seafarer Application - PT. BAHTERA KESELAMATAN SENTOSA')
+@section('title', 'Contact Us & Seafarer Application - PT. BAHTERA ANUGERAH SENTOSA')
 
 @section('content')
 
@@ -204,7 +204,7 @@
                     
                     <div class="space-y-1.5 pb-3 border-b border-slate-100">
                         <h3 class="text-lg sm:text-xl font-black text-[#061838] leading-snug">
-                            PT. BAHTERA KESELAMATAN SENTOSA
+                            PT. BAHTERA ANUGERAH SENTOSA
                         </h3>
                     </div>
 
@@ -233,12 +233,12 @@
                                     <span class="lang-id-only">Telepon / WhatsApp:</span>
                                     <span class="lang-en-only">Phone / WhatsApp:</span>
                                 </span>
-                                <strong class="text-[#061838] text-xs sm:text-sm font-black">+62 (021) 8900-1234 / +62 812-3456-7890</strong>
+                                <strong class="text-[#061838] text-xs sm:text-sm font-black">+62 (021) 8900-1234 / 080000000000</strong>
                             </div>
                         </div>
 
-                        <div class="flex items-center space-x-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200">
-                            <div class="w-9 h-9 rounded-xl bg-[#061838] text-[#FFB800] flex items-center justify-center flex-shrink-0 font-bold">
+                        <div class="flex items-start space-x-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                            <div class="w-9 h-9 rounded-xl bg-[#061838] text-[#FFB800] flex items-center justify-center flex-shrink-0 font-bold mt-0.5">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                             </div>
                             <div>
@@ -246,7 +246,11 @@
                                     <span class="lang-id-only">Email Resmi:</span>
                                     <span class="lang-en-only">Official Email:</span>
                                 </span>
-                                <a href="mailto:info@bahterakeselamatan.co.id" class="text-[#061838] text-xs sm:text-sm font-black hover:text-[#FFB800] transition">info@bahterakeselamatan.co.id</a>
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                                    <a href="mailto:pt_basn@outlook.co.id" class="text-[#061838] text-xs sm:text-sm font-black hover:text-[#FFB800] transition">pt_basn@outlook.co.id</a>
+                                    <span class="hidden sm:inline text-slate-400">/</span>
+                                    <a href="mailto:pt_basn@yahoo.co.id" class="text-[#061838] text-xs sm:text-sm font-black hover:text-[#FFB800] transition">pt_basn@yahoo.co.id</a>
+                                </div>
                             </div>
                         </div>
 
@@ -260,8 +264,8 @@
                                     <span class="lang-en-only">Office Hours:</span>
                                 </span>
                                 <strong class="text-[#061838] text-xs font-black">
-                                    <span class="lang-id-only">Senin &ndash; Jumat: 08:30 &ndash; 17:00 WIB</span>
-                                    <span class="lang-en-only">Monday &ndash; Friday: 08:30 &ndash; 17:00 WIB</span>
+                                    <span class="lang-id-only">Senin &ndash; Jumat: 08:00 &ndash; 16:00 WIB</span>
+                                    <span class="lang-en-only">Monday &ndash; Friday: 08:00 &ndash; 16:00 WIB</span>
                                 </strong>
                             </div>
                         </div>

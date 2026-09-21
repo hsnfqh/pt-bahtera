@@ -1,4 +1,4 @@
-// PT. Bahtera Keselamatan Sentosa - Interactive Scripts
+// PT. Bahtera Anugerah Sentosa - Interactive Scripts
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Language Toggle (ID / EN)

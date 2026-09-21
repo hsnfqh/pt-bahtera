@@ -17,7 +17,7 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
         $response->assertSee('PT.');
         $response->assertSee('BAHTERA');
-        $response->assertSee('KESELAMATAN');
+        $response->assertSee('ANUGERAH');
         $response->assertSee('SENTOSA');
         $response->assertSee('58.58-R');
         $response->assertSee('65.21');
@@ -34,8 +34,8 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
         $response->assertSee('Seafarer Recruitment');
         $response->assertSee('Factory Trawlers');
-        $response->assertSee('Belize');
-        $response->assertSee('Russia');
+        $response->assertSee('Panama');
+        $response->assertSee('Singapore');
         $response->assertSee('BUILDING PARTNERSHIPS');
     }
 

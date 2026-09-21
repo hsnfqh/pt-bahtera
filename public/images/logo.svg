@@ -72,7 +72,7 @@
 
     <!-- Main Company Name in Bold Gold & Red Accents -->
     <text x="0" y="44" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" letter-spacing="0.5">
-      PT. <tspan fill="url(#goldGradient)">BAHTERA</tspan> <tspan fill="url(#redGradient)">KESELAMATAN</tspan> <tspan fill="url(#goldGradient)">SENTOSA</tspan>
+      PT. <tspan fill="url(#goldGradient)">BAHTERA</tspan> <tspan fill="url(#redGradient)">ANUGERAH</tspan> <tspan fill="url(#goldGradient)">SENTOSA</tspan>
     </text>
 
     <!-- Subtitle / Tagline -->

@@ -6,11 +6,11 @@
             <div class="lg:col-span-5 space-y-4">
                 <div class="flex items-center space-x-3.5">
                     <div class="w-12 h-12 bg-[#061838] p-2 rounded-2xl shadow-md border border-white/20 flex items-center justify-center flex-shrink-0">
-                        <img src="{{ asset('images/logo-emblem.svg') }}" alt="PT. Bahtera Keselamatan Sentosa" class="w-full h-full object-contain">
+                        <img src="{{ asset('images/logo-emblem.svg') }}" alt="PT. Bahtera Anugerah Sentosa" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <h4 class="text-base sm:text-lg font-black text-[#061838] tracking-tight">
-                            PT. BAHTERA <span class="text-red-700">KESELAMATAN</span> SENTOSA
+                            PT. BAHTERA <span class="text-red-700">ANUGERAH</span> SENTOSA
                         </h4>
                         <p class="text-xs text-[#061838] font-extrabold uppercase tracking-wide">
                             <span class="lang-id-only">Agensi Pengawakan &amp; Penyaluran Pelaut Resmi</span>
@@ -100,12 +100,15 @@
 
                     <div class="flex items-center space-x-2.5">
                         <svg class="w-4 h-4 text-[#061838] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                        <a href="tel:+6281234567890" class="text-xs font-black hover:text-red-700 transition">+62 812-3456-7890</a>
+                        <a href="tel:080000000000" class="text-xs font-black hover:text-red-700 transition">080000000000</a>
                     </div>
 
-                    <div class="flex items-center space-x-2.5">
-                        <svg class="w-4 h-4 text-[#061838] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                        <a href="mailto:info@bahterakeselamatan.co.id" class="text-xs font-black hover:text-red-700 transition">info@bahterakeselamatan.co.id</a>
+                    <div class="flex items-start space-x-2.5">
+                        <svg class="w-4 h-4 text-[#061838] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <div class="flex flex-col space-y-1">
+                            <a href="mailto:pt_basn@outlook.co.id" class="text-xs font-black hover:text-red-700 transition">pt_basn@outlook.co.id</a>
+                            <a href="mailto:pt_basn@yahoo.co.id" class="text-xs font-black hover:text-red-700 transition">pt_basn@yahoo.co.id</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,7 +118,7 @@
         <!-- Bottom Copyright -->
         <div class="mt-12 pt-6 border-t border-[#061838]/20 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#061838] font-bold">
             <div>
-                <span>&copy; {{ date('Y') }} PT. BAHTERA KESELAMATAN SENTOSA. All Rights Reserved.</span>
+                <span>&copy; {{ date('Y') }} PT. BAHTERA ANUGERAH SENTOSA. All Rights Reserved.</span>
             </div>
             <div class="flex items-center space-x-4 text-[11px]">
                 <span class="text-red-800 font-black">SIUKAK &bull; SIUPPAK Certified</span>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Our Services & Vessel Types - PT. BAHTERA KESELAMATAN SENTOSA')
+@section('title', 'Our Services & Vessel Types - PT. BAHTERA ANUGERAH SENTOSA')
 
 @section('content')
 

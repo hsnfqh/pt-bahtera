@@ -73,13 +73,13 @@ class PageController extends Controller
 
         // In a production app, we would store the PDF and send email notifications.
         // For now, flash a success message with seafarer / inquiry reference ID.
-        $refId = 'BKS-'.strtoupper(substr(uniqid(), -6));
+        $refId = 'BAS-'.strtoupper(substr(uniqid(), -6));
 
         return redirect()->route('contact')->with('success', [
             'ref' => $refId,
             'name' => $validated['name'],
-            'message_id' => 'Terima kasih, '.$validated['name'].'! Pengajuan dan data Anda telah berhasil diterima oleh tim PT. BAHTERA KESELAMATAN SENTOSA.',
-            'message_en' => 'Thank you, '.$validated['name'].'! Your application and documents have been successfully received by PT. BAHTERA KESELAMATAN SENTOSA crewing team.',
+            'message_id' => 'Terima kasih, '.$validated['name'].'! Pengajuan dan data Anda telah berhasil diterima oleh tim PT. BAHTERA ANUGERAH SENTOSA.',
+            'message_en' => 'Thank you, '.$validated['name'].'! Your application and documents have been successfully received by PT. BAHTERA ANUGERAH SENTOSA crewing team.',
         ]);
     }
 }

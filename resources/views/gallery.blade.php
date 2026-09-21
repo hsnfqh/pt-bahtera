@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Activity Gallery - PT. BAHTERA KESELAMATAN SENTOSA')
+@section('title', 'Activity Gallery - PT. BAHTERA ANUGERAH SENTOSA')
 
 @section('content')
 
@@ -8,7 +8,7 @@
 <x-subpage-banner 
     titleId="Galeri <span class='text-[#FFB800]'>Aktivitas</span>"
     titleEn="Activity <span class='text-[#FFB800]'>Gallery</span>"
-    subtitleId="Dokumentasi Pelatihan, Penempatan, dan Operasional Pelaut PT. Bahtera Keselamatan Sentosa"
+    subtitleId="Dokumentasi Pelatihan, Penempatan, dan Operasional Pelaut PT. Bahtera Anugerah Sentosa"
     subtitleEn="Documentation of Training, Deployment, and Seafarer Operations"
     badge="ACTIVITY &amp; FLEET GALLERY"
 />
@@ -35,7 +35,7 @@
             <div class="gallery-item-trigger group rounded-3xl overflow-hidden bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-2xl cursor-pointer transition-all duration-300 transform hover:-translate-y-2 fade-in-section delay-100"
                  data-img-src="{{ asset('images/hero-banner.jpg') }}"
                  data-img-title="Armada Kapal di Pelabuhan"
-                 data-img-desc="Armada kapal mitra PT. Bahtera Keselamatan Sentosa dengan kru pelaut berpengalaman.">
+                 data-img-desc="Armada kapal mitra PT. Bahtera Anugerah Sentosa dengan kru pelaut berpengalaman.">
                 
                 <div class="h-64 overflow-hidden relative">
                     <img src="{{ asset('images/hero-banner.jpg') }}" alt="Armada Kapal" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">

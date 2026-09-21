@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Our Team & Certifications - PT. BAHTERA KESELAMATAN SENTOSA')
+@section('title', 'Our Team & Certifications - PT. BAHTERA ANUGERAH SENTOSA')
 
 @section('content')
 
@@ -156,8 +156,8 @@
                 <span class="lang-en-only">Official Certifications &amp; Licenses</span>
             </h2>
             <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-                <span class="lang-id-only">Dokumen legalitas otentik yang membuktikan kepatuhan hukum penuh dan reputasi tinggi PT. Bahtera Keselamatan Sentosa.</span>
-                <span class="lang-en-only">Authentic credentials and licenses verifying full regulatory compliance and reputable track record of PT. Bahtera Keselamatan Sentosa.</span>
+                <span class="lang-id-only">Dokumen legalitas otentik yang membuktikan kepatuhan hukum penuh dan reputasi tinggi PT. Bahtera Anugerah Sentosa.</span>
+                <span class="lang-en-only">Authentic credentials and licenses verifying full regulatory compliance and reputable track record of PT. Bahtera Anugerah Sentosa.</span>
             </p>
         </div>
 

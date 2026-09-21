@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'PT. BAHTERA KESELAMATAN SENTOSA - Professional Crewing & Manning Agency')
+@section('title', 'PT. BAHTERA ANUGERAH SENTOSA - Professional Crewing & Manning Agency')
 
 @section('content')
 
@@ -12,7 +12,7 @@
     {{-- Background image with strong overlay for readability --}}
     <div class="absolute inset-0 z-0">
         <img src="{{ asset('images/hero-banner.jpg') }}"
-             alt="Armada Kapal PT. Bahtera Keselamatan Sentosa"
+             alt="Armada Kapal PT. Bahtera Anugerah Sentosa"
              class="w-full h-full object-cover object-center scale-105">
         <div class="absolute inset-0 bg-gradient-to-b from-[#061838]/60 via-[#061838]/50 to-[#061838]/70"></div>
     </div>
@@ -21,7 +21,7 @@
 
         {{-- Main headline — clean gold without shadow --}}
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#FFB800] tracking-tight leading-tight whitespace-nowrap fade-in-section delay-100" style="color: #FFB800 !important;">
-            PT. BAHTERA KESELAMATAN SENTOSA
+            PT. BAHTERA ANUGERAH SENTOSA
         </h1>
 
         {{-- Subtitle --}}
@@ -29,15 +29,6 @@
             <span class="lang-id-only">Mitra Resmi Crewing &amp; Manning Agency Terpercaya di Indonesia. Legalitas SIUKAK, SIUPPAK, Kepatuhan IMO STCW &amp; MLC 2006.</span>
             <span class="lang-en-only">Your Trusted Official Crewing &amp; Manning Agency in Indonesia. Licensed SIUKAK, SIUPPAK, IMO STCW &amp; MLC 2006 Compliant.</span>
         </p>
-
-        {{-- CTA Button --}}
-        <div class="flex justify-center pt-2 fade-in-section delay-300">
-            <a href="{{ route('contact') }}"
-               class="px-8 py-3.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-sm uppercase tracking-wider shadow-lg transition hover:-translate-y-0.5 transform">
-                <span class="lang-id-only">Daftarkan Pelaut &nearr;</span>
-                <span class="lang-en-only">Apply Seafarer &nearr;</span>
-            </a>
-        </div>
     </div>
 </section>
 
@@ -61,17 +52,17 @@
             </div>
         </div>
         <div>
-            <div class="text-3xl font-black text-[#FFB800]">10+</div>
+            <div class="text-3xl font-black text-[#FFB800]">50+</div>
             <div class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wide">
                 <span class="lang-id-only">Negara Tujuan</span>
                 <span class="lang-en-only">Destination Countries</span>
             </div>
         </div>
         <div>
-            <div class="text-3xl font-black text-[#061838]">24/7</div>
+            <div class="text-3xl font-black text-[#061838]">6.000+</div>
             <div class="text-xs font-semibold text-slate-500 mt-1 uppercase tracking-wide">
-                <span class="lang-id-only">Dukungan Kru</span>
-                <span class="lang-en-only">Crew Support</span>
+                <span class="lang-id-only">Anggota Kru</span>
+                <span class="lang-en-only">Crew Member</span>
             </div>
         </div>
     </div>
@@ -97,14 +88,36 @@
                     </h2>
                 </div>
 
-                <p class="text-slate-600 text-base leading-relaxed">
-                    <span class="lang-id-only">
-                        <strong class="text-slate-900">PT. BAHTERA KESELAMATAN SENTOSA</strong> adalah perusahaan keagenan awak kapal terkemuka di Indonesia yang memegang izin resmi <strong>SIUKAK No. 58.58-R Tahun 2024</strong> dan <strong>SIUPPAK No. 65.21 Tahun 2016</strong>. Dengan pengalaman lebih dari <strong>20 tahun</strong>, kami melayani perekrutan, verifikasi dokumen, sertifikasi STCW &amp; MLC 2006, dan penempatan pelaut Indonesia ke armada internasional.
-                    </span>
-                    <span class="lang-en-only">
-                        <strong class="text-slate-900">PT. BAHTERA KESELAMATAN SENTOSA</strong> is a premier maritime crewing and manning agency in Indonesia holding official licenses <strong>SIUKAK No. 58.58-R / 2024</strong> and <strong>SIUPPAK No. 65.21 / 2016</strong>. With over <strong>20 years</strong> of experience, we specialize in recruitment, document verification, STCW &amp; MLC 2006 certification, and seafarer deployment worldwide.
-                    </span>
-                </p>
+                <div class="text-slate-600 text-sm sm:text-base leading-relaxed space-y-3.5">
+                    <div class="lang-id-only space-y-3">
+                        <p class="font-bold text-slate-900">
+                            <strong>PT. BAHTERA ANUGERAH SENTOSA</strong> &ndash; Mitra Terpercaya Anda dalam Layanan Crewing &amp; Manning Profesional
+                        </p>
+                        <p>
+                            Memegang izin resmi termasuk <strong>SIUKAK No. 58.58-R Tahun 2024</strong> dan <strong>SIUPPAK No. 65.21 Tahun 2016</strong>. <strong>PT. BAHTERA ANUGERAH SENTOSA</strong> adalah agensi crewing dan manning profesional yang berkomitmen untuk menyediakan pelaut yang berkualifikasi tinggi, berpengalaman, andal, dan profesional untuk industri maritim internasional.
+                        </p>
+                        <p>
+                            Dengan pengalaman lebih dari <strong>20 tahun</strong> dalam bisnis crewing dan manning, kami telah membangun reputasi yang kuat dalam menghadirkan personel maritim yang kompeten dan memenuhi standar internasional serta kebutuhan operasional pemilik dan operator kapal di seluruh dunia.
+                        </p>
+                        <p>
+                            Komitmen kami terhadap profesionalisme, kualitas, integritas, dan keandalan memungkinkan kami untuk menjalin dan mempertahankan kemitraan jangka panjang dengan klien dan mitra bisnis kami di seluruh industri maritim global.
+                        </p>
+                    </div>
+                    <div class="lang-en-only space-y-3">
+                        <p class="font-bold text-slate-900">
+                            <strong>PT. BAHTERA ANUGERAH SENTOSA</strong> &ndash; Your Trusted Partner in Professional Crewing &amp; Manning Services
+                        </p>
+                        <p>
+                            With valid licenses including <strong>SIUKAK No. 58.58-R Tahun 2024</strong> and <strong>SIUPPAK No. 65.21 Tahun 2016</strong>. <strong>PT. BAHTERA ANUGERAH SENTOSA</strong> is a professional crewing and manning agency committed to providing highly qualified, experienced, reliable, and professional seafarers to the international maritime industry.
+                        </p>
+                        <p>
+                            With more than <strong>20 years</strong> of experience in the crewing and manning business, we have built a strong reputation for delivering competent maritime personnel who meet international standards and the operational requirements of ship owners and vessel operators worldwide.
+                        </p>
+                        <p>
+                            Our commitment to professionalism, quality, integrity, and reliability enables us to establish and maintain long-term partnerships with our clients and business partners across the global maritime industry.
+                        </p>
+                    </div>
+                </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div class="flex items-start gap-4 p-5 rounded-2xl bg-white shadow-sm border border-slate-100">
@@ -148,7 +161,7 @@
             <div class="relative pb-6 pl-0 sm:pl-6 fade-in-right delay-200">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[360px] lg:h-[400px]">
                     <img src="{{ asset('images/crew-training.jpg') }}"
-                         alt="Tim PT. Bahtera Keselamatan Sentosa"
+                         alt="Tim PT. Bahtera Anugerah Sentosa"
                          class="w-full h-full object-cover object-center">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/65 via-transparent to-transparent"></div>
                     <div class="absolute bottom-5 left-5 right-5">
@@ -158,7 +171,7 @@
                         </p>
                         <h4 class="text-white font-black text-base">
                             <span class="lang-id-only">Siap Berlayar di Perairan Internasional</span>
-                            <span class="lang-en-only">Ready for Global Maritime Voyages</span>
+                            <span class="lang-en-only">Ready for Global Voyages</span>
                         </h4>
                     </div>
                 </div>
@@ -233,41 +246,57 @@
             </span>
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight tracking-tight">
                 <span class="lang-id-only">
-                    <span class="text-white">Menjadi </span><span class="text-[#FFB800]" style="color: #FFB800 !important;">Total Maritime Crewing Solution</span>
-                    <span class="block text-white mt-1.5">Terpadu, Unggul dan Terpercaya</span>
+                    <span class="text-white">Menjadi </span><span class="text-[#FFB800]" style="color: #FFB800 !important;">Mitra Crewing Internasional Terpercaya</span>
+                    <span class="block text-white mt-1.5">Profesional, Andal &amp; Berkompeten Tinggi</span>
                 </span>
                 <span class="lang-en-only">
-                    <span class="text-white">To Be the </span><span class="text-[#FFB800]" style="color: #FFB800 !important;">Total Maritime Crewing Solution</span>
-                    <span class="block text-white mt-1.5">Integrated, Superior &amp; Trusted</span>
+                    <span class="text-white">To Become a </span><span class="text-[#FFB800]" style="color: #FFB800 !important;">Trusted International Crewing Partner</span>
+                    <span class="block text-white mt-1.5">Professional, Reliable &amp; Highly Competent</span>
                 </span>
             </h2>
-            <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-                <span class="lang-id-only">Menjadi perusahaan crewing terkemuka yang unggul dan terpercaya, memberikan pelaut berkualitas tinggi untuk armada niaga dan perikanan internasional.</span>
-                <span class="lang-en-only">To be the leading and trusted crewing agency, delivering top-quality seafarers for international merchant and fishing fleets worldwide.</span>
+            <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-medium">
+                <span class="lang-id-only">Menjadi mitra crewing internasional yang terpercaya dan terkemuka, diakui dalam menyediakan pelaut yang profesional, andal, dan sangat kompeten untuk industri maritim global.</span>
+                <span class="lang-en-only">To become a trusted and leading international crewing partner, recognized for providing professional, reliable, and highly competent seafarers to the global maritime industry.</span>
             </p>
         </div>
 
-        {{-- 3 Misi Points horizontal --}}
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {{-- 5 Misi Points --}}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div class="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.07] backdrop-blur-sm border border-white/10 hover:border-[#FFB800]/40 transition-all duration-300 hover:-translate-y-1 shadow-lg fade-in-section delay-100">
                 <div class="w-10 h-10 rounded-full bg-[#FFB800] text-slate-900 flex items-center justify-center font-black text-sm flex-shrink-0 shadow-md">1</div>
                 <p class="text-slate-200 text-sm leading-relaxed pt-1">
-                    <span class="lang-id-only">Menyediakan pelaut Indonesia berkualitas, berdisiplin tinggi, dan bersertifikasi IMO STCW.</span>
-                    <span class="lang-en-only">Providing high-quality, disciplined Indonesian seafarers certified to IMO STCW standards.</span>
+                    <span class="lang-id-only">Menyediakan pelaut yang sangat berkualitas dan berpengalaman.</span>
+                    <span class="lang-en-only">To provide highly qualified and experienced seafarers.</span>
                 </p>
             </div>
             <div class="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.07] backdrop-blur-sm border border-white/10 hover:border-[#FFB800]/40 transition-all duration-300 hover:-translate-y-1 shadow-lg fade-in-section delay-200">
                 <div class="w-10 h-10 rounded-full bg-[#FFB800] text-slate-900 flex items-center justify-center font-black text-sm flex-shrink-0 shadow-md">2</div>
                 <p class="text-slate-200 text-sm leading-relaxed pt-1">
-                    <span class="lang-id-only">Menerapkan standar seleksi ketat, verifikasi dokumen, dan pemeriksaan kesehatan (MCU) komprehensif.</span>
-                    <span class="lang-en-only">Enforcing strict selection standards, document verification, and comprehensive MCU health checks.</span>
+                    <span class="lang-id-only">Mempertahankan standar tinggi dalam rekrutmen dan manajemen awak kapal.</span>
+                    <span class="lang-en-only">To maintain high standards of recruitment and crew management.</span>
                 </p>
             </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.07] backdrop-blur-sm border border-white/10 hover:border-[#FFB800]/40 transition-all duration-300 hover:-translate-y-1 shadow-lg fade-in-section delay-300">
                 <div class="w-10 h-10 rounded-full bg-[#FFB800] text-slate-900 flex items-center justify-center font-black text-sm flex-shrink-0 shadow-md">3</div>
                 <p class="text-slate-200 text-sm leading-relaxed pt-1">
-                    <span class="lang-id-only">Menjamin kepatuhan penuh terhadap regulasi pemerintah (SIUKAK &amp; SIUPPAK) dan MLC 2006.</span>
-                    <span class="lang-en-only">Ensuring full compliance with Indonesian regulations (SIUKAK &amp; SIUPPAK) and MLC 2006.</span>
+                    <span class="lang-id-only">Mendukung operasional kapal yang aman dan efisien.</span>
+                    <span class="lang-en-only">To support the safe and efficient operation of vessels.</span>
+                </p>
+            </div>
+            <div class="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.07] backdrop-blur-sm border border-white/10 hover:border-[#FFB800]/40 transition-all duration-300 hover:-translate-y-1 shadow-lg fade-in-section delay-400">
+                <div class="w-10 h-10 rounded-full bg-[#FFB800] text-slate-900 flex items-center justify-center font-black text-sm flex-shrink-0 shadow-md">4</div>
+                <p class="text-slate-200 text-sm leading-relaxed pt-1">
+                    <span class="lang-id-only">Membangun hubungan yang kuat dan berkelanjutan dengan pemilik dan operator kapal.</span>
+                    <span class="lang-en-only">To build strong and sustainable relationships with ship owners and operators.</span>
+                </p>
+            </div>
+            <div class="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.07] backdrop-blur-sm border border-white/10 hover:border-[#FFB800]/40 transition-all duration-300 hover:-translate-y-1 shadow-lg fade-in-section delay-500">
+                <div class="w-10 h-10 rounded-full bg-[#FFB800] text-slate-900 flex items-center justify-center font-black text-sm flex-shrink-0 shadow-md">5</div>
+                <p class="text-slate-200 text-sm leading-relaxed pt-1">
+                    <span class="lang-id-only">Terus meningkatkan layanan kami sesuai dengan standar maritim internasional.</span>
+                    <span class="lang-en-only">To continuously improve our services in line with international maritime standards.</span>
                 </p>
             </div>
         </div>
@@ -277,8 +306,8 @@
 
             {{-- Card 1 --}}
             <div class="group relative rounded-2xl overflow-hidden h-60 sm:h-72 cursor-pointer shadow-xl fade-in-section delay-100 border border-white/10">
-                <img src="{{ asset('images/crew-training.jpg') }}"
-                     alt="Crew Training"
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80&fit=crop"
+                     alt="Recruitment Team Interview"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/90 via-[#061838]/20 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-5">
@@ -326,8 +355,8 @@
                     </span>
                     <h3 class="text-white font-black text-base leading-tight">Fleet Coverage &amp; Global Reach</h3>
                     <p class="text-slate-300 text-xs mt-1.5 leading-relaxed max-h-0 overflow-hidden group-hover:max-h-20 transition-all duration-300">
-                        <span class="lang-id-only">Jangkauan ke 10+ negara — Belize, Rusia, Spanyol, Taiwan, Panama, Korea Selatan dan lainnya.</span>
-                        <span class="lang-en-only">Global deployment across 10+ countries — Belize, Russia, Spain, Taiwan, Panama, South Korea, etc.</span>
+                        <span class="lang-id-only">Jangkauan ke 50+ negara — Belize, Rusia, Spanyol, Taiwan, Panama, Korea Selatan dan lainnya.</span>
+                        <span class="lang-en-only">Global deployment across 50+ countries — Belize, Russia, Spain, Taiwan, Panama, South Korea, etc.</span>
                     </p>
                 </div>
             </div>
@@ -697,10 +726,10 @@
                     </span>
                     <h2 class="text-2xl sm:text-3xl font-black text-[#061838] leading-snug tracking-tight">
                         <span class="lang-id-only">
-                            Mengapa Memilih <span class="text-[#FFB800] block mt-1" style="color: #FFB800 !important;">PT. Bahtera Keselamatan Sentosa?</span>
+                            Mengapa Memilih <span class="text-[#FFB800] block mt-1" style="color: #FFB800 !important;">PT. Bahtera Anugerah Sentosa?</span>
                         </span>
                         <span class="lang-en-only">
-                            Why Choose <span class="text-[#FFB800] block mt-1" style="color: #FFB800 !important;">PT. Bahtera Keselamatan Sentosa?</span>
+                            Why Choose <span class="text-[#FFB800] block mt-1" style="color: #FFB800 !important;">PT. Bahtera Anugerah Sentosa?</span>
                         </span>
                     </h2>
                     <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -736,7 +765,7 @@
                             </div>
                         </div>
                         <div class="p-3.5 rounded-2xl bg-white/[0.07] backdrop-blur-sm border border-white/10">
-                            <div class="text-2xl font-black text-[#FFB800]" style="color: #FFB800 !important;">10+</div>
+                            <div class="text-2xl font-black text-[#FFB800]" style="color: #FFB800 !important;">50+</div>
                             <div class="text-[11px] font-bold text-slate-200 uppercase mt-0.5">
                                 <span class="lang-id-only">Negara Kemitraan</span>
                                 <span class="lang-en-only">Partner Countries</span>
