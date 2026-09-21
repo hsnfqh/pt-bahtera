@@ -23,7 +23,8 @@
                 <span class="lang-en-only">Organization Structure</span>
             </h2>
             <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-                Tim manajemen berpengalaman dan berdedikasi tinggi yang mengawal standar kualitas mutu, kepatuhan hukum maritim, dan integritas layanan crewing.
+                <span class="lang-id-only">Tim manajemen berpengalaman dan berdedikasi tinggi yang mengawal standar kualitas mutu, kepatuhan hukum maritim, dan integritas layanan crewing.</span>
+                <span class="lang-en-only">An experienced and dedicated management team upholding quality standards, maritime legal compliance, and crewing integrity.</span>
             </p>
         </div>
 
@@ -37,11 +38,15 @@
                         DIR
                     </div>
                     <div>
-                        <h3 class="text-xl font-black text-[#FFB800]">Direktur Utama</h3>
+                        <h3 class="text-xl font-black text-[#FFB800]">
+                            <span class="lang-id-only">Direktur Utama</span>
+                            <span class="lang-en-only">President Director</span>
+                        </h3>
                         <p class="text-xs text-slate-300 font-black uppercase tracking-widest mt-0.5">President Director &bull; Board of Management</p>
                     </div>
                     <p class="text-slate-200 text-xs leading-relaxed font-normal pt-1">
-                        Memimpin visi strategis perusahaan, hubungan kemitraan internasional, dan pengawasan tata kelola operasional serta kepatuhan maritim menyeluruh.
+                        <span class="lang-id-only">Memimpin visi strategis perusahaan, hubungan kemitraan internasional, dan pengawasan tata kelola operasional serta kepatuhan maritim menyeluruh.</span>
+                        <span class="lang-en-only">Leading strategic vision, international partner relations, operational governance oversight, and comprehensive maritime compliance.</span>
                     </p>
                 </div>
             </div>
@@ -57,7 +62,8 @@
                         <p class="text-xs text-[#FFB800] font-black uppercase tracking-wider bg-[#061838] px-3 py-0.5 rounded-full w-fit mx-auto mt-1">Head of Maritime Crewing Operations</p>
                     </div>
                     <p class="text-slate-600 text-xs leading-relaxed">
-                        Mengkoordinasikan seluruh divisi operasional, penempatan tenaga pelaut, serta kepatuhan standar internasional IMO &amp; ILO.
+                        <span class="lang-id-only">Mengkoordinasikan seluruh divisi operasional, penempatan tenaga pelaut, serta kepatuhan standar internasional IMO &amp; ILO.</span>
+                        <span class="lang-en-only">Coordinating all operational divisions, seafarer placements, and strict compliance with IMO &amp; ILO international standards.</span>
                     </p>
                 </div>
             </div>
@@ -70,10 +76,16 @@
                         REC
                     </div>
                     <div>
-                        <h4 class="text-base font-black text-[#061838]">Divisi Rekrutmen &amp; Seleksi</h4>
+                        <h4 class="text-base font-black text-[#061838]">
+                            <span class="lang-id-only">Divisi Rekrutmen &amp; Seleksi</span>
+                            <span class="lang-en-only">Recruitment &amp; Selection</span>
+                        </h4>
                         <span class="text-[11px] text-slate-500 font-bold block uppercase tracking-wider mt-0.5">Recruitment &amp; Selection</span>
                     </div>
-                    <p class="text-xs text-slate-600 leading-relaxed">Penyaringan kualifikasi, wawancara teknis, dan uji kompetensi pelaut berstandar STCW.</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        <span class="lang-id-only">Penyaringan kualifikasi, wawancara teknis, dan uji kompetensi pelaut berstandar STCW.</span>
+                        <span class="lang-en-only">Qualification screening, technical interviews, and STCW competency testing.</span>
+                    </p>
                 </div>
 
                 <div class="p-7 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-xl text-center space-y-3 transition-all duration-300 hover:-translate-y-1.5 fade-in-section delay-200">
@@ -81,10 +93,16 @@
                         DOC
                     </div>
                     <div>
-                        <h4 class="text-base font-black text-[#061838]">Divisi Legal &amp; Dokumen</h4>
+                        <h4 class="text-base font-black text-[#061838]">
+                            <span class="lang-id-only">Divisi Legal &amp; Dokumen</span>
+                            <span class="lang-en-only">Legal &amp; Compliance</span>
+                        </h4>
                         <span class="text-[11px] text-slate-500 font-bold block uppercase tracking-wider mt-0.5">Legal, Visa &amp; Compliance</span>
                     </div>
-                    <p class="text-xs text-slate-600 leading-relaxed">Paspor, Seaman Book, sertifikat STCW, visa maritim, dan legalitas SIUKAK/SIUPPAK.</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        <span class="lang-id-only">Paspor, Seaman Book, sertifikat STCW, visa maritim, dan legalitas SIUKAK/SIUPPAK.</span>
+                        <span class="lang-en-only">Passports, Seaman Books, STCW certificates, maritime visas, and official permits.</span>
+                    </p>
                 </div>
 
                 <div class="p-7 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-xl text-center space-y-3 transition-all duration-300 hover:-translate-y-1.5 fade-in-section delay-300">
@@ -92,10 +110,16 @@
                         TRN
                     </div>
                     <div>
-                        <h4 class="text-base font-black text-[#061838]">Divisi Diklat &amp; Medikal</h4>
+                        <h4 class="text-base font-black text-[#061838]">
+                            <span class="lang-id-only">Divisi Diklat &amp; Medikal</span>
+                            <span class="lang-en-only">Training &amp; Medical</span>
+                        </h4>
                         <span class="text-[11px] text-slate-500 font-bold block uppercase tracking-wider mt-0.5">Training &amp; MCU Coordinator</span>
                     </div>
-                    <p class="text-xs text-slate-600 leading-relaxed">Pelatihan pra-keberangkatan, standar safety drill, dan Medical Check Up (MCU) terakreditasi.</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        <span class="lang-id-only">Pelatihan pra-keberangkatan, standar safety drill, dan Medical Check Up (MCU) terakreditasi.</span>
+                        <span class="lang-en-only">Pre-departure training, safety drills, and certified Medical Check Up (MCU).</span>
+                    </p>
                 </div>
 
                 <div class="p-7 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-xl text-center space-y-3 transition-all duration-300 hover:-translate-y-1.5 fade-in-section delay-400">
@@ -103,10 +127,16 @@
                         FIN
                     </div>
                     <div>
-                        <h4 class="text-base font-black text-[#061838]">Divisi Keuangan &amp; HR</h4>
+                        <h4 class="text-base font-black text-[#061838]">
+                            <span class="lang-id-only">Divisi Keuangan &amp; HR</span>
+                            <span class="lang-en-only">Finance &amp; HR</span>
+                        </h4>
                         <span class="text-[11px] text-slate-500 font-bold block uppercase tracking-wider mt-0.5">Finance &amp; Crew Welfare</span>
                     </div>
-                    <p class="text-xs text-slate-600 leading-relaxed">Penggajian allotment kru, asuransi pelaut, dan pendampingan keluarga 24/7.</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        <span class="lang-id-only">Penggajian allotment kru, asuransi pelaut, dan pendampingan keluarga 24/7.</span>
+                        <span class="lang-en-only">Crew allotment payroll, maritime insurance, and 24/7 family support services.</span>
+                    </p>
                 </div>
 
             </div>
@@ -126,7 +156,8 @@
                 <span class="lang-en-only">Official Certifications &amp; Licenses</span>
             </h2>
             <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-                Dokumen legalitas otentik yang membuktikan kepatuhan hukum penuh dan reputasi tinggi PT. Bahtera Keselamatan Sentosa.
+                <span class="lang-id-only">Dokumen legalitas otentik yang membuktikan kepatuhan hukum penuh dan reputasi tinggi PT. Bahtera Keselamatan Sentosa.</span>
+                <span class="lang-en-only">Authentic credentials and licenses verifying full regulatory compliance and reputable track record of PT. Bahtera Keselamatan Sentosa.</span>
             </p>
         </div>
 
@@ -138,15 +169,22 @@
                         <span class="text-xs font-black uppercase px-3 py-1 rounded-full bg-[#061838] text-[#FFB800]">
                             SIUKAK 2024
                         </span>
-                        <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">&check; Terverifikasi</span>
+                        <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">
+                            <span class="lang-id-only">&check; Terverifikasi</span>
+                            <span class="lang-en-only">&check; Verified</span>
+                        </span>
                     </div>
                     <h3 class="text-lg font-black text-[#061838]">SIUKAK No. 58.58-R Tahun 2024</h3>
                     <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal resmi dari Kementerian Ketenagakerjaan RI untuk armada perikanan dan niaga internasional.
+                        <span class="lang-id-only">Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal resmi dari Kementerian Ketenagakerjaan RI untuk armada perikanan dan niaga internasional.</span>
+                        <span class="lang-en-only">Official Recruitment &amp; Placement Business License from the Indonesian Ministry of Manpower for international fishing and commercial vessels.</span>
                     </p>
                 </div>
                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700 flex justify-between items-center">
-                    <span class="font-semibold">Nomor Izin:</span>
+                    <span class="font-semibold">
+                        <span class="lang-id-only">Nomor Izin:</span>
+                        <span class="lang-en-only">License No:</span>
+                    </span>
                     <strong class="text-[#061838] font-black bg-white px-2.5 py-1 rounded border border-slate-200">58.58-R / 2024</strong>
                 </div>
             </div>
@@ -157,15 +195,22 @@
                         <span class="text-xs font-black uppercase px-3 py-1 rounded-full bg-[#061838] text-[#FFB800]">
                             SIUPPAK 2016
                         </span>
-                        <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">&check; Terverifikasi</span>
+                        <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">
+                            <span class="lang-id-only">&check; Terverifikasi</span>
+                            <span class="lang-en-only">&check; Verified</span>
+                        </span>
                     </div>
                     <h3 class="text-lg font-black text-[#061838]">SIUPPAK No. 65.21 Tahun 2016</h3>
                     <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal dari Direktorat Jenderal Perhubungan Laut, Kementerian Perhubungan RI.
+                        <span class="lang-id-only">Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal dari Direktorat Jenderal Perhubungan Laut, Kementerian Perhubungan RI.</span>
+                        <span class="lang-en-only">Seafarer Recruitment and Placement License issued by Directorate General of Sea Transportation, Indonesian Ministry of Transportation.</span>
                     </p>
                 </div>
                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700 flex justify-between items-center">
-                    <span class="font-semibold">Nomor Izin:</span>
+                    <span class="font-semibold">
+                        <span class="lang-id-only">Nomor Izin:</span>
+                        <span class="lang-en-only">License No:</span>
+                    </span>
                     <strong class="text-[#061838] font-black bg-white px-2.5 py-1 rounded border border-slate-200">65.21 / 2016</strong>
                 </div>
             </div>
@@ -180,11 +225,15 @@
                     </div>
                     <h3 class="text-lg font-black text-[#061838]">MLC 2006 &amp; STCW 2010</h3>
                     <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        Kepatuhan menyeluruh terhadap Maritime Labour Convention (MLC 2006) dan standar kompetensi IMO STCW 2010 Manila Amendments.
+                        <span class="lang-id-only">Kepatuhan menyeluruh terhadap Maritime Labour Convention (MLC 2006) dan standar kompetensi IMO STCW 2010 Manila Amendments.</span>
+                        <span class="lang-en-only">Full compliance with Maritime Labour Convention (MLC 2006) and IMO STCW 2010 Manila Amendments competency standards.</span>
                     </p>
                 </div>
                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700 flex justify-between items-center">
-                    <span class="font-semibold">Standar:</span>
+                    <span class="font-semibold">
+                        <span class="lang-id-only">Standar:</span>
+                        <span class="lang-en-only">Standard:</span>
+                    </span>
                     <strong class="text-[#061838] font-black bg-white px-2.5 py-1 rounded border border-slate-200">IMO &amp; ILO MLC 2006</strong>
                 </div>
             </div>
@@ -193,6 +242,5 @@
 
     </div>
 </section>
-
 
 @endsection

@@ -6,8 +6,8 @@
 
 <!-- Top Subpage Header with PT. BKS Logo -->
 <x-subpage-banner 
-    titleId="Layanan &amp; <span class='text-[#FFB800]'>Jenis Kapal</span>"
-    titleEn="Our Services &amp; <span class='text-[#FFB800]'>Vessel Types</span>"
+    titleId="Layanan &amp; <br><span class='text-[#FFB800]'>Jenis Kapal</span>"
+    titleEn="Our Services &amp; <br><span class='text-[#FFB800]'>Vessel Types</span>"
     subtitleId="Solusi Manajemen Awak Kapal Terpadu &amp; Berstandar Internasional"
     subtitleEn="Integrated Maritime Crewing Solutions &amp; International Standards"
     badge="MARITIME CREWING SOLUTIONS"
@@ -24,7 +24,8 @@
                 <span class="lang-en-only">Our Crewing Services</span>
             </h2>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
-                Kami berspesialisasi dalam perekrutan, seleksi, penempatan, dan penyaluran pelaut berkualifikasi untuk berbagai armada kapal di seluruh dunia dengan kepatuhan penuh standar IMO STCW &amp; MLC 2006.
+                <span class="lang-id-only">Kami berspesialisasi dalam perekrutan, seleksi, penempatan, dan penyaluran pelaut berkualifikasi untuk berbagai armada kapal di seluruh dunia dengan kepatuhan penuh standar IMO STCW &amp; MLC 2006.</span>
+                <span class="lang-en-only">We specialize in recruiting, selecting, placing, and deploying certified seafarers for various international vessel fleets in full compliance with IMO STCW &amp; MLC 2006 standards.</span>
             </p>
         </div>
 
@@ -38,18 +39,26 @@
                         <img src="{{ asset('images/crew-training.jpg') }}" alt="Recruitment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/80 via-transparent to-transparent"></div>
                         <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-wider bg-[#FFB800] text-[#061838] shadow-sm">
-                            Recruitment &bull; Selection
+                            <span class="lang-id-only">Rekrutmen &bull; Seleksi</span>
+                            <span class="lang-en-only">Recruitment &bull; Selection</span>
                         </span>
                     </div>
                     <div class="p-6 space-y-2">
-                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">Seafarer Recruitment &amp; Selection</h3>
+                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">
+                            <span class="lang-id-only">Rekrutmen &amp; Seleksi Pelaut</span>
+                            <span class="lang-en-only">Seafarer Recruitment &amp; Selection</span>
+                        </h3>
                         <p class="text-slate-600 text-xs leading-relaxed">
-                            Proses rekrutmen dan seleksi ketat berbasis kompetensi teknis maritim, verifikasi dokumen, serta uji fisik dan mental pelaut komprehensif.
+                            <span class="lang-id-only">Proses rekrutmen dan seleksi ketat berbasis kompetensi teknis maritim, verifikasi dokumen, serta uji fisik dan mental pelaut komprehensif.</span>
+                            <span class="lang-en-only">Rigorous competency-based screening, maritime document verification, and comprehensive physical and psychological fitness tests.</span>
                         </p>
                     </div>
                 </div>
                 <div class="px-6 py-3 border-t border-slate-100 text-[11px] text-slate-500 font-bold flex items-center justify-between bg-slate-50/70">
-                    <span>Standardized Screening</span>
+                    <span>
+                        <span class="lang-id-only">Penyaringan Standar</span>
+                        <span class="lang-en-only">Standardized Screening</span>
+                    </span>
                     <span class="text-[#061838] font-black bg-[#FFB800]/25 px-2 py-0.5 rounded text-[10px]">STCW Compliant</span>
                 </div>
             </div>
@@ -61,18 +70,26 @@
                         <img src="{{ asset('images/hero-banner.jpg') }}" alt="Placement" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/80 via-transparent to-transparent"></div>
                         <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-wider bg-[#061838] text-[#FFB800] border border-[#FFB800]/40 shadow-sm">
-                            Embarkation &bull; Placement
+                            <span class="lang-id-only">Pemberangkatan &bull; Penempatan</span>
+                            <span class="lang-en-only">Embarkation &bull; Placement</span>
                         </span>
                     </div>
                     <div class="p-6 space-y-2">
-                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">Crew Placement &amp; Deployment</h3>
+                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">
+                            <span class="lang-id-only">Penempatan &amp; Pemberangkatan Kru</span>
+                            <span class="lang-en-only">Crew Placement &amp; Deployment</span>
+                        </h3>
                         <p class="text-slate-600 text-xs leading-relaxed">
-                            Penempatan dan pemberangkatan kru pelaut ke kapal-kapal internasional secara tepat waktu sesuai jadwal operasional pemilik kapal.
+                            <span class="lang-id-only">Penempatan dan pemberangkatan kru pelaut ke kapal-kapal internasional secara tepat waktu sesuai jadwal operasional pemilik kapal.</span>
+                            <span class="lang-en-only">Timely seafarer deployment and embarkation to global merchant and fishing fleets tailored to shipowners' schedules.</span>
                         </p>
                     </div>
                 </div>
                 <div class="px-6 py-3 border-t border-slate-100 text-[11px] text-slate-500 font-bold flex items-center justify-between bg-slate-50/70">
-                    <span>On-Time Departure</span>
+                    <span>
+                        <span class="lang-id-only">Tepat Waktu</span>
+                        <span class="lang-en-only">On-Time Departure</span>
+                    </span>
                     <span class="text-[#061838] font-black bg-[#FFB800]/25 px-2 py-0.5 rounded text-[10px]">Fit-to-Position</span>
                 </div>
             </div>
@@ -84,18 +101,26 @@
                         <img src="{{ asset('images/subpage-banner.jpg') }}" alt="Documentation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/80 via-transparent to-transparent"></div>
                         <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-wider bg-[#FFB800] text-[#061838] shadow-sm">
-                            Visa &bull; Endorsement
+                            <span class="lang-id-only">Visa &bull; Endorsement</span>
+                            <span class="lang-en-only">Visa &bull; Endorsement</span>
                         </span>
                     </div>
                     <div class="p-6 space-y-2">
-                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">Crew Documentation &amp; Certification</h3>
+                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">
+                            <span class="lang-id-only">Dokumentasi &amp; Sertifikasi Kru</span>
+                            <span class="lang-en-only">Crew Documentation &amp; Certification</span>
+                        </h3>
                         <p class="text-slate-600 text-xs leading-relaxed">
-                            Pengurusan lengkap Paspor Pelaut, Seaman Book, sertifikat STCW, visa maritim negara tujuan, endorsement negara bendera, dan MCU.
+                            <span class="lang-id-only">Pengurusan lengkap Paspor Pelaut, Seaman Book, sertifikat STCW, visa maritim negara tujuan, endorsement negara bendera, dan MCU.</span>
+                            <span class="lang-en-only">Full management of Seaman Book, STCW certificates, maritime transit visas, flag state endorsements, and certified MCU.</span>
                         </p>
                     </div>
                 </div>
                 <div class="px-6 py-3 border-t border-slate-100 text-[11px] text-slate-500 font-bold flex items-center justify-between bg-slate-50/70">
-                    <span>Flag Endorsement</span>
+                    <span>
+                        <span class="lang-id-only">Endorsement Bendera</span>
+                        <span class="lang-en-only">Flag Endorsement</span>
+                    </span>
                     <span class="text-[#061838] font-black bg-[#FFB800]/25 px-2 py-0.5 rounded text-[10px]">Medical Clearance</span>
                 </div>
             </div>
@@ -107,18 +132,26 @@
                         <img src="{{ asset('images/ship-bridge.jpg') }}" alt="Logistics" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/80 via-transparent to-transparent"></div>
                         <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-wider bg-[#061838] text-[#FFB800] border border-[#FFB800]/40 shadow-sm">
-                            Travel &bull; Transit
+                            <span class="lang-id-only">Perjalanan &bull; Transit</span>
+                            <span class="lang-en-only">Travel &bull; Transit</span>
                         </span>
                     </div>
                     <div class="p-6 space-y-2">
-                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">Crew Coordination &amp; Travel Logistics</h3>
+                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">
+                            <span class="lang-id-only">Koordinasi Logistik &amp; Perjalanan</span>
+                            <span class="lang-en-only">Crew Coordination &amp; Travel Logistics</span>
+                        </h3>
                         <p class="text-slate-600 text-xs leading-relaxed">
-                            Koordinasi logistik perjalanan mulai dari tiket penerbangan, transportasi darat, akomodasi transit, hingga pendampingan sign-on di pelabuhan.
+                            <span class="lang-id-only">Koordinasi logistik perjalanan mulai dari tiket penerbangan, transportasi darat, akomodasi transit, hingga pendampingan sign-on di pelabuhan.</span>
+                            <span class="lang-en-only">Seamless travel arrangement from flight ticketing, airport pickups, transit accommodation, to port sign-on liaison.</span>
                         </p>
                     </div>
                 </div>
                 <div class="px-6 py-3 border-t border-slate-100 text-[11px] text-slate-500 font-bold flex items-center justify-between bg-slate-50/70">
-                    <span>Flight Logistics</span>
+                    <span>
+                        <span class="lang-id-only">Logistik Penerbangan</span>
+                        <span class="lang-en-only">Flight Logistics</span>
+                    </span>
                     <span class="text-[#061838] font-black bg-[#FFB800]/25 px-2 py-0.5 rounded text-[10px]">Port Liaison</span>
                 </div>
             </div>
@@ -130,18 +163,26 @@
                         <img src="{{ asset('images/vessel-fishing-trawler.jpg') }}" alt="Rotation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/80 via-transparent to-transparent"></div>
                         <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-wider bg-[#FFB800] text-[#061838] shadow-sm">
-                            Rotation &bull; Relief
+                            <span class="lang-id-only">Rotasi &bull; Pergantian</span>
+                            <span class="lang-en-only">Rotation &bull; Relief</span>
                         </span>
                     </div>
                     <div class="p-6 space-y-2">
-                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">Crew Replacement &amp; Rotation</h3>
+                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">
+                            <span class="lang-id-only">Rotasi &amp; Pergantian Kru</span>
+                            <span class="lang-en-only">Crew Replacement &amp; Rotation</span>
+                        </h3>
                         <p class="text-slate-600 text-xs leading-relaxed">
-                            Perencanaan jadwal rotasi dan penggantian kru secara teratur demi kestabilan dan produktivitas operasi kapal tanpa jeda waktu kosong.
+                            <span class="lang-id-only">Perencanaan jadwal rotasi dan penggantian kru secara teratur demi kestabilan dan produktivitas operasi kapal tanpa jeda waktu kosong.</span>
+                            <span class="lang-en-only">Systematic crew rotation planning and standby pool management ensuring zero vessel downtime and uninterrupted voyage operations.</span>
                         </p>
                     </div>
                 </div>
                 <div class="px-6 py-3 border-t border-slate-100 text-[11px] text-slate-500 font-bold flex items-center justify-between bg-slate-50/70">
-                    <span>Planned Relief</span>
+                    <span>
+                        <span class="lang-id-only">Pergantian Terencana</span>
+                        <span class="lang-en-only">Planned Relief</span>
+                    </span>
                     <span class="text-[#061838] font-black bg-[#FFB800]/25 px-2 py-0.5 rounded text-[10px]">Standby Ready</span>
                 </div>
             </div>
@@ -153,18 +194,26 @@
                         <img src="{{ asset('images/vessel-factory-trawler.jpg') }}" alt="Welfare" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/80 via-transparent to-transparent"></div>
                         <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-wider bg-[#061838] text-[#FFB800] border border-[#FFB800]/40 shadow-sm">
-                            Welfare &bull; Payroll
+                            <span class="lang-id-only">Kesejahteraan &bull; Gaji</span>
+                            <span class="lang-en-only">Welfare &bull; Payroll</span>
                         </span>
                     </div>
                     <div class="p-6 space-y-2">
-                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">Crew Welfare &amp; Payroll Administration</h3>
+                        <h3 class="text-base sm:text-lg font-black text-[#061838] group-hover:text-[#0b3b82] transition-colors leading-snug">
+                            <span class="lang-id-only">Kesejahteraan &amp; Administrasi Gaji</span>
+                            <span class="lang-en-only">Crew Welfare &amp; Payroll Administration</span>
+                        </h3>
                         <p class="text-slate-600 text-xs leading-relaxed">
-                            Pengelolaan gaji tepat waktu, alokasi remitansi keluarga (allotment), asuransi jiwa &amp; kesehatan kerja, serta pemantauan kesejahteraan pelaut.
+                            <span class="lang-id-only">Pengelolaan gaji tepat waktu, alokasi remitansi keluarga (allotment), asuransi jiwa &amp; kesehatan kerja, serta pemantauan kesejahteraan pelaut.</span>
+                            <span class="lang-en-only">Punctual salary processing, family remittance (allotment) management, life &amp; medical insurance, and seafarer welfare monitoring.</span>
                         </p>
                     </div>
                 </div>
                 <div class="px-6 py-3 border-t border-slate-100 text-[11px] text-slate-500 font-bold flex items-center justify-between bg-slate-50/70">
-                    <span>Timely Remittance</span>
+                    <span>
+                        <span class="lang-id-only">Remitansi Tepat Waktu</span>
+                        <span class="lang-en-only">Timely Remittance</span>
+                    </span>
                     <span class="text-[#061838] font-black bg-[#FFB800]/25 px-2 py-0.5 rounded text-[10px]">MLC Compliant</span>
                 </div>
             </div>
@@ -185,11 +234,12 @@
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto space-y-3 fade-in-section">
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight uppercase">
-                <span class="lang-id-only">Jenis Kapal / Vessel Types</span>
+                <span class="lang-id-only">Jenis Kapal Armada</span>
                 <span class="lang-en-only">Supported Vessel Fleet Types</span>
             </h2>
             <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
-                Pengalaman kami melayani berbagai jenis kapal memungkinkan kami memahami persyaratan spesifik setiap armada dan menyediakan kru yang tepat.
+                <span class="lang-id-only">Pengalaman kami melayani berbagai jenis kapal memungkinkan kami memahami persyaratan spesifik setiap armada dan menyediakan kru yang tepat.</span>
+                <span class="lang-en-only">Our extensive experience across various vessel types enables us to understand specific fleet requirements and supply the right crew.</span>
             </p>
         </div>
 
@@ -208,7 +258,10 @@
                 </div>
                 <div class="p-6 space-y-2">
                     <h3 class="text-base sm:text-lg font-black text-white group-hover:text-[#FFB800] transition-colors">Factory Trawlers</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">Kapal penangkap dan pemrosesan ikan modern di laut lepas dengan fasilitas pabrik pembekuan standar ekspor.</p>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        <span class="lang-id-only">Kapal penangkap dan pemrosesan ikan modern di laut lepas dengan fasilitas pabrik pembekuan standar ekspor.</span>
+                        <span class="lang-en-only">Modern oceanic fishing and fish-processing factory vessels with export-standard onboard freezing facilities.</span>
+                    </p>
                 </div>
             </div>
 
@@ -224,7 +277,10 @@
                 </div>
                 <div class="p-6 space-y-2">
                     <h3 class="text-base sm:text-lg font-black text-white group-hover:text-[#FFB800] transition-colors">Fishing Trawlers</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">Kapal pukat hela untuk penangkapan ikan laut dalam di berbagai perairan internasional dengan kru dek terlatih.</p>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        <span class="lang-id-only">Kapal pukat hela untuk penangkapan ikan laut dalam di berbagai perairan internasional dengan kru dek terlatih.</span>
+                        <span class="lang-en-only">Deep-sea bottom and pelagic trawlers operating across global fishing grounds with skilled deck crews.</span>
+                    </p>
                 </div>
             </div>
 
@@ -240,7 +296,10 @@
                 </div>
                 <div class="p-6 space-y-2">
                     <h3 class="text-base sm:text-lg font-black text-white group-hover:text-[#FFB800] transition-colors">Longliners</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">Armada rawai tuna samudra lepas dengan ABK berpengalaman dalam penanganan hasil tangkapan bernilai tinggi.</p>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        <span class="lang-id-only">Armada rawai tuna samudra lepas dengan ABK berpengalaman dalam penanganan hasil tangkapan bernilai tinggi.</span>
+                        <span class="lang-en-only">Oceanic tuna longline vessels manned by seasoned seafarers skilled in handling high-value sashimi-grade catches.</span>
+                    </p>
                 </div>
             </div>
 
@@ -256,7 +315,10 @@
                 </div>
                 <div class="p-6 space-y-2">
                     <h3 class="text-base sm:text-lg font-black text-white group-hover:text-[#FFB800] transition-colors">Squid Jiggers</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">Kapal pemancing cumi-cumi otomatis dengan pencahayaan khusus berdaya tinggi dan sistem pembekuan cepat.</p>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        <span class="lang-id-only">Kapal pemancing cumi-cumi otomatis dengan pencahayaan khusus berdaya tinggi dan sistem pembekuan cepat.</span>
+                        <span class="lang-en-only">Automated squid jigging vessels equipped with high-powered lighting arrays and blast freezing systems.</span>
+                    </p>
                 </div>
             </div>
 
@@ -272,7 +334,10 @@
                 </div>
                 <div class="p-6 space-y-2">
                     <h3 class="text-base sm:text-lg font-black text-white group-hover:text-[#FFB800] transition-colors">General Cargo &amp; Container</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">Kapal kargo umum dan peti kemas niaga dengan kru berlisensi perwira dan rating deck/engine lengkap.</p>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        <span class="lang-id-only">Kapal kargo umum dan peti kemas niaga dengan kru berlisensi perwira dan rating deck/engine lengkap.</span>
+                        <span class="lang-en-only">Merchant general cargo and container vessels staffed with certified officers and skilled deck/engine ratings.</span>
+                    </p>
                 </div>
             </div>
 
@@ -288,7 +353,10 @@
                 </div>
                 <div class="p-6 space-y-2">
                     <h3 class="text-base sm:text-lg font-black text-white group-hover:text-[#FFB800] transition-colors">Tugboat &amp; Offshore Support</h3>
-                    <p class="text-slate-300 text-xs leading-relaxed">Kapal tunda pelabuhan dan armada pendukung lepas pantai (AHTS/Supply Vessel) untuk operasi logistik energi.</p>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        <span class="lang-id-only">Kapal tunda pelabuhan dan armada pendukung lepas pantai (AHTS/Supply Vessel) untuk operasi logistik energi.</span>
+                        <span class="lang-en-only">Harbor tugboats and offshore support vessels (AHTS / PSV) facilitating maritime logistics and marine energy operations.</span>
+                    </p>
                 </div>
             </div>
 
@@ -308,7 +376,8 @@
                 <span class="lang-en-only">International Experience</span>
             </h2>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
-                Rekam jejak penempatan kru pelaut kami telah menjangkau rute perairan global dan berlayar di bawah berbagai bendera negara maritim terkemuka.
+                <span class="lang-id-only">Rekam jejak penempatan kru pelaut kami telah menjangkau rute perairan global dan berlayar di bawah berbagai bendera negara maritim terkemuka.</span>
+                <span class="lang-en-only">Our crew placement track record spans global maritime routes, sailing under the world's most prestigious flag states.</span>
             </p>
         </div>
 
@@ -323,7 +392,8 @@
                         <span class="lang-en-only">Regulatory Compliance &amp;<br>Global Flag States</span>
                     </h3>
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                        Kru kami telah berpengalaman berlayar di bawah regulasi bendera maritim utama dunia, menjamin kelancaran inspeksi Port State Control (PSC) dan kepatuhan penuh konvensi ILO &amp; IMO.
+                        <span class="lang-id-only">Kru kami telah berpengalaman berlayar di bawah regulasi bendera maritim utama dunia, menjamin kelancaran inspeksi Port State Control (PSC) dan kepatuhan penuh konvensi ILO &amp; IMO.</span>
+                        <span class="lang-en-only">Our seafarers are experienced under major global flag states, ensuring seamless Port State Control (PSC) inspections and compliance with ILO &amp; IMO conventions.</span>
                     </p>
                 </div>
 
@@ -451,9 +521,13 @@
                 <div class="w-10 h-10 rounded-xl bg-[#061838] text-[#FFB800] flex items-center justify-center font-black text-sm shadow-sm">
                     01
                 </div>
-                <h3 class="text-base sm:text-lg font-black text-[#061838]">Strategic Partnership</h3>
+                <h3 class="text-base sm:text-lg font-black text-[#061838]">
+                    <span class="lang-id-only">Kemitraan Strategis</span>
+                    <span class="lang-en-only">Strategic Partnership</span>
+                </h3>
                 <p class="text-slate-600 text-xs leading-relaxed">
-                    Kolaborasi erat yang berorientasi pada keberlanjutan operasional, efisiensi biaya crewing, dan pemenuhan kebutuhan spesifik setiap kapal mitra.
+                    <span class="lang-id-only">Kolaborasi erat yang berorientasi pada keberlanjutan operasional, efisiensi biaya crewing, dan pemenuhan kebutuhan spesifik setiap kapal mitra.</span>
+                    <span class="lang-en-only">Close collaboration focused on operational continuity, cost-effective crewing solutions, and tailored maritime partner specifications.</span>
                 </p>
             </div>
 
@@ -461,9 +535,13 @@
                 <div class="w-10 h-10 rounded-xl bg-[#061838] text-[#FFB800] flex items-center justify-center font-black text-sm shadow-sm">
                     02
                 </div>
-                <h3 class="text-base sm:text-lg font-black text-[#061838]">Qualified Seafarers</h3>
+                <h3 class="text-base sm:text-lg font-black text-[#061838]">
+                    <span class="lang-id-only">Pelaut Berkualifikasi</span>
+                    <span class="lang-en-only">Qualified Seafarers</span>
+                </h3>
                 <p class="text-slate-600 text-xs leading-relaxed">
-                    Pelaut bersertifikasi lengkap sesuai regulasi STCW terkini, berpengalaman di perairan internasional, serta melalui proses seleksi dan verifikasi medis ketat.
+                    <span class="lang-id-only">Pelaut bersertifikasi lengkap sesuai regulasi STCW terkini, berpengalaman di perairan internasional, serta melalui proses seleksi dan verifikasi medis ketat.</span>
+                    <span class="lang-en-only">Fully certified crew adhering to latest STCW guidelines, proven international sea-time, and rigorous medical clearances.</span>
                 </p>
             </div>
 
@@ -471,9 +549,13 @@
                 <div class="w-10 h-10 rounded-xl bg-[#061838] text-[#FFB800] flex items-center justify-center font-black text-sm shadow-sm">
                     03
                 </div>
-                <h3 class="text-base sm:text-lg font-black text-[#061838]">Full Compliance &amp; Care</h3>
+                <h3 class="text-base sm:text-lg font-black text-[#061838]">
+                    <span class="lang-id-only">Kepatuhan &amp; Perlindungan Penuh</span>
+                    <span class="lang-en-only">Full Compliance &amp; Care</span>
+                </h3>
                 <p class="text-slate-600 text-xs leading-relaxed">
-                    Jaminan perlindungan hak pelaut dan kepatuhan penuh terhadap ketentuan ILO Maritime Labour Convention (MLC 2006) dan regulasi ketenagakerjaan maritim.
+                    <span class="lang-id-only">Jaminan perlindungan hak pelaut dan kepatuhan penuh terhadap ketentuan ILO Maritime Labour Convention (MLC 2006) dan regulasi ketenagakerjaan maritim.</span>
+                    <span class="lang-en-only">Full seafarer rights protection and complete adherence to ILO Maritime Labour Convention (MLC 2006) standards.</span>
                 </p>
             </div>
         </div>

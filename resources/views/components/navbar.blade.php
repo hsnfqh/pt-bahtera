@@ -32,22 +32,32 @@
         <!-- Right: Operational Hours & Language Switcher -->
         <div class="flex items-center space-x-4 text-[11px] sm:text-xs ml-auto">
             <span class="hidden sm:inline text-slate-300 font-medium">
-                <span class="text-[#FFB800] font-bold">&bull;</span> Senin &ndash; Jumat: 08:30 &ndash; 17:00 WIB
+                <span class="text-[#FFB800] font-bold">&bull;</span>
+                <span class="lang-id-only">Senin &ndash; Jumat: 08:30 &ndash; 17:00 WIB</span>
+                <span class="lang-en-only">Mon &ndash; Fri: 08:30 &ndash; 17:00 WIB (UTC+7)</span>
             </span>
             
             <!-- Language Switcher Flags Pill -->
-            <div class="flex items-center bg-white/10 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/15 gap-2">
-                <button type="button" data-set-lang="id" class="lang-flag-btn flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-bold text-white hover:bg-[#FFB800] hover:text-slate-950 transition" title="Bahasa Indonesia">
-                    <span class="w-4 h-2.5 rounded-sm overflow-hidden inline-flex flex-col border border-white/40 shadow-sm flex-shrink-0">
-                        <span class="bg-red-600 h-1/2 w-full"></span>
-                        <span class="bg-white h-1/2 w-full"></span>
+            <div class="flex items-center bg-white/10 backdrop-blur-md p-1 rounded-full border border-white/15 gap-1 shadow-inner">
+                <!-- ID Button with Indonesia Flag -->
+                <button type="button" data-set-lang="id" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold text-white transition cursor-pointer" title="Bahasa Indonesia">
+                    <span class="w-4 h-2.5 rounded-[2px] overflow-hidden inline-flex flex-col border border-white/40 shadow-sm flex-shrink-0">
+                        <span class="bg-[#E70011] h-1/2 w-full"></span>
+                        <span class="bg-[#FFFFFF] h-1/2 w-full"></span>
                     </span>
                     <span>ID</span>
                 </button>
                 <span class="text-white/30 text-[10px]">|</span>
-                <button type="button" data-set-lang="en" class="lang-flag-btn flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-bold text-white hover:bg-[#FFB800] hover:text-slate-950 transition" title="English">
-                    <span class="w-4 h-2.5 rounded-sm overflow-hidden inline-flex items-center justify-center bg-blue-800 text-[6px] text-white font-black border border-white/40 shadow-sm flex-shrink-0">
-                        EN
+                <!-- EN Button with UK Flag (Union Jack) -->
+                <button type="button" data-set-lang="en" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold text-white transition cursor-pointer" title="English">
+                    <span class="w-4 h-2.5 rounded-[2px] overflow-hidden inline-flex items-center justify-center border border-white/40 shadow-sm flex-shrink-0 bg-[#012169]">
+                        <svg class="w-full h-full object-cover" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="30" fill="#012169"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFFFFF" stroke-width="6"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#FFFFFF" stroke-width="10"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                        </svg>
                     </span>
                     <span>EN</span>
                 </button>
@@ -75,7 +85,7 @@
                         </span>
                     </div>
                     <span class="text-[10px] sm:text-[11px] font-extrabold text-[#061838]/90 tracking-wide">
-                        <span class="lang-id-only">Official Maritime Crewing &amp; Manning Agency</span>
+                        <span class="lang-id-only">Agensi Pengawakan &amp; Penyaluran Pelaut Resmi</span>
                         <span class="lang-en-only">Official Maritime Crewing &amp; Manning Agency</span>
                     </span>
                 </div>
@@ -85,31 +95,31 @@
             <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
                 <!-- Home Link -->
                 <a href="{{ route('home') }}" class="py-2 text-sm transition-all duration-200 border-b-[3px] focus:outline-none focus:ring-0 {{ $currentRoute === 'home' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700 font-extrabold' }}">
-                    <span class="lang-id-only">Home</span>
+                    <span class="lang-id-only">Beranda</span>
                     <span class="lang-en-only">Home</span>
                 </a>
 
                 <!-- Our Service Link -->
                 <a href="{{ route('services') }}" class="py-2 text-sm transition-all duration-200 border-b-[3px] focus:outline-none focus:ring-0 {{ $currentRoute === 'services' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700 font-extrabold' }}">
-                    <span class="lang-id-only">Our Services</span>
+                    <span class="lang-id-only">Layanan Kami</span>
                     <span class="lang-en-only">Our Services</span>
                 </a>
 
                 <!-- Our Team Link -->
                 <a href="{{ route('team') }}" class="py-2 text-sm transition-all duration-200 border-b-[3px] focus:outline-none focus:ring-0 {{ $currentRoute === 'team' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700 font-extrabold' }}">
-                    <span class="lang-id-only">Our Team</span>
+                    <span class="lang-id-only">Tim Kami</span>
                     <span class="lang-en-only">Our Team</span>
                 </a>
 
                 <!-- Gallery Link -->
                 <a href="{{ route('gallery') }}" class="py-2 text-sm transition-all duration-200 border-b-[3px] focus:outline-none focus:ring-0 {{ $currentRoute === 'gallery' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700 font-extrabold' }}">
-                    <span class="lang-id-only">Gallery</span>
+                    <span class="lang-id-only">Galeri</span>
                     <span class="lang-en-only">Gallery</span>
                 </a>
 
                 <!-- Contact Us Link -->
                 <a href="{{ route('contact') }}" class="py-2 text-sm transition-all duration-200 border-b-[3px] focus:outline-none focus:ring-0 {{ $currentRoute === 'contact' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700 font-extrabold' }}">
-                    <span class="lang-id-only">Contact Us</span>
+                    <span class="lang-id-only">Hubungi Kami</span>
                     <span class="lang-en-only">Contact Us</span>
                 </a>
 
@@ -134,23 +144,23 @@
     <!-- Mobile Drawer Menu -->
     <div id="mobile-menu" class="hidden lg:hidden border-b-2 border-amber-500 bg-[#FFB800] px-4 pt-3 pb-6 space-y-2 shadow-xl">
         <a href="{{ route('home') }}" class="block px-3 py-2.5 text-sm font-bold border-b-2 {{ $currentRoute === 'home' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700' }}">
-            <span class="lang-id-only">Home</span>
+            <span class="lang-id-only">Beranda</span>
             <span class="lang-en-only">Home</span>
         </a>
         <a href="{{ route('services') }}" class="block px-3 py-2.5 text-sm font-bold border-b-2 {{ $currentRoute === 'services' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700' }}">
-            <span class="lang-id-only">Our Services</span>
+            <span class="lang-id-only">Layanan Kami</span>
             <span class="lang-en-only">Our Services</span>
         </a>
         <a href="{{ route('team') }}" class="block px-3 py-2.5 text-sm font-bold border-b-2 {{ $currentRoute === 'team' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700' }}">
-            <span class="lang-id-only">Our Team</span>
+            <span class="lang-id-only">Tim Kami</span>
             <span class="lang-en-only">Our Team</span>
         </a>
         <a href="{{ route('gallery') }}" class="block px-3 py-2.5 text-sm font-bold border-b-2 {{ $currentRoute === 'gallery' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700' }}">
-            <span class="lang-id-only">Gallery</span>
+            <span class="lang-id-only">Galeri</span>
             <span class="lang-en-only">Gallery</span>
         </a>
         <a href="{{ route('contact') }}" class="block px-3 py-2.5 text-sm font-bold border-b-2 {{ $currentRoute === 'contact' ? 'text-red-700 border-red-700 font-black' : 'text-[#061838] border-transparent hover:text-red-700 hover:border-red-700' }}">
-            <span class="lang-id-only">Contact Us</span>
+            <span class="lang-id-only">Hubungi Kami</span>
             <span class="lang-en-only">Contact Us</span>
         </a>
 

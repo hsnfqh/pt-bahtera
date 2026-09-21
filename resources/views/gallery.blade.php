@@ -23,7 +23,8 @@
                 <span class="lang-en-only">Activity Gallery &amp; Vessel Operations</span>
             </h2>
             <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-                Dokumentasi profesionalisme kru kami di anjungan navigasi kapal, pelatihan pra-keberangkatan, dan operasi armada di pelabuhan dunia.
+                <span class="lang-id-only">Dokumentasi profesionalisme kru kami di anjungan navigasi kapal, pelatihan pra-keberangkatan, dan operasi armada di pelabuhan dunia.</span>
+                <span class="lang-en-only">Visual documentation of our crew professionalism across ship bridges, pre-departure drills, and international fleet operations.</span>
             </p>
         </div>
 
@@ -46,11 +47,23 @@
                 
                 <div class="p-7 bg-white space-y-2">
                     <div class="flex items-center justify-between">
-                        <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">Pelabuhan Niaga</span>
-                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lihat Foto &rarr;</span>
+                        <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">
+                            <span class="lang-id-only">Pelabuhan Niaga</span>
+                            <span class="lang-en-only">Commercial Port</span>
+                        </span>
+                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            <span class="lang-id-only">Lihat Foto &rarr;</span>
+                            <span class="lang-en-only">View Photo &rarr;</span>
+                        </span>
                     </div>
-                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">Operasional Armada di Pelabuhan</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Pemberangkatan dan koordinasi kru kapal penangkap ikan internasional.</p>
+                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">
+                        <span class="lang-id-only">Operasional Armada di Pelabuhan</span>
+                        <span class="lang-en-only">Port Fleet Operations</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        <span class="lang-id-only">Pemberangkatan dan koordinasi kru kapal penangkap ikan internasional.</span>
+                        <span class="lang-en-only">Departure and coordination of international fishing fleet crew members.</span>
+                    </p>
                 </div>
             </div>
 
@@ -71,10 +84,19 @@
                 <div class="p-7 bg-white space-y-2">
                     <div class="flex items-center justify-between">
                         <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">Radar &amp; ECDIS</span>
-                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lihat Foto &rarr;</span>
+                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            <span class="lang-id-only">Lihat Foto &rarr;</span>
+                            <span class="lang-en-only">View Photo &rarr;</span>
+                        </span>
                     </div>
-                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">Navigasi Anjungan &amp; Radar</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Kesiapan perwira navigasi memandu kapal di perairan samudera luas.</p>
+                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">
+                        <span class="lang-id-only">Navigasi Anjungan &amp; Radar</span>
+                        <span class="lang-en-only">Bridge Navigation &amp; Radar</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        <span class="lang-id-only">Kesiapan perwira navigasi memandu kapal di perairan samudera luas.</span>
+                        <span class="lang-en-only">Navigational officers handling advanced radar systems across open ocean waters.</span>
+                    </p>
                 </div>
             </div>
 
@@ -95,10 +117,19 @@
                 <div class="p-7 bg-white space-y-2">
                     <div class="flex items-center justify-between">
                         <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">Safety Drill</span>
-                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lihat Foto &rarr;</span>
+                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            <span class="lang-id-only">Lihat Foto &rarr;</span>
+                            <span class="lang-en-only">View Photo &rarr;</span>
+                        </span>
                     </div>
-                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">Pelatihan Keselamatan Dek</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Standard Operating Procedure (SOP) keselamatan awak kapal IMO.</p>
+                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">
+                        <span class="lang-id-only">Pelatihan Keselamatan Dek</span>
+                        <span class="lang-en-only">Deck Safety Drills</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        <span class="lang-id-only">Standard Operating Procedure (SOP) keselamatan awak kapal IMO.</span>
+                        <span class="lang-en-only">IMO standard safety operating procedures for deck and engine crew.</span>
+                    </p>
                 </div>
             </div>
 
@@ -118,11 +149,23 @@
                 
                 <div class="p-7 bg-white space-y-2">
                     <div class="flex items-center justify-between">
-                        <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">Rute Global</span>
-                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lihat Foto &rarr;</span>
+                        <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">
+                            <span class="lang-id-only">Rute Global</span>
+                            <span class="lang-en-only">Global Routes</span>
+                        </span>
+                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            <span class="lang-id-only">Lihat Foto &rarr;</span>
+                            <span class="lang-en-only">View Photo &rarr;</span>
+                        </span>
                     </div>
-                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">Pelayaran Samudera Lepas</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Perjalanan aman dan produktif melintasi perairan internasional.</p>
+                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">
+                        <span class="lang-id-only">Pelayaran Samudera Lepas</span>
+                        <span class="lang-en-only">Ocean Voyage Operations</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        <span class="lang-id-only">Perjalanan aman dan produktif melintasi perairan internasional.</span>
+                        <span class="lang-en-only">Safe and productive navigation across international high seas.</span>
+                    </p>
                 </div>
             </div>
 
@@ -142,11 +185,23 @@
                 
                 <div class="p-7 bg-white space-y-2">
                     <div class="flex items-center justify-between">
-                        <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">Kontrak Resmi</span>
-                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lihat Foto &rarr;</span>
+                        <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">
+                            <span class="lang-id-only">Kontrak Resmi</span>
+                            <span class="lang-en-only">Official Contract</span>
+                        </span>
+                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            <span class="lang-id-only">Lihat Foto &rarr;</span>
+                            <span class="lang-en-only">View Photo &rarr;</span>
+                        </span>
                     </div>
-                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">Pre-Departure Briefing</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Pengarahan hak dan kewajiban pelaut sebelum sign-on di kapal.</p>
+                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">
+                        <span class="lang-id-only">Pre-Departure Briefing</span>
+                        <span class="lang-en-only">Pre-Departure Briefing</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        <span class="lang-id-only">Pengarahan hak dan kewajiban pelaut sebelum sign-on di kapal.</span>
+                        <span class="lang-en-only">Guidance on seafarer rights, responsibilities, and welfare before vessel boarding.</span>
+                    </p>
                 </div>
             </div>
 
@@ -166,11 +221,23 @@
                 
                 <div class="p-7 bg-white space-y-2">
                     <div class="flex items-center justify-between">
-                        <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">Sign-On Support</span>
-                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lihat Foto &rarr;</span>
+                        <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">
+                            <span class="lang-id-only">Sign-On Support</span>
+                            <span class="lang-en-only">Sign-On Support</span>
+                        </span>
+                        <span class="text-xs text-[#FFB800] font-black flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                            <span class="lang-id-only">Lihat Foto &rarr;</span>
+                            <span class="lang-en-only">View Photo &rarr;</span>
+                        </span>
                     </div>
-                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">Koordinasi Sign-On Pelabuhan</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">Pendampingan penuh dari keberangkatan hingga naik ke atas kapal.</p>
+                    <h3 class="text-lg font-black text-[#061838] group-hover:text-[#FFB800] transition-colors leading-tight">
+                        <span class="lang-id-only">Koordinasi Sign-On Pelabuhan</span>
+                        <span class="lang-en-only">Port Sign-On Coordination</span>
+                    </h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        <span class="lang-id-only">Pendampingan penuh dari keberangkatan hingga naik ke atas kapal.</span>
+                        <span class="lang-en-only">Comprehensive transit support from departure terminal to on-board sign-on.</span>
+                    </p>
                 </div>
             </div>
 

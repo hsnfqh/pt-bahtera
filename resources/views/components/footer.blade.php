@@ -12,7 +12,10 @@
                         <h4 class="text-base sm:text-lg font-black text-[#061838] tracking-tight">
                             PT. BAHTERA <span class="text-red-700">KESELAMATAN</span> SENTOSA
                         </h4>
-                        <p class="text-xs text-[#061838] font-extrabold uppercase tracking-wide">Official Crewing &amp; Manning Agency</p>
+                        <p class="text-xs text-[#061838] font-extrabold uppercase tracking-wide">
+                            <span class="lang-id-only">Agensi Pengawakan &amp; Penyaluran Pelaut Resmi</span>
+                            <span class="lang-en-only">Official Crewing &amp; Manning Agency</span>
+                        </p>
                     </div>
                 </div>
 
@@ -30,14 +33,20 @@
                     <div class="p-3.5 rounded-xl bg-white border border-amber-600/30 shadow-sm flex items-center space-x-2.5">
                         <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 flex-shrink-0 animate-pulse"></span>
                         <div class="text-xs">
-                            <span class="text-slate-600 block text-[10px] uppercase font-bold">Lisensi Resmi SIUKAK</span>
+                            <span class="text-slate-600 block text-[10px] uppercase font-bold">
+                                <span class="lang-id-only">Lisensi Resmi SIUKAK</span>
+                                <span class="lang-en-only">SIUKAK Official License</span>
+                            </span>
                             <span class="font-black text-[#061838] text-[11px]">No. 58.58-R / 2024</span>
                         </div>
                     </div>
                     <div class="p-3.5 rounded-xl bg-white border border-amber-600/30 shadow-sm flex items-center space-x-2.5">
                         <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 flex-shrink-0 animate-pulse"></span>
                         <div class="text-xs">
-                            <span class="text-slate-600 block text-[10px] uppercase font-bold">Lisensi Resmi SIUPPAK</span>
+                            <span class="text-slate-600 block text-[10px] uppercase font-bold">
+                                <span class="lang-id-only">Lisensi Resmi SIUPPAK</span>
+                                <span class="lang-en-only">SIUPPAK Official License</span>
+                            </span>
                             <span class="font-black text-[#061838] text-[11px]">No. 65.21 / 2016</span>
                         </div>
                     </div>
@@ -51,11 +60,11 @@
                     <span class="lang-en-only">Quick Links</span>
                 </h4>
                 <ul class="space-y-2.5 text-xs font-bold text-[#061838]">
-                    <li><a href="{{ route('home') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span>Home / Beranda</span></a></li>
-                    <li><a href="{{ route('services') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span>Our Services</span></a></li>
-                    <li><a href="{{ route('team') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span>Our Team</span></a></li>
-                    <li><a href="{{ route('gallery') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span>Galeri Kegiatan</span></a></li>
-                    <li><a href="{{ route('contact') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span>Pendaftaran Pelaut</span></a></li>
+                    <li><a href="{{ route('home') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Beranda</span><span class="lang-en-only">Home</span></a></li>
+                    <li><a href="{{ route('services') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Layanan Kami</span><span class="lang-en-only">Our Services</span></a></li>
+                    <li><a href="{{ route('team') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Tim Kami</span><span class="lang-en-only">Our Team</span></a></li>
+                    <li><a href="{{ route('gallery') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Galeri Kegiatan</span><span class="lang-en-only">Activity Gallery</span></a></li>
+                    <li><a href="{{ route('contact') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Pendaftaran Pelaut</span><span class="lang-en-only">Apply Seafarer</span></a></li>
                 </ul>
             </div>
 

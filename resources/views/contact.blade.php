@@ -158,7 +158,8 @@
                                         <span class="lang-en-only">Drag &amp; drop your PDF file here or <span class="text-[#061838] underline decoration-[#FFB800] decoration-2">Browse File</span></span>
                                     </p>
                                     <p class="text-[11px] text-slate-500">
-                                        Format berkas yang diterima: CV / Resume, Buku Pelaut, Paspor, atau Sertifikat STCW (Format .PDF)
+                                        <span class="lang-id-only">Format berkas yang diterima: CV / Resume, Buku Pelaut, Paspor, atau Sertifikat STCW (Format .PDF)</span>
+                                        <span class="lang-en-only">Accepted file formats: CV / Resume, Seaman Book, Passport, or STCW Certificates (.PDF Format)</span>
                                     </p>
                                 </div>
                             </div>
@@ -173,7 +174,8 @@
                                     </div>
                                 </div>
                                 <button type="button" id="pdf_remove_btn" class="px-3 py-1.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs font-black transition shadow-sm">
-                                    Hapus
+                                    <span class="lang-id-only">Hapus</span>
+                                    <span class="lang-en-only">Remove</span>
                                 </button>
                             </div>
 
@@ -212,7 +214,10 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             </div>
                             <div>
-                                <strong class="text-[#061838] block font-black text-xs uppercase tracking-wide">Alamat Kantor Pusat:</strong>
+                                <strong class="text-[#061838] block font-black text-xs uppercase tracking-wide">
+                                    <span class="lang-id-only">Alamat Kantor Pusat:</span>
+                                    <span class="lang-en-only">Headquarters Address:</span>
+                                </strong>
                                 <p class="text-slate-600 text-xs mt-0.5 leading-relaxed font-medium">
                                     Jl. Telaga Citra / Perum Telaga Murni, Kec. Cikarang Barat, Kab. Bekasi, Jawa Barat 17530 - Indonesia
                                 </p>
@@ -224,7 +229,10 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                             </div>
                             <div>
-                                <span class="text-slate-500 block text-[11px] font-bold uppercase">Telepon / WhatsApp:</span>
+                                <span class="text-slate-500 block text-[11px] font-bold uppercase">
+                                    <span class="lang-id-only">Telepon / WhatsApp:</span>
+                                    <span class="lang-en-only">Phone / WhatsApp:</span>
+                                </span>
                                 <strong class="text-[#061838] text-xs sm:text-sm font-black">+62 (021) 8900-1234 / +62 812-3456-7890</strong>
                             </div>
                         </div>
@@ -234,7 +242,10 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                             </div>
                             <div>
-                                <span class="text-slate-500 block text-[11px] font-bold uppercase">Email Resmi:</span>
+                                <span class="text-slate-500 block text-[11px] font-bold uppercase">
+                                    <span class="lang-id-only">Email Resmi:</span>
+                                    <span class="lang-en-only">Official Email:</span>
+                                </span>
                                 <a href="mailto:info@bahterakeselamatan.co.id" class="text-[#061838] text-xs sm:text-sm font-black hover:text-[#FFB800] transition">info@bahterakeselamatan.co.id</a>
                             </div>
                         </div>
@@ -244,8 +255,14 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                             </div>
                             <div>
-                                <span class="text-slate-500 block text-[11px] font-bold uppercase">Jam Operasional:</span>
-                                <strong class="text-[#061838] text-xs font-black">Senin &ndash; Jumat: 08:30 &ndash; 17:00 WIB</strong>
+                                <span class="text-slate-500 block text-[11px] font-bold uppercase">
+                                    <span class="lang-id-only">Jam Operasional:</span>
+                                    <span class="lang-en-only">Office Hours:</span>
+                                </span>
+                                <strong class="text-[#061838] text-xs font-black">
+                                    <span class="lang-id-only">Senin &ndash; Jumat: 08:30 &ndash; 17:00 WIB</span>
+                                    <span class="lang-en-only">Monday &ndash; Friday: 08:30 &ndash; 17:00 WIB</span>
+                                </strong>
                             </div>
                         </div>
                     </div>
@@ -257,10 +274,12 @@
                 <div class="p-6 sm:p-8 rounded-3xl bg-white border-2 border-slate-200/80 shadow-xl space-y-4">
                     <div class="flex items-center justify-between">
                         <span class="text-xs font-black text-[#061838] uppercase tracking-wide">
-                            Peta Lokasi Kantor
+                            <span class="lang-id-only">Peta Lokasi Kantor</span>
+                            <span class="lang-en-only">Office Location Map</span>
                         </span>
                         <a href="https://maps.google.com/?q=Perum+Telaga+Murni+Cikarang+Barat" target="_blank" class="text-xs text-[#061838] font-black hover:text-[#FFB800] transition">
-                            Buka di Google Maps &rarr;
+                            <span class="lang-id-only">Buka di Google Maps &rarr;</span>
+                            <span class="lang-en-only">Open in Google Maps &rarr;</span>
                         </a>
                     </div>
 

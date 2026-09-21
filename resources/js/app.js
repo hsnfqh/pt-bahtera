@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const savedLang = localStorage.getItem('pt_bks_lang') || 'id';
         setLanguage(savedLang);
 
-        const langBtns = document.querySelectorAll('.lang-toggle-btn');
+        const langBtns = document.querySelectorAll('[data-set-lang], .lang-toggle-btn, .lang-flag-btn');
         langBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -20,16 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const setLanguage = (lang) => {
         document.documentElement.setAttribute('data-lang', lang);
+        document.documentElement.setAttribute('lang', lang);
         localStorage.setItem('pt_bks_lang', lang);
 
-        document.querySelectorAll('.lang-btn-indicator').forEach(el => {
-            const btnLang = el.getAttribute('data-lang-val');
+        document.querySelectorAll('[data-set-lang]').forEach(el => {
+            const btnLang = el.getAttribute('data-set-lang');
             if (btnLang === lang) {
-                el.classList.add('bg-amber-500', 'text-slate-950', 'font-bold');
-                el.classList.remove('text-slate-300', 'hover:text-amber-400');
+                el.classList.add('bg-[#FFB800]', 'text-[#061838]', 'font-black', 'shadow-sm');
+                el.classList.remove('text-white');
             } else {
-                el.classList.remove('bg-amber-500', 'text-slate-950', 'font-bold');
-                el.classList.add('text-slate-300', 'hover:text-amber-400');
+                el.classList.remove('bg-[#FFB800]', 'text-[#061838]', 'font-black', 'shadow-sm');
+                el.classList.add('text-white');
             }
         });
     };
