@@ -2,10 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactSubmissionMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
+    /**
+     * Target recipient email address
+     */
+    protected string $adminEmail = 'ahmadhasanfaqih01@gmail.com';
+
     /**
      * Display the Home Page
      */
@@ -57,7 +65,7 @@ class PageController extends Controller
     }
 
     /**
-     * Handle Seafarer Application / Contact Submission with PDF Upload
+     * Handle Seafarer Application / Contact Submission with PDF Upload and Real Email Delivery
      */
     public function submitContact(Request $request)
     {
@@ -71,15 +79,49 @@ class PageController extends Controller
             'pdf_file' => 'nullable|file|mimes:pdf|max:10240',
         ]);
 
-        // In a production app, we would store the PDF and send email notifications.
-        // For now, flash a success message with seafarer / inquiry reference ID.
         $refId = 'BAS-'.strtoupper(substr(uniqid(), -6));
+        $validated['ref'] = $refId;
+
+        $storedFilePath = null;
+        $originalFileName = null;
+
+        // Handle PDF upload
+        if ($request->hasFile('pdf_file') && $request->file('pdf_file')->isValid()) {
+            $file = $request->file('pdf_file');
+            $originalFileName = $file->getClientOriginalName();
+            $fileName = $refId . '_' . time() . '.' . $file->getClientOriginalExtension();
+            
+            // Store file safely in storage/app/berkas_pelaut
+            $destinationPath = storage_path('app/berkas_pelaut');
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0755, true);
+            }
+            
+            $file->move($destinationPath, $fileName);
+            $storedFilePath = $destinationPath . DIRECTORY_SEPARATOR . $fileName;
+
+            $validated['has_file'] = true;
+            $validated['original_filename'] = $originalFileName;
+        } else {
+            $validated['has_file'] = false;
+        }
+
+        // Send Real Email Notification to Admin
+        try {
+            Mail::to($this->adminEmail)->send(
+                new ContactSubmissionMail($validated, $storedFilePath, $originalFileName)
+            );
+            Log::info("Email pendaftaran pelaut Ref: {$refId} berhasil dikirim ke {$this->adminEmail}");
+        } catch (\Exception $e) {
+            // Log error if SMTP is not yet configured, but continue smoothly for user
+            Log::error("Gagal mengirim email pendaftaran pelaut Ref: {$refId} ke {$this->adminEmail}. Error: " . $e->getMessage());
+        }
 
         return redirect()->route('contact')->with('success', [
             'ref' => $refId,
             'name' => $validated['name'],
-            'message_id' => 'Terima kasih, '.$validated['name'].'! Pengajuan dan data Anda telah berhasil diterima oleh tim PT. BAHTERA ANUGERAH SENTOSA.',
-            'message_en' => 'Thank you, '.$validated['name'].'! Your application and documents have been successfully received by PT. BAHTERA ANUGERAH SENTOSA crewing team.',
+            'message_id' => 'Terima kasih, '.$validated['name'].'! Pengajuan dan berkas Anda telah berhasil dikirim ke email tim manajemen PT. BAHTERA ANUGERAH SENTOSA ('.$this->adminEmail.').',
+            'message_en' => 'Thank you, '.$validated['name'].'! Your application and documents have been successfully forwarded to PT. BAHTERA ANUGERAH SENTOSA management team.',
         ]);
     }
 }

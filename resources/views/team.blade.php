@@ -14,133 +14,41 @@
 />
 
 <!-- 1. STRUKTUR ORGANISASI SECTION -->
-<section id="organization-structure" class="py-24 lg:py-32 bg-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+<section id="organization-structure" class="py-20 lg:py-28 bg-[#F8FAFC] relative overflow-hidden">
+    <!-- Subtle Background Pattern -->
+    <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:24px_24px] opacity-60 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
         
-        <div class="text-center max-w-3xl mx-auto space-y-4 fade-in-section">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 fade-in-section">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#061838]/5 border border-[#061838]/10 text-xs font-black text-[#061838] tracking-widest uppercase">
+                <span class="w-2 h-2 rounded-full bg-[#FFB800]"></span>
+                <span class="lang-id-only">Bagan Organisasi Resmi</span>
+                <span class="lang-en-only">Official Organization Chart</span>
+            </div>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#061838] tracking-tight uppercase">
                 <span class="lang-id-only">Struktur Organisasi Perusahaan</span>
                 <span class="lang-en-only">Organization Structure</span>
             </h2>
             <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-                <span class="lang-id-only">Tim manajemen berpengalaman dan berdedikasi tinggi yang mengawal standar kualitas mutu, kepatuhan hukum maritim, dan integritas layanan crewing.</span>
-                <span class="lang-en-only">An experienced and dedicated management team upholding quality standards, maritime legal compliance, and crewing integrity.</span>
+                <span class="lang-id-only">Bagan hierarki kepemimpinan dan pembagian divisi kerja PT. Bahtera Anugerah Sentosa.</span>
+                <span class="lang-en-only">Official leadership hierarchy and operational divisions of PT. Bahtera Anugerah Sentosa.</span>
             </p>
         </div>
 
-        <!-- Hierarchy Structure -->
-        <div class="space-y-8">
-            
-            <!-- Tier 1: President Director -->
-            <div class="flex justify-center fade-in-section delay-100">
-                <div class="w-full max-w-md p-8 rounded-3xl bg-gradient-to-b from-[#041126] via-[#092248] to-[#041126] text-white border border-white/15 border-t-4 border-t-[#FFB800] text-center space-y-4 shadow-2xl hover:-translate-y-1.5 transition-transform duration-300">
-                    <div class="w-16 h-16 mx-auto rounded-2xl bg-[#FFB800] text-[#061838] flex items-center justify-center font-black text-xl shadow-lg">
-                        DIR
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-black text-[#FFB800]">
-                            <span class="lang-id-only">Direktur Utama</span>
-                            <span class="lang-en-only">President Director</span>
-                        </h3>
-                        <p class="text-xs text-slate-300 font-black uppercase tracking-widest mt-0.5">President Director &bull; Board of Management</p>
-                    </div>
-                    <p class="text-slate-200 text-xs leading-relaxed font-normal pt-1">
-                        <span class="lang-id-only">Memimpin visi strategis perusahaan, hubungan kemitraan internasional, dan pengawasan tata kelola operasional serta kepatuhan maritim menyeluruh.</span>
-                        <span class="lang-en-only">Leading strategic vision, international partner relations, operational governance oversight, and comprehensive maritime compliance.</span>
-                    </p>
+        <!-- High-Definition Visual Chart Card -->
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border-2 border-slate-200/80 hover:border-[#FFB800] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 overflow-hidden group cursor-pointer" tabindex="0">
+                <div class="w-full flex justify-center items-center">
+                    <img 
+                        src="{{ asset('images/struktur-organisasi.svg') }}" 
+                        alt="Struktur Organisasi PT. Bahtera Anugerah Sentosa" 
+                        class="w-full h-auto max-w-4xl object-contain select-none transition-transform duration-300 group-hover:scale-[1.01]"
+                        loading="eager"
+                    />
                 </div>
             </div>
-
-            <!-- Tier 2: General Manager -->
-            <div class="flex justify-center fade-in-section delay-200">
-                <div class="w-full max-w-md p-7 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] text-center space-y-3 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5">
-                    <div class="w-14 h-14 mx-auto rounded-2xl bg-[#061838] text-[#FFB800] flex items-center justify-center font-black text-base shadow-md">
-                        GM
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-black text-[#061838]">General Manager / Operations Director</h4>
-                        <p class="text-xs text-[#FFB800] font-black uppercase tracking-wider bg-[#061838] px-3 py-0.5 rounded-full w-fit mx-auto mt-1">Head of Maritime Crewing Operations</p>
-                    </div>
-                    <p class="text-slate-600 text-xs leading-relaxed">
-                        <span class="lang-id-only">Mengkoordinasikan seluruh divisi operasional, penempatan tenaga pelaut, serta kepatuhan standar internasional IMO &amp; ILO.</span>
-                        <span class="lang-en-only">Coordinating all operational divisions, seafarer placements, and strict compliance with IMO &amp; ILO international standards.</span>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Tier 3: Department Managers Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
-                
-                <div class="p-7 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-xl text-center space-y-3 transition-all duration-300 hover:-translate-y-1.5 fade-in-section delay-100">
-                    <div class="w-12 h-12 mx-auto rounded-2xl bg-[#FFB800] text-[#061838] flex items-center justify-center font-black shadow-sm">
-                        REC
-                    </div>
-                    <div>
-                        <h4 class="text-base font-black text-[#061838]">
-                            <span class="lang-id-only">Divisi Rekrutmen &amp; Seleksi</span>
-                            <span class="lang-en-only">Recruitment &amp; Selection</span>
-                        </h4>
-                        <span class="text-[11px] text-slate-500 font-bold block uppercase tracking-wider mt-0.5">Recruitment &amp; Selection</span>
-                    </div>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        <span class="lang-id-only">Penyaringan kualifikasi, wawancara teknis, dan uji kompetensi pelaut berstandar STCW.</span>
-                        <span class="lang-en-only">Qualification screening, technical interviews, and STCW competency testing.</span>
-                    </p>
-                </div>
-
-                <div class="p-7 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-xl text-center space-y-3 transition-all duration-300 hover:-translate-y-1.5 fade-in-section delay-200">
-                    <div class="w-12 h-12 mx-auto rounded-2xl bg-[#061838] text-[#FFB800] flex items-center justify-center font-black shadow-sm">
-                        DOC
-                    </div>
-                    <div>
-                        <h4 class="text-base font-black text-[#061838]">
-                            <span class="lang-id-only">Divisi Legal &amp; Dokumen</span>
-                            <span class="lang-en-only">Legal &amp; Compliance</span>
-                        </h4>
-                        <span class="text-[11px] text-slate-500 font-bold block uppercase tracking-wider mt-0.5">Legal, Visa &amp; Compliance</span>
-                    </div>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        <span class="lang-id-only">Paspor, Seaman Book, sertifikat STCW, visa maritim, dan legalitas SIUKAK/SIUPPAK.</span>
-                        <span class="lang-en-only">Passports, Seaman Books, STCW certificates, maritime visas, and official permits.</span>
-                    </p>
-                </div>
-
-                <div class="p-7 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-xl text-center space-y-3 transition-all duration-300 hover:-translate-y-1.5 fade-in-section delay-300">
-                    <div class="w-12 h-12 mx-auto rounded-2xl bg-[#FFB800] text-[#061838] flex items-center justify-center font-black shadow-sm">
-                        TRN
-                    </div>
-                    <div>
-                        <h4 class="text-base font-black text-[#061838]">
-                            <span class="lang-id-only">Divisi Diklat &amp; Medikal</span>
-                            <span class="lang-en-only">Training &amp; Medical</span>
-                        </h4>
-                        <span class="text-[11px] text-slate-500 font-bold block uppercase tracking-wider mt-0.5">Training &amp; MCU Coordinator</span>
-                    </div>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        <span class="lang-id-only">Pelatihan pra-keberangkatan, standar safety drill, dan Medical Check Up (MCU) terakreditasi.</span>
-                        <span class="lang-en-only">Pre-departure training, safety drills, and certified Medical Check Up (MCU).</span>
-                    </p>
-                </div>
-
-                <div class="p-7 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-xl text-center space-y-3 transition-all duration-300 hover:-translate-y-1.5 fade-in-section delay-400">
-                    <div class="w-12 h-12 mx-auto rounded-2xl bg-[#061838] text-[#FFB800] flex items-center justify-center font-black shadow-sm">
-                        FIN
-                    </div>
-                    <div>
-                        <h4 class="text-base font-black text-[#061838]">
-                            <span class="lang-id-only">Divisi Keuangan &amp; HR</span>
-                            <span class="lang-en-only">Finance &amp; HR</span>
-                        </h4>
-                        <span class="text-[11px] text-slate-500 font-bold block uppercase tracking-wider mt-0.5">Finance &amp; Crew Welfare</span>
-                    </div>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        <span class="lang-id-only">Penggajian allotment kru, asuransi pelaut, dan pendampingan keluarga 24/7.</span>
-                        <span class="lang-en-only">Crew allotment payroll, maritime insurance, and 24/7 family support services.</span>
-                    </p>
-                </div>
-
-            </div>
-
         </div>
 
     </div>

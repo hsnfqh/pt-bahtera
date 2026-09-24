@@ -5,7 +5,7 @@
             <!-- Column 1: Company Brand & Licenses (5 cols) -->
             <div class="lg:col-span-5 space-y-4">
                 <div class="flex items-center space-x-3.5">
-                    <div class="w-12 h-12 bg-[#061838] p-2 rounded-2xl shadow-md border border-white/20 flex items-center justify-center flex-shrink-0">
+                    <div class="w-12 h-12 bg-white p-1.5 rounded-2xl shadow-md border border-slate-200/80 flex items-center justify-center flex-shrink-0">
                         <img src="{{ asset('images/logo-emblem.svg') }}" alt="PT. Bahtera Anugerah Sentosa" class="w-full h-full object-contain">
                     </div>
                     <div>

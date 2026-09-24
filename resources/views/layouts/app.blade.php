@@ -28,7 +28,70 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Inter', sans-serif;
         }
+
+        /* 100% Reliable Language Switching Rules */
+        html[data-lang="id"] .lang-en-only {
+            display: none !important;
+        }
+        html[data-lang="en"] .lang-id-only {
+            display: none !important;
+        }
+
+        /* Active Language Flag Pill Buttons */
+        .lang-flag-btn.lang-active {
+            background-color: #FFB800 !important;
+            color: #061838 !important;
+            font-weight: 900 !important;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.25) !important;
+        }
+        .lang-flag-btn:not(.lang-active) {
+            color: #FFFFFF !important;
+            background-color: transparent !important;
+            opacity: 0.85;
+        }
+        .lang-flag-btn:not(.lang-active):hover {
+            opacity: 1;
+            background-color: rgba(255,255,255,0.1) !important;
+        }
     </style>
+
+    <script>
+        // Global Instant Language Switcher
+        window.setLanguage = function(lang) {
+            if (lang !== 'id' && lang !== 'en') lang = 'id';
+            
+            document.documentElement.setAttribute('data-lang', lang);
+            document.documentElement.setAttribute('lang', lang);
+            
+            try {
+                localStorage.setItem('pt_bas_lang', lang);
+            } catch (e) {}
+
+            document.querySelectorAll('[data-set-lang]').forEach(function(el) {
+                var btnLang = el.getAttribute('data-set-lang');
+                if (btnLang === lang) {
+                    el.classList.add('lang-active');
+                } else {
+                    el.classList.remove('lang-active');
+                }
+            });
+        };
+
+        // Initialize immediately
+        (function() {
+            var initialLang = 'id';
+            try {
+                initialLang = localStorage.getItem('pt_bas_lang') || 'id';
+            } catch (e) {}
+            document.documentElement.setAttribute('data-lang', initialLang);
+            document.documentElement.setAttribute('lang', initialLang);
+        })();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentLang = document.documentElement.getAttribute('data-lang') || 'id';
+            window.setLanguage(currentLang);
+        });
+    </script>
 </head>
 <body class="bg-[#F8FAFC] text-slate-800 antialiased min-h-screen flex flex-col selection:bg-amber-400 selection:text-slate-950">
 

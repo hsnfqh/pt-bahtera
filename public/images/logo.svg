@@ -1,87 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%" fill="none">
   <defs>
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFF2A1"/>
-      <stop offset="30%" stop-color="#E5B23B"/>
-      <stop offset="70%" stop-color="#B8860B"/>
-      <stop offset="100%" stop-color="#8F6306"/>
-    </linearGradient>
-    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FDE68A"/>
-      <stop offset="50%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
-    </linearGradient>
-    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF4D4D"/>
-      <stop offset="50%" stop-color="#DC2626"/>
-      <stop offset="100%" stop-color="#991B1B"/>
-    </linearGradient>
-    <linearGradient id="navyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E3E62"/>
-      <stop offset="100%" stop-color="#0B192C"/>
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <clipPath id="logoGlobeCircle">
+      <circle cx="55" cy="60" r="46" />
+    </clipPath>
   </defs>
 
-  <!-- Logo Emblem / Icon -->
+  <!-- Logo Container White Box Rounded -->
   <g transform="translate(10, 10)">
-    <!-- Outer Gold Ring -->
-    <circle cx="50" cy="50" r="46" stroke="url(#goldGradient)" stroke-width="3.5" fill="url(#navyGradient)"/>
-    <circle cx="50" cy="50" r="40" stroke="url(#goldGradient)" stroke-width="1.2" stroke-dasharray="3 2" fill="none" opacity="0.8"/>
+    <rect width="100" height="100" rx="20" fill="#FFFFFF" stroke="#0852A5" stroke-width="2" />
     
-    <!-- Ship Wheel / Compass Spikes -->
-    <g stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round">
-      <line x1="50" y1="6" x2="50" y2="16"/>
-      <line x1="50" y1="84" x2="50" y2="94"/>
-      <line x1="6" y1="50" x2="16" y2="50"/>
-      <line x1="84" y1="50" x2="94" y2="50"/>
-      <line x1="19" y1="19" x2="26" y2="26"/>
-      <line x1="74" y1="74" x2="81" y2="81"/>
-      <line x1="81" y1="19" x2="74" y2="26"/>
-      <line x1="26" y1="74" x2="19" y2="81"/>
+    <!-- Globe Inner -->
+    <g transform="translate(5, 5) scale(0.45)">
+      <!-- Base Globe Circle -->
+      <circle cx="100" cy="100" r="78" fill="#FFFFFF" stroke="#0852A5" stroke-width="5" />
+
+      <!-- Lat & Long Grid -->
+      <g clip-path="url(#globeCircle)" fill="none" stroke="#0852A5" stroke-width="3.8">
+        <line x1="100" y1="20" x2="100" y2="180" />
+        <ellipse cx="100" cy="100" rx="34" ry="78" />
+        <ellipse cx="100" cy="100" rx="64" ry="78" />
+        <line x1="20" y1="100" x2="180" y2="100" stroke-width="3" />
+        <path d="M 28 62 Q 100 82 172 62" />
+        <path d="M 52 38 Q 100 52 148 38" />
+        <path d="M 28 138 Q 100 118 172 138" />
+        <path d="M 52 162 Q 100 148 148 162" />
+      </g>
+      <circle cx="100" cy="100" r="78" fill="none" stroke="#0852A5" stroke-width="5" />
+
+      <!-- Diagonal Banner -->
+      <g transform="rotate(-18 100 100)">
+        <rect x="6" y="74" width="188" height="52" fill="#FFFFFF" stroke="#0852A5" stroke-width="5" />
+        <text x="100" y="113" text-anchor="middle" font-family="'Georgia', serif" font-weight="900" font-size="41" fill="#E0141D" letter-spacing="7">BAS</text>
+      </g>
     </g>
-
-    <!-- Golden Anchor with Red Center Ribbon -->
-    <!-- Anchor Ring -->
-    <circle cx="50" cy="27" r="6" stroke="url(#goldGradient)" stroke-width="2.5" fill="none"/>
-    <!-- Anchor Stock (horizontal crossbar) -->
-    <path d="M37 36 L63 36" stroke="url(#goldGradient)" stroke-width="3" stroke-linecap="round"/>
-    <!-- Anchor Shank (vertical line) -->
-    <path d="M50 31 L50 72" stroke="url(#goldGradient)" stroke-width="4" stroke-linecap="round"/>
-    <!-- Anchor Flukes & Crown -->
-    <path d="M30 54 Q32 76 50 76 Q68 76 70 54" stroke="url(#goldGradient)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
-    <!-- Left Fluke Tip -->
-    <polygon points="26,53 34,53 30,46" fill="url(#goldGradient)"/>
-    <!-- Right Fluke Tip -->
-    <polygon points="66,53 74,53 70,46" fill="url(#goldGradient)"/>
-
-    <!-- Red Shield / Star Emblem Accent in Center -->
-    <polygon points="50,45 53,52 60,52 54,56 56,63 50,59 44,63 46,56 40,52 47,52" fill="url(#redGradient)" filter="url(#glow)"/>
   </g>
 
   <!-- Typography: Company Name & Subtitle -->
-  <g transform="translate(125, 20)">
+  <g transform="translate(130, 20)">
     <!-- Red Accent Top Bar / Badge -->
-    <rect x="0" y="2" width="14" height="14" rx="2" fill="url(#redGradient)"/>
-    <text x="22" y="14" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="url(#goldText)" letter-spacing="2.5">
+    <text x="0" y="16" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#D97706" letter-spacing="2.5">
       CREWING &amp; MANNING AGENCY
     </text>
 
-    <!-- Main Company Name in Bold Gold & Red Accents -->
-    <text x="0" y="44" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" letter-spacing="0.5">
-      PT. <tspan fill="url(#goldGradient)">BAHTERA</tspan> <tspan fill="url(#redGradient)">ANUGERAH</tspan> <tspan fill="url(#goldGradient)">SENTOSA</tspan>
+    <!-- Main Company Name in Bold -->
+    <text x="0" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="23" font-weight="900" fill="#061838" letter-spacing="0.5">
+      PT. <tspan fill="#0852A5">BAHTERA</tspan> <tspan fill="#E0141D">ANUGERAH</tspan> <tspan fill="#0852A5">SENTOSA</tspan>
     </text>
 
     <!-- Subtitle / Tagline -->
-    <text x="0" y="68" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#93C5FD" letter-spacing="0.5">
+    <text x="0" y="70" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0F3875" letter-spacing="0.5">
       SIUKAK No. 58.58-R/2024 &bull; SIUPPAK No. 65.21/2016
     </text>
     
-    <text x="0" y="85" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="10.5" font-weight="500" fill="#E2E8F0" opacity="0.85">
-      Your Trusted Partner in Professional Maritime Seafarers
+    <text x="0" y="88" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="10.5" font-weight="500" fill="#64748B">
+      Professional Maritime Crewing &amp; Manning Services
     </text>
   </g>
 </svg>

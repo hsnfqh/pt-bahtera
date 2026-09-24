@@ -31,7 +31,7 @@
 
             <!-- Right: Corporate Emblem Badge -->
             <div class="flex-shrink-0 flex items-center space-x-4 bg-[#061838]/85 backdrop-blur-md px-6 py-5 rounded-2xl shadow-2xl border-2 border-[#FFB800]/50 fade-in-right">
-                <div class="w-14 h-14 flex-shrink-0">
+                <div class="w-14 h-14 flex-shrink-0 bg-white p-1.5 rounded-2xl shadow-md border border-slate-200/80 flex items-center justify-center">
                     <img src="{{ asset('images/logo-emblem.svg') }}" alt="Emblem PT. Bahtera Anugerah Sentosa" class="w-full h-full object-contain">
                 </div>
                 <div class="flex flex-col text-left">

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="100%" height="100%" style="background-color: transparent; font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+  <defs>
+    <!-- Soft, Subtle Clean Shadows (like Modern Minimalist Cards) -->
+    <filter id="softCardShadow" x="-5%" y="-5%" width="115%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.05" />
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.03" />
+    </filter>
+    <filter id="softGoldShadow" x="-5%" y="-5%" width="115%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#D97706" flood-opacity="0.08" />
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#D97706" flood-opacity="0.04" />
+    </filter>
+
+    <!-- Marker Arrows -->
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#0A326E"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#D97706"/>
+    </marker>
+
+    <!-- Clip Paths for Cards -->
+    <clipPath id="clipBox">
+      <rect width="440" height="96" rx="18" ry="18"/>
+    </clipPath>
+    <clipPath id="clipAdmin">
+      <rect width="420" height="96" rx="18" ry="18"/>
+    </clipPath>
+    <clipPath id="clipSec">
+      <rect width="390" height="96" rx="18" ry="18"/>
+    </clipPath>
+  </defs>
+
+  <!-- ================= CONNECTOR LINES ================= -->
+  <g fill="none">
+    <!-- Commissioner to Director -->
+    <line x1="490" y1="126" x2="490" y2="182" stroke="#0A326E" stroke-width="2.5" marker-end="url(#arrowBlue)" />
+
+    <!-- Director to Operational Manager -->
+    <line x1="490" y1="286" x2="490" y2="392" stroke="#0A326E" stroke-width="2.5" marker-end="url(#arrowBlue)" />
+
+    <!-- Branch to Corporate Secretary -->
+    <line x1="490" y1="340" x2="748" y2="340" stroke="#D97706" stroke-width="2.5" marker-end="url(#arrowGold)" />
+    <circle cx="490" cy="340" r="4" fill="#D97706" />
+
+    <!-- Operational Manager to Admins Fork -->
+    <!-- Vertical drop -->
+    <line x1="490" y1="496" x2="490" y2="540" stroke="#0A326E" stroke-width="2.5" />
+    <!-- Horizontal Crossbar -->
+    <line x1="250" y1="540" x2="730" y2="540" stroke="#0A326E" stroke-width="2.5" />
+    <!-- Left Drop to Admin 1 -->
+    <line x1="250" y1="540" x2="250" y2="592" stroke="#0A326E" stroke-width="2.5" marker-end="url(#arrowBlue)" />
+    <!-- Right Drop to Admin 2 -->
+    <line x1="730" y1="540" x2="730" y2="592" stroke="#0A326E" stroke-width="2.5" marker-end="url(#arrowBlue)" />
+  </g>
+
+  <!-- ================= 1. COMMISSIONER ================= -->
+  <g transform="translate(270, 30)" filter="url(#softCardShadow)">
+    <g clip-path="url(#clipBox)">
+      <!-- Card Body BG -->
+      <rect width="440" height="96" fill="#EDF4FC"/>
+      <!-- Header BG -->
+      <rect width="440" height="38" fill="#0A326E"/>
+    </g>
+    <!-- Border -->
+    <rect width="440" height="96" rx="18" ry="18" fill="none" stroke="#0A326E" stroke-width="2"/>
+    <!-- Header Text -->
+    <text x="220" y="24" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="800" letter-spacing="2">COMMISSIONER</text>
+    <!-- Name Text -->
+    <text x="220" y="73" text-anchor="middle" fill="#061838" font-size="18" font-weight="800" letter-spacing="0.3">NOVA OLHA PRANG. S.Th.</text>
+  </g>
+
+  <!-- ================= 2. DIRECTOR ================= -->
+  <g transform="translate(270, 190)" filter="url(#softCardShadow)">
+    <g clip-path="url(#clipBox)">
+      <!-- Card Body BG -->
+      <rect width="440" height="96" fill="#EDF4FC"/>
+      <!-- Header BG -->
+      <rect width="440" height="38" fill="#0A326E"/>
+    </g>
+    <!-- Border -->
+    <rect width="440" height="96" rx="18" ry="18" fill="none" stroke="#0A326E" stroke-width="2"/>
+    <!-- Header Text -->
+    <text x="220" y="24" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="800" letter-spacing="2">DIRECTOR</text>
+    <!-- Name Text -->
+    <text x="220" y="73" text-anchor="middle" fill="#061838" font-size="18" font-weight="800" letter-spacing="0.3">SUGIARNO, S.H.</text>
+  </g>
+
+  <!-- ================= 3. CORPORATE SECRETARY ================= -->
+  <g transform="translate(755, 292)" filter="url(#softGoldShadow)">
+    <g clip-path="url(#clipSec)">
+      <!-- Card Body BG -->
+      <rect width="390" height="96" fill="#FFFDF5"/>
+      <!-- Header BG -->
+      <rect width="390" height="38" fill="#D97706"/>
+    </g>
+    <!-- Border -->
+    <rect width="390" height="96" rx="18" ry="18" fill="none" stroke="#D97706" stroke-width="2"/>
+    <!-- Header Text -->
+    <text x="195" y="24" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="800" letter-spacing="1.5">CORPORATE SECRETARY</text>
+    <!-- Name Text -->
+    <text x="195" y="73" text-anchor="middle" fill="#061838" font-size="15" font-weight="800" letter-spacing="0.2">FERNANDA SAFIRA FENTURINI, S.Ak.</text>
+  </g>
+
+  <!-- ================= 4. OPERATIONAL MANAGER ================= -->
+  <g transform="translate(270, 400)" filter="url(#softCardShadow)">
+    <g clip-path="url(#clipBox)">
+      <!-- Card Body BG -->
+      <rect width="440" height="96" fill="#EDF4FC"/>
+      <!-- Header BG -->
+      <rect width="440" height="38" fill="#0A326E"/>
+    </g>
+    <!-- Border -->
+    <rect width="440" height="96" rx="18" ry="18" fill="none" stroke="#0A326E" stroke-width="2"/>
+    <!-- Header Text -->
+    <text x="220" y="24" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="800" letter-spacing="2">OPERATIONAL MANAGER</text>
+    <!-- Name Text -->
+    <text x="220" y="73" text-anchor="middle" fill="#061838" font-size="18" font-weight="800" letter-spacing="0.3">RAHMI DEWI SAPUTRI, S.E.</text>
+  </g>
+
+  <!-- ================= 5. ADMIN LEFT ================= -->
+  <g transform="translate(40, 600)" filter="url(#softCardShadow)">
+    <g clip-path="url(#clipAdmin)">
+      <!-- Card Body BG -->
+      <rect width="420" height="96" fill="#EDF4FC"/>
+      <!-- Header BG -->
+      <rect width="420" height="38" fill="#0A326E"/>
+    </g>
+    <!-- Border -->
+    <rect width="420" height="96" rx="18" ry="18" fill="none" stroke="#0A326E" stroke-width="2"/>
+    <!-- Header Text -->
+    <text x="210" y="24" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="800" letter-spacing="2">ADMIN</text>
+    <!-- Name Text -->
+    <text x="210" y="73" text-anchor="middle" fill="#061838" font-size="15" font-weight="800" letter-spacing="0.2">VEGA VAREN SITOFAYA WALEAN</text>
+  </g>
+
+  <!-- ================= 6. ADMIN RIGHT ================= -->
+  <g transform="translate(520, 600)" filter="url(#softCardShadow)">
+    <g clip-path="url(#clipAdmin)">
+      <!-- Card Body BG -->
+      <rect width="420" height="96" fill="#EDF4FC"/>
+      <!-- Header BG -->
+      <rect width="420" height="38" fill="#0A326E"/>
+    </g>
+    <!-- Border -->
+    <rect width="420" height="96" rx="18" ry="18" fill="none" stroke="#0A326E" stroke-width="2"/>
+    <!-- Header Text -->
+    <text x="210" y="24" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="800" letter-spacing="2">ADMIN</text>
+    <!-- Name Text -->
+    <text x="210" y="73" text-anchor="middle" fill="#061838" font-size="16" font-weight="800" letter-spacing="0.3">JONA DENI WUNGKANA</text>
+  </g>
+</svg>

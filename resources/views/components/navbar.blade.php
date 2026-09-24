@@ -29,28 +29,26 @@
                 <span class="lang-en-only">Mon &ndash; Fri: 08:00 &ndash; 16:00 WIB (UTC+7)</span>
             </span>
             
-            <!-- Language Switcher Flags Pill -->
-            <div class="flex items-center bg-white/10 backdrop-blur-md p-1 rounded-full border border-white/15 gap-1 shadow-inner">
-                <!-- ID Button with Indonesia Flag -->
-                <button type="button" data-set-lang="id" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold text-white transition cursor-pointer" title="Bahasa Indonesia">
-                    <span class="w-4 h-2.5 rounded-[2px] overflow-hidden inline-flex flex-col border border-white/40 shadow-sm flex-shrink-0">
-                        <span class="bg-[#E70011] h-1/2 w-full"></span>
-                        <span class="bg-[#FFFFFF] h-1/2 w-full"></span>
-                    </span>
+            <!-- Language Switcher Flags Pill (ID / EN) -->
+            <div class="flex items-center bg-black/30 backdrop-blur-md p-1 rounded-full border border-white/20 gap-1 shadow-inner">
+                <!-- ID Button with Indonesia Flag SVG -->
+                <button type="button" data-set-lang="id" onclick="window.setLanguage('id')" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition cursor-pointer" title="Bahasa Indonesia">
+                    <svg class="w-4 h-2.5 rounded-[2px] overflow-hidden shadow-xs border border-white/40 flex-shrink-0" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="640" height="240" fill="#E70011"/>
+                        <rect y="240" width="640" height="240" fill="#FFFFFF"/>
+                    </svg>
                     <span>ID</span>
                 </button>
                 <span class="text-white/30 text-[10px]">|</span>
-                <!-- EN Button with UK Flag (Union Jack) -->
-                <button type="button" data-set-lang="en" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold text-white transition cursor-pointer" title="English">
-                    <span class="w-4 h-2.5 rounded-[2px] overflow-hidden inline-flex items-center justify-center border border-white/40 shadow-sm flex-shrink-0 bg-[#012169]">
-                        <svg class="w-full h-full object-cover" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="60" height="30" fill="#012169"/>
-                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFFFFF" stroke-width="6"/>
-                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3"/>
-                            <path d="M30,0 v30 M0,15 h60" stroke="#FFFFFF" stroke-width="10"/>
-                            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
-                        </svg>
-                    </span>
+                <!-- EN Button with UK Flag SVG -->
+                <button type="button" data-set-lang="en" onclick="window.setLanguage('en')" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition cursor-pointer" title="English">
+                    <svg class="w-4 h-2.5 rounded-[2px] overflow-hidden shadow-xs border border-white/40 flex-shrink-0" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="60" height="30" fill="#012169"/>
+                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFFFFF" stroke-width="6"/>
+                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3"/>
+                        <path d="M30,0 v30 M0,15 h60" stroke="#FFFFFF" stroke-width="10"/>
+                        <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                    </svg>
                     <span>EN</span>
                 </button>
             </div>
@@ -66,7 +64,7 @@
             
             <!-- Company Logo & Brand -->
             <a href="{{ route('home') }}" class="flex items-center space-x-3.5 group py-2 focus:outline-none">
-                <div class="w-12 h-12 flex-shrink-0 transition transform group-hover:scale-105 duration-200 bg-[#061838] p-2 rounded-2xl shadow-md border border-white/20 flex items-center justify-center">
+                <div class="w-12 h-12 flex-shrink-0 transition transform group-hover:scale-105 duration-200 bg-white p-1.5 rounded-2xl shadow-md border border-slate-200/80 flex items-center justify-center">
                     <img src="{{ asset('images/logo-emblem.svg') }}" alt="Logo PT. Bahtera Anugerah Sentosa" class="w-full h-full object-contain">
                 </div>
                 <div class="flex flex-col">
