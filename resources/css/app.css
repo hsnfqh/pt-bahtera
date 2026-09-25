@@ -4,21 +4,21 @@
 @theme {
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
-    
+
     --color-maritime-950: #061628;
     --color-maritime-900: #0A2540;
     --color-maritime-850: #0C2E52;
     --color-maritime-800: #0C356A;
     --color-maritime-700: #134B8A;
     --color-maritime-600: #1B62B3;
-    
+
     --color-gold-base: #FFB800;
     --color-gold-light: #FFD700;
     --color-gold-bright: #FFC000;
     --color-gold-amber: #FFB800;
     --color-gold-dark: #D97706;
     --color-gold-header: #FFB800;
-    
+
     --color-crimson-600: #DC2626;
     --color-crimson-700: #B91C1C;
 }
@@ -42,7 +42,12 @@ body {
 }
 
 /* Headings Font */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Inter', sans-serif;
 }
 
@@ -107,13 +112,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 8px;
     height: 8px;
 }
+
 ::-webkit-scrollbar-track {
     background: #0A2540;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #D4AF37;
     border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #F59E0B;
 }
@@ -168,21 +176,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Stagger delay classes */
-.delay-75 { transition-delay: 75ms; }
-.delay-100 { transition-delay: 100ms; }
-.delay-150 { transition-delay: 150ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-250 { transition-delay: 250ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; }
-.delay-600 { transition-delay: 600ms; }
+.delay-75 {
+    transition-delay: 75ms;
+}
+
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-150 {
+    transition-delay: 150ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-250 {
+    transition-delay: 250ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+}
+
+.delay-400 {
+    transition-delay: 400ms;
+}
+
+.delay-500 {
+    transition-delay: 500ms;
+}
+
+.delay-600 {
+    transition-delay: 600ms;
+}
 
 /* Continuous LED Running Text (Marquee / Digital Running Text) */
 @keyframes runningTextScroll {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-50%);
     }

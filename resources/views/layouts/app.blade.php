@@ -109,11 +109,23 @@
     <!-- Gallery Lightbox Modal -->
     <div id="gallery-lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-sm p-4 transition-all duration-300">
         <div class="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
-            <button id="lightbox-close" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center justify-center transition shadow-lg focus:outline-none">
+            <!-- Close -->
+            <button id="lightbox-close" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center justify-center transition shadow-lg focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
+            <!-- Prev -->
+            <button id="lightbox-prev" class="hidden absolute left-3 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/50 hover:bg-[#FFB800] text-white hover:text-[#061838] flex items-center justify-center transition-all duration-200 shadow-lg focus:outline-none" aria-label="Previous photo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <!-- Next -->
+            <button id="lightbox-next" class="hidden absolute right-3 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/50 hover:bg-[#FFB800] text-white hover:text-[#061838] flex items-center justify-center transition-all duration-200 shadow-lg focus:outline-none" aria-label="Next photo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+            <!-- Counter -->
+            <span id="lightbox-counter" class="hidden absolute bottom-20 right-4 z-20 px-3 py-1 rounded-lg text-xs font-bold bg-black/60 text-white pointer-events-none"></span>
+            <!-- Image -->
             <div class="max-h-[70vh] overflow-hidden flex items-center justify-center bg-slate-950">
-                <img id="lightbox-img" src="" alt="Gallery Preview" class="max-h-[70vh] w-auto object-contain">
+                <img id="lightbox-img" src="" alt="Gallery Preview" class="max-h-[70vh] w-auto object-contain transition-opacity duration-300">
             </div>
             <div class="p-6 bg-white border-t border-slate-100">
                 <h3 id="lightbox-title" class="text-lg font-bold text-slate-900 mb-1"></h3>
@@ -121,6 +133,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Floating Quick Action Buttons (Bottom Right) -->
     <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end space-y-3">
@@ -137,5 +150,6 @@
         </a>
     </div>
 
+    @stack('scripts')
 </body>
 </html>

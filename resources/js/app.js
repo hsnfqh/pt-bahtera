@@ -187,4 +187,8 @@ document.addEventListener('DOMContentLoaded', () => {
             fadeObserver.observe(el);
         }
     });
+
+    // 6. Departure Process Slideshow
+    // NOTE: Controlled by inline script in gallery.blade.php to support lightbox integration.
+    // Do not add a duplicate controller here.
 });

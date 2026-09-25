@@ -233,7 +233,7 @@
                                     <span class="lang-id-only">Telepon / WhatsApp:</span>
                                     <span class="lang-en-only">Phone / WhatsApp:</span>
                                 </span>
-                                <strong class="text-[#061838] text-xs sm:text-sm font-black">+62 (021) 8900-1234 / 080000000000</strong>
+                                <strong class="text-[#061838] text-xs sm:text-sm font-black">+62 (021) 8000-0000 / 080000000000</strong>
                             </div>
                         </div>
 
@@ -281,7 +281,7 @@
                             <span class="lang-id-only">Peta Lokasi Kantor</span>
                             <span class="lang-en-only">Office Location Map</span>
                         </span>
-                        <a href="https://maps.google.com/?q=Perum+Telaga+Murni+Cikarang+Barat" target="_blank" class="text-xs text-[#061838] font-black hover:text-[#FFB800] transition">
+                        <a href="https://share.google/oLo9UY64q0VF74LCI" target="_blank" class="text-xs text-[#061838] font-black hover:text-[#FFB800] transition">
                             <span class="lang-id-only">Buka di Google Maps &rarr;</span>
                             <span class="lang-en-only">Open in Google Maps &rarr;</span>
                         </a>
@@ -290,7 +290,7 @@
                     <!-- Interactive Google Map Embed -->
                     <div class="w-full h-64 rounded-2xl overflow-hidden border-2 border-slate-200 shadow-inner">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15863.636608579625!2d107.1000!3d-6.2625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698544c4c9258b%3A0xb3ff76c4db618e95!2sTelaga%20Murni%2C%20Cikarang%20Barat%2C%20Bekasi%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                            src="https://maps.google.com/maps?q=PT.%20BAHTERA%20ANUGERAH%20SENTOSA&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                             width="100%" 
                             height="100%" 
                             style="border:0;" 

@@ -21,10 +21,10 @@
 
                 <p class="text-xs text-[#061838]/90 leading-relaxed max-w-md font-semibold">
                     <span class="lang-id-only">
-                        Mitra strategis dan tepercaya penyedia tenaga pelaut Indonesia yang kompeten, berdisiplin tinggi, dan bersertifikasi internasional (STCW &amp; MLC 2006) untuk armada kapal niaga dan perikanan global.
+                        Mitra strategis dan tepercaya penyedia tenaga pelaut Indonesia yang kompeten, berdisiplin tinggi, dan bersertifikasi internasional (SIUKAK &amp; SIUPPAK) untuk armada kapal niaga dan perikanan global.
                     </span>
                     <span class="lang-en-only">
-                        Your trusted partner in providing highly qualified, reliable, and certified seafarers (STCW &amp; MLC 2006) to the international maritime industry.
+                        Your trusted partner in providing highly qualified, reliable, and certified seafarers (SIUKAK &amp; SIUPPAK) to the international maritime industry.
                     </span>
                 </p>
 
@@ -63,26 +63,12 @@
                     <li><a href="{{ route('home') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Beranda</span><span class="lang-en-only">Home</span></a></li>
                     <li><a href="{{ route('services') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Layanan Kami</span><span class="lang-en-only">Our Services</span></a></li>
                     <li><a href="{{ route('team') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Tim Kami</span><span class="lang-en-only">Our Team</span></a></li>
-                    <li><a href="{{ route('gallery') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Galeri Kegiatan</span><span class="lang-en-only">Activity Gallery</span></a></li>
-                    <li><a href="{{ route('contact') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Pendaftaran Pelaut</span><span class="lang-en-only">Apply Seafarer</span></a></li>
+                    <li><a href="{{ route('gallery') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Galeri</span><span class="lang-en-only">Gallery</span></a></li>
+                    <li><a href="{{ route('contact') }}" class="hover:text-red-700 transition flex items-center gap-1.5">&rarr; <span class="lang-id-only">Hubungi Kami</span><span class="lang-en-only">Contact Us</span></a></li>
                 </ul>
             </div>
 
-            <!-- Column 3: Vessel Types (2 cols) -->
-            <div class="lg:col-span-2 space-y-3">
-                <h4 class="text-xs font-black uppercase tracking-wider text-[#061838] border-b-2 border-red-700 pb-2 mb-3">
-                    <span class="lang-id-only">Jenis Armada</span>
-                    <span class="lang-en-only">Vessel Types</span>
-                </h4>
-                <ul class="space-y-2.5 text-xs font-bold text-[#061838]">
-                    <li>&bull; Factory Trawlers</li>
-                    <li>&bull; Fishing Trawlers</li>
-                    <li>&bull; Longliners (Tuna)</li>
-                    <li>&bull; Purse Seiners</li>
-                    <li>&bull; Squid Jiggers</li>
-                    <li>&bull; Cargo Reefer Vessels</li>
-                </ul>
-            </div>
+
 
             <!-- Column 4: Contact & Office (3 cols) -->
             <div class="lg:col-span-3 space-y-3">
@@ -122,8 +108,6 @@
             </div>
             <div class="flex items-center space-x-4 text-[11px]">
                 <span class="text-red-800 font-black">SIUKAK &bull; SIUPPAK Certified</span>
-                <span>&bull;</span>
-                <span class="text-[#061838] font-black">STCW &amp; MLC 2006 Compliant</span>
             </div>
         </div>
     </div>

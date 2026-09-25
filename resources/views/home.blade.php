@@ -25,9 +25,9 @@
         </h1>
 
         {{-- Subtitle --}}
-        <p class="text-white text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed font-medium fade-in-section delay-200">
-            <span class="lang-id-only">Mitra Resmi Crewing &amp; Manning Agency Terpercaya di Indonesia. Legalitas SIUKAK, SIUPPAK, Kepatuhan IMO STCW &amp; MLC 2006.</span>
-            <span class="lang-en-only">Your Trusted Official Crewing &amp; Manning Agency in Indonesia. Licensed SIUKAK, SIUPPAK, IMO STCW &amp; MLC 2006 Compliant.</span>
+        <p class="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-3xl leading-tight font-bold fade-in-section delay-200 mt-2">
+            <span class="lang-id-only">Integritas adalah Prioritas Kami</span>
+            <span class="lang-en-only">Intergrity is Our Priority</span>
         </p>
     </div>
 </section>
@@ -125,10 +125,9 @@
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         </div>
                         <div>
-                            <div class="text-sm font-bold text-slate-900">STCW &amp; MLC 2006</div>
+                            <div class="text-sm font-bold text-slate-900">SIUKAK &amp; SIUPPAK</div>
                             <p class="text-xs text-slate-500 mt-0.5 leading-relaxed">
-                                <span class="lang-id-only">Standar ILO dan IMO Manila Amendments</span>
-                                <span class="lang-en-only">ILO &amp; IMO Manila Amendments Standards</span>
+                                SIUKAK No. 58.58-R Tahun 2024 and SIUPPAK No. 65.21 Tahun 2016
                             </p>
                         </div>
                     </div>
@@ -160,7 +159,7 @@
             {{-- Right: Photo with badge — landscape ratio --}}
             <div class="relative pb-6 pl-0 sm:pl-6 fade-in-right delay-200">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[360px] lg:h-[400px]">
-                    <img src="{{ asset('images/crew-training.jpg') }}"
+                    <img src="{{asset('images/FB_IMG_1789792894133.jpg') }}"
                          alt="Tim PT. Bahtera Anugerah Sentosa"
                          class="w-full h-full object-cover object-center">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/65 via-transparent to-transparent"></div>
@@ -325,9 +324,9 @@
 
             {{-- Card 2 --}}
             <div class="group relative rounded-2xl overflow-hidden h-60 sm:h-72 cursor-pointer shadow-xl fade-in-section delay-200 border border-white/10">
-                <img src="{{ asset('images/ship-bridge.jpg') }}"
-                     alt="Ship Operations"
-                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <img src="{{ asset('images/20260621_221340.jpg') }}"
+                     alt="Seafarers International Departure"
+                     class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/90 via-[#061838]/20 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-5">
                     <span class="inline-block px-2.5 py-1 rounded bg-[#FFB800] text-slate-900 text-xs font-extrabold uppercase mb-2">
@@ -344,8 +343,8 @@
 
             {{-- Card 3 --}}
             <div class="group relative rounded-2xl overflow-hidden h-60 sm:h-72 cursor-pointer shadow-xl fade-in-section delay-300 border border-white/10">
-                <img src="{{ asset('images/vessel-fishing-trawler.jpg') }}"
-                     alt="Fishing Vessel"
+                <img src="{{ asset('images/FB_IMG_1789792894133.jpg') }}"
+                     alt="Fleet Coverage"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-[#061838]/90 via-[#061838]/20 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 right-0 p-5">
@@ -382,14 +381,10 @@
                 <span class="lang-id-only">Legalitas Perusahaan</span>
                 <span class="lang-en-only">Corporate Legality</span>
             </h2>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-                <span class="lang-id-only">Beroperasi dengan otorisasi hukum penuh di bawah izin resmi Kementerian Republik Indonesia dan standar kepatuhan maritim internasional (IMO &amp; ILO).</span>
-                <span class="lang-en-only">Operating with full legal authority licensed by the Ministry of Republic of Indonesia and global maritime compliance standards (IMO &amp; ILO).</span>
-            </p>
         </div>
 
-        {{-- 3 Dossier Cards --}}
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{-- 2 Dossier Cards --}}
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
             {{-- Card 1: SIUKAK --}}
             <div class="group bg-white rounded-3xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 overflow-hidden flex flex-col justify-between fade-in-section delay-100">
@@ -482,45 +477,7 @@
                 </div>
             </div>
 
-            {{-- Card 3: MLC & STCW --}}
-            <div class="group bg-white rounded-3xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 overflow-hidden flex flex-col justify-between fade-in-section delay-300">
-                <div>
-                    <div class="h-2.5 bg-[#FFB800]"></div>
-                    <div class="p-8 space-y-5">
-                        <div class="flex items-center justify-between">
-                            <div class="w-14 h-14 rounded-2xl bg-[#061838] text-[#FFB800] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            </div>
-                            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-extrabold text-[11px] uppercase tracking-wider">
-                                GLOBAL STANDARD
-                            </span>
-                        </div>
 
-                        <div>
-                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block">Maritime Labour Convention &amp; STCW</span>
-                            <h3 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">IMO &amp; ILO Standard</h3>
-                            <p class="text-xs font-semibold text-slate-500 mt-1">
-                                <span class="lang-id-only">Kepatuhan Penuh Standar Internasional</span>
-                                <span class="lang-en-only">Full International Standard Compliance</span>
-                            </p>
-                        </div>
-
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            <span class="lang-id-only">Perlindungan hak pelaut, perjanjian kerja laut (PKL) transparan, asuransi, dan pelatihan tersertifikasi IMO Manila Amendments.</span>
-                            <span class="lang-en-only">Protection of seafarers' rights, transparent employment contracts (SEA), insurance, and IMO Manila Amendments certified training.</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="px-8 pb-8 pt-2">
-                    <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200">
-                        <span class="text-xs font-bold text-slate-800">
-                            MLC 2006 Compliant
-                        </span>
-                        <span class="text-[10px] font-black uppercase text-slate-700 bg-white px-2.5 py-1 rounded-md border border-slate-200 shadow-2xs">STCW Certified</span>
-                    </div>
-                </div>
-            </div>
 
         </div>
 
@@ -585,10 +542,20 @@
                 <span class="lang-id-only">Komitmen Kami</span>
                 <span class="lang-en-only">Our Commitment</span>
             </h2>
-            <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-normal">
-                <span class="lang-id-only">Dedikasi dan prinsip utama yang kami pegang teguh dalam setiap penyaluran, pembinaan, dan perlindungan pelaut profesional Indonesia.</span>
-                <span class="lang-en-only">The core principles and dedication we uphold in every deployment, development, and protection of Indonesian maritime professionals.</span>
-            </p>
+            <div class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-normal space-y-4 text-left sm:text-center">
+                <div class="lang-id-only space-y-4">
+                    <p>PT. BAHTERA ANUGERAH SENTOSA, kami percaya bahwa sumber daya manusia yang berkualitas adalah fondasi utama dari operasi maritim yang sukses.</p>
+                    <p>Misi kami adalah menyediakan pelaut yang kompeten, dapat diandalkan, dan profesional yang berkontribusi terhadap keselamatan, efisiensi, dan produktivitas pada setiap kapal tempat mereka bertugas.</p>
+                    <p>Kami terus meningkatkan proses rekrutmen, seleksi, pelatihan, dan manajemen kru kami untuk memastikan pelaut kami siap memenuhi tuntutan industri maritim modern.</p>
+                    <p>Kami berkomitmen untuk mempertahankan standar tertinggi dalam kualitas, keselamatan, dan kepatuhan operasional.</p>
+                </div>
+                <div class="lang-en-only space-y-4">
+                    <p>PT. BAHTERA ANUGERAH SENTOSA, we believe that quality people are the foundation of a successful maritime operation.</p>
+                    <p>Our mission is to provide competent, dependable, and professional seafarers who contribute to the safety, efficiency, and productivity of every vessel they serve.</p>
+                    <p>We continuously improve our recruitment, selection, training, and crew management processes to ensure that our seafarers are prepared to meet the demands of the modern maritime industry.</p>
+                    <p>We are committed to maintaining the highest standards of quality, safety, and operational compliance.</p>
+                </div>
+            </div>
         </div>
 
         {{-- 5 High-Contrast Cards with Top Golden Border Accent --}}
@@ -628,13 +595,13 @@
                     <div>
                         <h4 class="font-black text-base uppercase tracking-wider" style="color: #FFB800 !important;">QUALITY</h4>
                         <p class="text-xs text-slate-100 mt-2 leading-relaxed font-normal" style="color: #F8FAFC !important;">
-                            <span class="lang-id-only">Standar seleksi kompetensi ketat, sertifikasi STCW resmi terotentikasi, dan uji kesehatan MCU komprehensif.</span>
-                            <span class="lang-en-only">Strict competency selection, authentic STCW certification, and comprehensive MCU medical testing.</span>
+                            <span class="lang-id-only">Standar seleksi kompetensi ketat, sertifikasi SIUKAK &amp; SIUPPAK resmi terotentikasi, dan uji kesehatan MCU komprehensif.</span>
+                            <span class="lang-en-only">Strict competency selection, authentic SIUKAK &amp; SIUPPAK certification, and comprehensive MCU medical testing.</span>
                         </p>
                     </div>
                 </div>
                 <span class="text-[11px] font-black px-3 py-1 rounded-full w-fit mt-5 shadow-sm" style="background-color: #FFB800 !important; color: #061838 !important;">
-                    STCW Verified
+                    SIUKAK &amp; SIUPPAK Verified
                 </span>
             </div>
 
@@ -794,12 +761,12 @@
                             </div>
                         </div>
                         <h3 class="font-black text-slate-900 text-base leading-tight group-hover:text-[#061838]">
-                            <span class="lang-id-only">Legalitas Resmi Lengkap</span>
-                            <span class="lang-en-only">Fully Licensed &amp; Verified</span>
+                            <span class="lang-id-only">20+ Tahun Pengalaman</span>
+                            <span class="lang-en-only">20+ Years of Experience</span>
                         </h3>
                         <p class="text-slate-500 text-xs leading-relaxed">
-                            <span class="lang-id-only">Izin SIUKAK No. 58.58-R/2024 dan SIUPPAK No. 65.21/2016 serta kepatuhan standar IMO STCW &amp; MLC 2006.</span>
-                            <span class="lang-en-only">SIUKAK No. 58.58-R/2024 &amp; SIUPPAK No. 65.21/2016 with IMO STCW &amp; MLC 2006 compliance.</span>
+                            <span class="lang-id-only">Lebih dari dua dekade pengalaman di industri crewing dan manning internasional.</span>
+                            <span class="lang-en-only">More than two decades of experience in the international crewing and manning industry.</span>
                         </p>
                     </div>
                 </div>
@@ -814,12 +781,12 @@
                             </div>
                         </div>
                         <h3 class="font-black text-slate-900 text-base leading-tight group-hover:text-[#061838]">
-                            <span class="lang-id-only">20+ Tahun Pengalaman</span>
-                            <span class="lang-en-only">20+ Years Experience</span>
+                            <span class="lang-id-only">Pelaut Berkualitas</span>
+                            <span class="lang-en-only">Qualified Seafarers</span>
                         </h3>
                         <p class="text-slate-500 text-xs leading-relaxed">
-                            <span class="lang-id-only">Rekam jejak lebih dari dua dekade dalam rekrutmen dan penempatan pelaut andal untuk armada kapal global.</span>
-                            <span class="lang-en-only">Over two decades of proven excellence in recruiting and placing qualified seafarers worldwide.</span>
+                            <span class="lang-id-only">Sekelompok profesional maritim yang berpengalaman, kompeten, dan dipilih secara saksama.</span>
+                            <span class="lang-en-only">A carefully selected pool of experienced and competent maritime professionals.</span>
                         </p>
                     </div>
                 </div>
@@ -834,12 +801,12 @@
                             </div>
                         </div>
                         <h3 class="font-black text-slate-900 text-base leading-tight group-hover:text-[#061838]">
-                            <span class="lang-id-only">Seleksi &amp; MCU Ketat</span>
-                            <span class="lang-en-only">Strict Selection &amp; MCU</span>
+                            <span class="lang-id-only">Paparan Internasional</span>
+                            <span class="lang-en-only">International Exposure</span>
                         </h3>
                         <p class="text-slate-500 text-xs leading-relaxed">
-                            <span class="lang-id-only">Uji kecakapan teknis, background check, dan Medical Check Up (MCU) menyeluruh di rumah sakit terakreditasi.</span>
-                            <span class="lang-en-only">Technical competency testing, background checks, and comprehensive Medical Check-Up (MCU).</span>
+                            <span class="lang-id-only">Pengalaman menyuplai kru untuk kapal yang beroperasi di bawah berbagai bendera internasional.</span>
+                            <span class="lang-en-only">Experience supplying crew for vessels operating under various international flags.</span>
                         </p>
                     </div>
                 </div>
@@ -854,12 +821,12 @@
                             </div>
                         </div>
                         <h3 class="font-black text-slate-900 text-base leading-tight group-hover:text-[#061838]">
-                            <span class="lang-id-only">Dokumen &amp; Logistik Lengkap</span>
-                            <span class="lang-en-only">Full Documentation &amp; Logistics</span>
+                            <span class="lang-id-only">Rekrutmen Profesional</span>
+                            <span class="lang-en-only">Professional Recruitment</span>
                         </h3>
                         <p class="text-slate-500 text-xs leading-relaxed">
-                            <span class="lang-id-only">Pengurusan visa maritim, paspor, endorsement negara bendera, tiket pesawat, dan transit pelabuhan.</span>
-                            <span class="lang-en-only">Maritime visas, seaman passport, flag endorsements, flight bookings, and port transit logistics.</span>
+                            <span class="lang-id-only">Proses rekrutmen dan seleksi terstruktur yang berfokus pada kompetensi, pengalaman, kedisiplinan, dan keandalan.</span>
+                            <span class="lang-en-only">A structured recruitment and selection process focused on competence, experience, discipline, and reliability.</span>
                         </p>
                     </div>
                 </div>
@@ -874,12 +841,12 @@
                             </div>
                         </div>
                         <h3 class="font-black text-slate-900 text-base leading-tight group-hover:text-[#061838]">
-                            <span class="lang-id-only">Jaringan Global Luas</span>
-                            <span class="lang-en-only">Extensive Global Network</span>
+                            <span class="lang-id-only">Kemitraan Jangka Panjang</span>
+                            <span class="lang-en-only">Long-Term Partnership</span>
                         </h3>
                         <p class="text-slate-500 text-xs leading-relaxed">
-                            <span class="lang-id-only">Kemitraan strategis dengan pemilik kapal di Belize, Rusia, Spanyol, Taiwan, Panama, Korea Selatan, dll.</span>
-                            <span class="lang-en-only">Strategic partnerships with shipowners across Belize, Russia, Spain, Taiwan, Panama, South Korea, etc.</span>
+                            <span class="lang-id-only">Kami percaya dalam membangun hubungan yang langgeng berdasarkan kepercayaan, transparansi, dan kesuksesan bersama.</span>
+                            <span class="lang-en-only">We believe in building lasting relationships based on trust, transparency, and mutual success.</span>
                         </p>
                     </div>
                 </div>
@@ -894,12 +861,12 @@
                             </div>
                         </div>
                         <h3 class="font-black text-slate-900 text-base leading-tight group-hover:text-[#061838]">
-                            <span class="lang-id-only">Dukungan Kru 24/7</span>
-                            <span class="lang-en-only">24/7 Crew Support</span>
+                            <span class="lang-id-only">Solusi Kru yang Andal</span>
+                            <span class="lang-en-only">Reliable Crew Solutions</span>
                         </h3>
                         <p class="text-slate-500 text-xs leading-relaxed">
-                            <span class="lang-id-only">Transparansi slip gaji (allotment), asuransi pelaut, pendampingan keluarga, dan monitoring darurat 24 jam.</span>
-                            <span class="lang-en-only">Payroll transparency (allotment), seafarer insurance, family assistance, and 24/7 emergency response.</span>
+                            <span class="lang-id-only">Kami menyediakan solusi crewing yang fleksibel dan andal, disesuaikan dengan kebutuhan operasional pemilik dan operator kapal.</span>
+                            <span class="lang-en-only">We provide flexible and dependable crewing solutions tailored to the operational requirements of ship owners and vessel operators.</span>
                         </p>
                     </div>
                 </div>
