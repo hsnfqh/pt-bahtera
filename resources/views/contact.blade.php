@@ -230,10 +230,10 @@
                             </div>
                             <div>
                                 <span class="text-slate-500 block text-[11px] font-bold uppercase">
-                                    <span class="lang-id-only">Telepon / WhatsApp:</span>
-                                    <span class="lang-en-only">Phone / WhatsApp:</span>
+                                    <span class="lang-id-only">Telepon Kantor:</span>
+                                    <span class="lang-en-only">Office Phone:</span>
                                 </span>
-                                <strong class="text-[#061838] text-xs sm:text-sm font-black">+62 (021) 8000-0000 / 080000000000</strong>
+                                <a href="tel:+622189106967" class="text-[#061838] text-xs sm:text-sm font-black hover:text-[#FFB800] transition">(+62) 21 89106967</a>
                             </div>
                         </div>
 
