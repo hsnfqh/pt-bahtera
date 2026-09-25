@@ -10,7 +10,7 @@
                     </div>
                     <div>
                         <h4 class="text-base sm:text-lg font-black text-[#061838] tracking-tight">
-                            PT. BAHTERA <span class="text-red-700">ANUGERAH</span> SENTOSA
+                            PT BAHTERA <span class="text-red-700">ANUGERAH</span> SENTOSA
                         </h4>
                         <p class="text-xs text-[#061838] font-extrabold uppercase tracking-wide">
                             <span class="lang-id-only">Agensi Pengawakan &amp; Penyaluran Pelaut Resmi</span>
@@ -104,7 +104,7 @@
         <!-- Bottom Copyright -->
         <div class="mt-12 pt-6 border-t border-[#061838]/20 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#061838] font-bold">
             <div>
-                <span>&copy; {{ date('Y') }} PT. BAHTERA ANUGERAH SENTOSA. All Rights Reserved.</span>
+                <span>&copy; {{ date('Y') }} PT BAHTERA ANUGERAH SENTOSA. All Rights Reserved.</span>
             </div>
             <div class="flex items-center space-x-4 text-[11px]">
                 <span class="text-red-800 font-black">SIUKAK &bull; SIUPPAK Certified</span>

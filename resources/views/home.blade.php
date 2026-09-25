@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'PT. BAHTERA ANUGERAH SENTOSA - Professional Crewing & Manning Agency')
+@section('title', 'PT BAHTERA ANUGERAH SENTOSA - Professional Crewing & Manning Agency')
 
 @section('content')
 
@@ -94,10 +94,10 @@
                 <div class="text-slate-600 text-sm sm:text-base leading-relaxed space-y-3.5">
                     <div class="lang-id-only space-y-3">
                         <p class="font-bold text-slate-900">
-                            <strong>PT. BAHTERA ANUGERAH SENTOSA</strong> &ndash; Mitra Terpercaya Anda dalam Layanan Crewing &amp; Manning Profesional
+                            <strong>PT BAHTERA ANUGERAH SENTOSA</strong> &ndash; Mitra Terpercaya Anda dalam Layanan Crewing &amp; Manning Profesional
                         </p>
                         <p>
-                            Memegang izin resmi termasuk <strong>SIUKAK No. 58.58-R Tahun 2024</strong> dan <strong>SIUPPAK No. 65.21 Tahun 2016</strong>. <strong>PT. BAHTERA ANUGERAH SENTOSA</strong> adalah agensi crewing dan manning profesional yang berkomitmen untuk menyediakan pelaut yang berkualifikasi tinggi, berpengalaman, andal, dan profesional untuk industri maritim internasional.
+                            Memegang izin resmi termasuk <strong>SIUKAK No. 58.58-R Tahun 2024</strong> dan <strong>SIUPPAK No. 65.21 Tahun 2016</strong>. <strong>PT BAHTERA ANUGERAH SENTOSA</strong> adalah agensi crewing dan manning profesional yang berkomitmen untuk menyediakan pelaut yang berkualifikasi tinggi, berpengalaman, andal, dan profesional untuk industri maritim internasional.
                         </p>
                         <p>
                             Dengan pengalaman lebih dari <strong>20 tahun</strong> dalam bisnis crewing dan manning, kami telah membangun reputasi yang kuat dalam menghadirkan personel maritim yang kompeten dan memenuhi standar internasional serta kebutuhan operasional pemilik dan operator kapal di seluruh dunia.
@@ -108,10 +108,10 @@
                     </div>
                     <div class="lang-en-only space-y-3">
                         <p class="font-bold text-slate-900">
-                            <strong>PT. BAHTERA ANUGERAH SENTOSA</strong> &ndash; Your Trusted Partner in Professional Crewing &amp; Manning Services
+                            <strong>PT BAHTERA ANUGERAH SENTOSA</strong> &ndash; Your Trusted Partner in Professional Crewing &amp; Manning Services
                         </p>
                         <p>
-                            With valid licenses including <strong>SIUKAK No. 58.58-R Tahun 2024</strong> and <strong>SIUPPAK No. 65.21 Tahun 2016</strong>. <strong>PT. BAHTERA ANUGERAH SENTOSA</strong> is a professional crewing and manning agency committed to providing highly qualified, experienced, reliable, and professional seafarers to the international maritime industry.
+                            With valid licenses including <strong>SIUKAK No. 58.58-R Tahun 2024</strong> and <strong>SIUPPAK No. 65.21 Tahun 2016</strong>. <strong>PT BAHTERA ANUGERAH SENTOSA</strong> is a professional crewing and manning agency committed to providing highly qualified, experienced, reliable, and professional seafarers to the international maritime industry.
                         </p>
                         <p>
                             With more than <strong>20 years</strong> of experience in the crewing and manning business, we have built a strong reputation for delivering competent maritime personnel who meet international standards and the operational requirements of ship owners and vessel operators worldwide.
@@ -547,13 +547,13 @@
             </h2>
             <div class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-normal space-y-4 text-left sm:text-center">
                 <div class="lang-id-only space-y-4">
-                    <p>PT. BAHTERA ANUGERAH SENTOSA, kami percaya bahwa sumber daya manusia yang berkualitas adalah fondasi utama dari operasi maritim yang sukses.</p>
+                    <p>PT BAHTERA ANUGERAH SENTOSA, kami percaya bahwa sumber daya manusia yang berkualitas adalah fondasi utama dari operasi maritim yang sukses.</p>
                     <p>Misi kami adalah menyediakan pelaut yang kompeten, dapat diandalkan, dan profesional yang berkontribusi terhadap keselamatan, efisiensi, dan produktivitas pada setiap kapal tempat mereka bertugas.</p>
                     <p>Kami terus meningkatkan proses rekrutmen, seleksi, pelatihan, dan manajemen kru kami untuk memastikan pelaut kami siap memenuhi tuntutan industri maritim modern.</p>
                     <p>Kami berkomitmen untuk mempertahankan standar tertinggi dalam kualitas, keselamatan, dan kepatuhan operasional.</p>
                 </div>
                 <div class="lang-en-only space-y-4">
-                    <p>PT. BAHTERA ANUGERAH SENTOSA, we believe that quality people are the foundation of a successful maritime operation.</p>
+                    <p>PT BAHTERA ANUGERAH SENTOSA, we believe that quality people are the foundation of a successful maritime operation.</p>
                     <p>Our mission is to provide competent, dependable, and professional seafarers who contribute to the safety, efficiency, and productivity of every vessel they serve.</p>
                     <p>We continuously improve our recruitment, selection, training, and crew management processes to ensure that our seafarers are prepared to meet the demands of the modern maritime industry.</p>
                     <p>We are committed to maintaining the highest standards of quality, safety, and operational compliance.</p>

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', 'PT. BAHTERA ANUGERAH SENTOSA - Professional Crewing & Manning Services')</title>
+    <title>@yield('title', 'PT BAHTERA ANUGERAH SENTOSA - Professional Crewing & Manning Services')</title>
     
     <!-- Meta SEO -->
-    <meta name="description" content="PT. BAHTERA ANUGERAH SENTOSA - Professional Crewing & Manning Services with SIUKAK No. 58.58-R/2024 & SIUPPAK No. 65.21/2016. Your trusted international maritime partner.">
+    <meta name="description" content="PT BAHTERA ANUGERAH SENTOSA - Professional Crewing & Manning Services with SIUKAK No. 58.58-R/2024 & SIUPPAK No. 65.21/2016. Your trusted international maritime partner.">
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo-emblem.svg') }}?v=2">
     <link rel="shortcut icon" type="image/svg+xml" href="{{ asset('images/logo-emblem.svg') }}?v=2">

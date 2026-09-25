@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us & Seafarer Application - PT. BAHTERA ANUGERAH SENTOSA')
+@section('title', 'Contact Us & Seafarer Application - PT BAHTERA ANUGERAH SENTOSA')
 
 @section('content')
 
@@ -204,7 +204,7 @@
                     
                     <div class="space-y-1.5 pb-3 border-b border-slate-100">
                         <h3 class="text-lg sm:text-xl font-black text-[#061838] leading-snug">
-                            PT. BAHTERA ANUGERAH SENTOSA
+                            PT BAHTERA ANUGERAH SENTOSA
                         </h3>
                     </div>
 

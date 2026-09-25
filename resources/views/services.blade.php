@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Our Services & Vessel Types - PT. BAHTERA ANUGERAH SENTOSA')
+@section('title', 'Our Services & Vessel Types - PT BAHTERA ANUGERAH SENTOSA')
 
 @section('content')
 
@@ -547,8 +547,8 @@
                     <span class="lang-en-only">We would be honored to become your trusted crewing partner and support your fleet with qualified and dependable maritime professionals.</span>
                 </p>
                 <p>
-                    <span class="lang-id-only">Baik Anda membutuhkan kru untuk kapal penangkap ikan, factory trawlers, longliners, purse seiners, kapal cargo reefer, maupun kapal komersial lainnya, PT. BAHTERA ANUGERAH SENTOSA siap menyediakan solusi penyaluran kru yang andal dan disesuaikan dengan kebutuhan Anda.</span>
-                    <span class="lang-en-only">Whether you require crew for fishing vessels, factory trawlers, longliners, purse seiners, cargo reefer vessels, or other commercial vessels, PT. BAHTERA ANUGERAH SENTOSA is ready to provide reliable crewing solutions tailored to your requirements.</span>
+                    <span class="lang-id-only">Baik Anda membutuhkan kru untuk kapal penangkap ikan, factory trawlers, longliners, purse seiners, kapal cargo reefer, maupun kapal komersial lainnya, PT BAHTERA ANUGERAH SENTOSA siap menyediakan solusi penyaluran kru yang andal dan disesuaikan dengan kebutuhan Anda.</span>
+                    <span class="lang-en-only">Whether you require crew for fishing vessels, factory trawlers, longliners, purse seiners, cargo reefer vessels, or other commercial vessels, PT BAHTERA ANUGERAH SENTOSA is ready to provide reliable crewing solutions tailored to your requirements.</span>
                 </p>
                 <p class="font-semibold text-[#061838]">
                     <span class="lang-id-only">Kami menantikan terjalinnya kemitraan yang sukses, terpercaya, dan berkelanjutan dalam jangka panjang bersama para pemilik kapal, operator armada, dan perusahaan maritim di seluruh dunia.</span>

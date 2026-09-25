@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Our Team & Certifications - PT. BAHTERA ANUGERAH SENTOSA')
+@section('title', 'Our Team & Certifications - PT BAHTERA ANUGERAH SENTOSA')
 
 @section('content')
 

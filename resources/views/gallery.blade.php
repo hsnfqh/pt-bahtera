@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Activity Gallery - PT. BAHTERA ANUGERAH SENTOSA')
+@section('title', 'Activity Gallery - PT BAHTERA ANUGERAH SENTOSA')
 
 @section('content')
 
