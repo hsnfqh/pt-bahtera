@@ -19,9 +19,12 @@
 
     <div class="relative z-10 w-full max-w-4xl mx-auto px-6 flex flex-col items-center gap-5 py-24 fade-in-section">
 
-        {{-- Main headline — clean gold, responsive without overflow on mobile --}}
-        <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#FFB800] tracking-tight leading-tight text-center max-w-full break-words fade-in-section delay-100" style="color: #FFB800 !important;">
-            PT. BAHTERA ANUGERAH SENTOSA
+        {{-- Main headline — Bold, grand, and impactful on both mobile and desktop --}}
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-black text-[#FFB800] tracking-tight text-center max-w-4xl mx-auto fade-in-section delay-100 leading-tight" style="color: #FFB800 !important;">
+            <span class="block font-black uppercase tracking-widest text-2xl sm:text-4xl md:text-5xl mb-1 sm:mb-2">PT.</span>
+            <span class="block font-black uppercase tracking-tight leading-tight">
+                <span class="inline-block">BAHTERA ANUGERAH</span> <span class="inline-block">SENTOSA</span>
+            </span>
         </h1>
 
         {{-- Subtitle --}}
