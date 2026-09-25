@@ -2,63 +2,66 @@
     $currentRoute = Route::currentRouteName();
 @endphp
 
-<!-- 1. SLIM CORPORATE TOPBAR (Dark Navy with Gold Accents) -->
-<div class="bg-[#061838] text-slate-200 text-xs border-b border-white/10 relative z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-3">
-        
-        <!-- Left: Contact Info -->
-        <div class="flex flex-wrap items-center gap-3 sm:gap-4 text-[11px] sm:text-xs">
-            <a href="tel:+622189106967" class="inline-flex items-center text-slate-300 font-medium hover:text-[#FFB800] transition">
-                <svg class="w-3.5 h-3.5 mr-1.5 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                (+62) 21 89106967
-            </a>
-            <span class="text-white/20 hidden sm:inline">|</span>
-            <div class="hidden sm:inline-flex items-center gap-1.5 text-slate-300 font-medium">
-                <svg class="w-3.5 h-3.5 mr-1 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                <a href="mailto:pt_basn@outlook.co.id" class="hover:text-[#FFB800] transition">pt_basn@outlook.co.id</a>
-                <span class="text-white/25">/</span>
-                <a href="mailto:pt_basn@yahoo.co.id" class="hover:text-[#FFB800] transition">pt_basn@yahoo.co.id</a>
-            </div>
-        </div>
+<!-- FIXED / STICKY HEADER (Topbar + Main Navigation stay pinned when scrolling) -->
+<header class="sticky top-0 z-50 w-full shadow-lg">
 
-        <!-- Right: Operational Hours & Language Switcher -->
-        <div class="flex items-center space-x-4 text-[11px] sm:text-xs ml-auto">
-            <span class="hidden sm:inline text-slate-300 font-medium">
-                <span class="text-[#FFB800] font-bold">&bull;</span>
-                <span class="lang-id-only">Senin &ndash; Jumat: 08:00 &ndash; 16:00 WIB</span>
-                <span class="lang-en-only">Mon &ndash; Fri: 08:00 &ndash; 16:00 WIB (UTC+7)</span>
-            </span>
+    <!-- 1. SLIM CORPORATE TOPBAR (Dark Navy with Gold Accents) -->
+    <div class="bg-[#061838] text-slate-200 text-xs border-b border-white/10 relative z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-3">
             
-            <!-- Language Switcher Flags Pill (ID / EN) -->
-            <div class="flex items-center bg-black/30 backdrop-blur-md p-1 rounded-full border border-white/20 gap-1 shadow-inner">
-                <!-- ID Button with Indonesia Flag SVG -->
-                <button type="button" data-set-lang="id" onclick="window.setLanguage('id')" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition cursor-pointer" title="Bahasa Indonesia">
-                    <svg class="w-4 h-2.5 rounded-[2px] overflow-hidden shadow-xs border border-white/40 flex-shrink-0" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="640" height="240" fill="#E70011"/>
-                        <rect y="240" width="640" height="240" fill="#FFFFFF"/>
-                    </svg>
-                    <span>ID</span>
-                </button>
-                <span class="text-white/30 text-[10px]">|</span>
-                <!-- EN Button with UK Flag SVG -->
-                <button type="button" data-set-lang="en" onclick="window.setLanguage('en')" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition cursor-pointer" title="English">
-                    <svg class="w-4 h-2.5 rounded-[2px] overflow-hidden shadow-xs border border-white/40 flex-shrink-0" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="60" height="30" fill="#012169"/>
-                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFFFFF" stroke-width="6"/>
-                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3"/>
-                        <path d="M30,0 v30 M0,15 h60" stroke="#FFFFFF" stroke-width="10"/>
-                        <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
-                    </svg>
-                    <span>EN</span>
-                </button>
+            <!-- Left: Contact Info -->
+            <div class="flex flex-wrap items-center gap-3 sm:gap-4 text-[11px] sm:text-xs">
+                <a href="tel:+622189106967" class="inline-flex items-center text-slate-300 font-medium hover:text-[#FFB800] transition">
+                    <svg class="w-3.5 h-3.5 mr-1.5 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    (+62) 21 89106967
+                </a>
+                <span class="text-white/20 hidden sm:inline">|</span>
+                <div class="hidden sm:inline-flex items-center gap-1.5 text-slate-300 font-medium">
+                    <svg class="w-3.5 h-3.5 mr-1 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    <a href="mailto:pt_basn@outlook.co.id" class="hover:text-[#FFB800] transition">pt_basn@outlook.co.id</a>
+                    <span class="text-white/25">/</span>
+                    <a href="mailto:pt_basn@yahoo.co.id" class="hover:text-[#FFB800] transition">pt_basn@yahoo.co.id</a>
+                </div>
             </div>
+
+            <!-- Right: Operational Hours & Language Switcher -->
+            <div class="flex items-center space-x-4 text-[11px] sm:text-xs ml-auto">
+                <span class="hidden sm:inline text-slate-300 font-medium">
+                    <span class="text-[#FFB800] font-bold">&bull;</span>
+                    <span class="lang-id-only">Senin &ndash; Jumat: 08:00 &ndash; 16:00 WIB</span>
+                    <span class="lang-en-only">Mon &ndash; Fri: 08:00 &ndash; 16:00 WIB (UTC+7)</span>
+                </span>
+                
+                <!-- Language Switcher Flags Pill (ID / EN) -->
+                <div class="flex items-center bg-black/30 backdrop-blur-md p-1 rounded-full border border-white/20 gap-1 shadow-inner">
+                    <!-- ID Button with Indonesia Flag SVG -->
+                    <button type="button" data-set-lang="id" onclick="window.setLanguage('id')" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition cursor-pointer" title="Bahasa Indonesia">
+                        <svg class="w-4 h-2.5 rounded-[2px] overflow-hidden shadow-xs border border-white/40 flex-shrink-0" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="640" height="240" fill="#E70011"/>
+                            <rect y="240" width="640" height="240" fill="#FFFFFF"/>
+                        </svg>
+                        <span>ID</span>
+                    </button>
+                    <span class="text-white/30 text-[10px]">|</span>
+                    <!-- EN Button with UK Flag SVG -->
+                    <button type="button" data-set-lang="en" onclick="window.setLanguage('en')" class="lang-flag-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold transition cursor-pointer" title="English">
+                        <svg class="w-4 h-2.5 rounded-[2px] overflow-hidden shadow-xs border border-white/40 flex-shrink-0" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="30" fill="#012169"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFFFFF" stroke-width="6"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#FFFFFF" stroke-width="10"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                        </svg>
+                        <span>EN</span>
+                    </button>
+                </div>
+            </div>
+
         </div>
-
     </div>
-</div>
 
-<!-- 2. MAIN SOLID YELLOW NAVBAR (Clean Underline Only — No Boxes) -->
-<header class="sticky top-0 z-40 bg-[#FFB800] border-b-2 border-amber-500 shadow-md transition-all duration-300" style="background-color: #FFB800 !important;">
+    <!-- 2. MAIN SOLID YELLOW NAVBAR -->
+    <div class="bg-[#FFB800] border-b-2 border-amber-500 shadow-md transition-all duration-300" style="background-color: #FFB800 !important;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
             
@@ -146,5 +149,6 @@
             <span class="lang-id-only">Hubungi Kami</span>
             <span class="lang-en-only">Contact Us</span>
         </a>
+    </div>
     </div>
 </header>
