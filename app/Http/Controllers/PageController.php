@@ -12,7 +12,7 @@ class PageController extends Controller
     /**
      * Target recipient email address
      */
-    protected string $adminEmail = 'ahmadhasanfaqih01@gmail.com';
+    protected string $adminEmail = 'bahasmaryo@gmail.com';
 
     /**
      * Display the Home Page
