@@ -106,12 +106,14 @@ class PageController extends Controller
             $validated['has_file'] = false;
         }
 
-        // Send Real Email Notification to Admin
+        // Send Real Email Notification to Maryo
         try {
-            Mail::to($this->adminEmail)->send(
+            Mail::to(
+                new \Illuminate\Mail\Mailables\Address($this->adminEmail, 'Maryo - PT. Bahtera Anugerah Sentosa')
+            )->send(
                 new ContactSubmissionMail($validated, $storedFilePath, $originalFileName)
             );
-            Log::info("Email pendaftaran pelaut Ref: {$refId} berhasil dikirim ke {$this->adminEmail}");
+            Log::info("Email pendaftaran pelaut Ref: {$refId} berhasil dikirim ke Maryo ({$this->adminEmail})");
         } catch (\Exception $e) {
             // Log error if SMTP is not yet configured, but continue smoothly for user
             Log::error("Gagal mengirim email pendaftaran pelaut Ref: {$refId} ke {$this->adminEmail}. Error: " . $e->getMessage());

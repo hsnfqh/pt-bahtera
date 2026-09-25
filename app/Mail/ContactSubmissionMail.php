@@ -38,6 +38,10 @@ class ContactSubmissionMail extends Mailable
         $crewType = $this->data['crew_type'] ?? 'Lamaran Pelaut';
 
         return new Envelope(
+            from: new Address(
+                config('mail.from.address', 'ahmadhasanfaqih01@gmail.com'),
+                "{$name} (Pelamar PT. BAS)"
+            ),
             subject: "[PT. BAS] Pendaftaran / Berkas Baru: {$name} ({$crewType}) - Ref: {$ref}",
             replyTo: [
                 new Address($this->data['email'], $this->data['name']),
