@@ -19,9 +19,9 @@
 
     <div class="relative z-10 w-full max-w-6xl mx-auto px-6 flex flex-col items-center gap-5 py-24 fade-in-section">
 
-        {{-- Main headline — Identical font size for PT. & name. Desktop: 1 full line. Mobile: bold stacked --}}
+        {{-- Main headline — PT on top (no dot), BAHTERA ANUGERAH SENTOSA below --}}
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#FFB800] tracking-tight text-center max-w-5xl mx-auto fade-in-section delay-100 leading-tight" style="color: #FFB800 !important;">
-            <span class="block font-black uppercase tracking-tight mb-1 sm:mb-2">PT.</span>
+            <span class="block font-black uppercase tracking-tight mb-1 sm:mb-2">PT</span>
             <span class="block font-black uppercase tracking-tight leading-tight lg:whitespace-nowrap">
                 <span class="inline-block">BAHTERA ANUGERAH</span> <span class="inline-block">SENTOSA</span>
             </span>
