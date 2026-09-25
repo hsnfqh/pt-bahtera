@@ -170,60 +170,6 @@
                 </div>
 
             </div>
-
-            <!-- Mobile Quick Action: Open Full Diagram Modal / Image -->
-            <div class="pt-4 text-center">
-                <button 
-                    type="button"
-                    onclick="document.getElementById('org-chart-modal').classList.remove('hidden'); document.body.style.overflow='hidden';"
-                    class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 text-white hover:bg-[#0A326E] text-xs font-bold transition-all shadow-md active:scale-95"
-                >
-                    <svg class="w-4 h-4 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
-                    </svg>
-                    <span class="lang-id-only">Buka Versi Bagan Grafik Penuh</span>
-                    <span class="lang-en-only">View Full Graphic Diagram</span>
-                </button>
-            </div>
-        </div>
-
-        <!-- Full Diagram Modal (Accessible on Mobile & Desktop) -->
-        <div id="org-chart-modal" class="fixed inset-0 z-50 hidden bg-[#061838]/90 backdrop-blur-md p-4 sm:p-6 flex flex-col items-center justify-center">
-            <!-- Modal Header -->
-            <div class="w-full max-w-5xl flex items-center justify-between pb-3 text-white border-b border-white/10">
-                <div class="flex items-center gap-2">
-                    <span class="w-2.5 h-2.5 rounded-full bg-[#FFB800]"></span>
-                    <span class="font-black text-sm uppercase tracking-wider">
-                        <span class="lang-id-only">Bagan Organisasi Lengkap</span>
-                        <span class="lang-en-only">Full Organization Chart</span>
-                    </span>
-                </div>
-                <button 
-                    type="button" 
-                    onclick="document.getElementById('org-chart-modal').classList.add('hidden'); document.body.style.overflow='auto';"
-                    class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-bold transition-all"
-                    aria-label="Tutup"
-                >
-                    ✕ Tutup
-                </button>
-            </div>
-
-            <!-- Modal Content (Scrollable & Zoomable) -->
-            <div class="w-full max-w-5xl flex-1 overflow-auto py-4 flex items-center justify-center">
-                <div class="bg-white p-4 sm:p-8 rounded-2xl shadow-2xl min-w-[320px] max-w-full">
-                    <img 
-                        src="{{ asset('images/struktur-organisasi.svg') }}" 
-                        alt="Struktur Organisasi PT. Bahtera Anugerah Sentosa" 
-                        class="w-full h-auto min-w-[500px] object-contain"
-                    />
-                </div>
-            </div>
-
-            <!-- Modal Footer Hint -->
-            <p class="text-xs text-white/70 text-center pt-2">
-                <span class="lang-id-only">💡 Geser ke samping atau cubit (pinch) layar untuk memperbesar tampilan bagan.</span>
-                <span class="lang-en-only">💡 Swipe horizontally or pinch screen to zoom the diagram.</span>
-            </p>
         </div>
 
     </div>
