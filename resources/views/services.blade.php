@@ -556,11 +556,11 @@
                 </p>
             </div>
 
-            <div class="pt-2">
-                <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-[#061838] hover:bg-[#FFB800] text-white hover:text-[#061838] font-black text-xs uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-0.5">
-                    <span class="lang-id-only">Hubungi Kami</span>
-                    <span class="lang-en-only">Contact Us</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            <div class="pt-4 flex justify-center">
+                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#061838] hover:bg-[#FFB800] text-white hover:text-[#061838] font-black text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-0.5 group">
+                    <span class="lang-id-only leading-none">Hubungi Kami</span>
+                    <span class="lang-en-only leading-none">Contact Us</span>
+                    <svg class="w-4 h-4 flex-shrink-0 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </a>
             </div>
         </div>
