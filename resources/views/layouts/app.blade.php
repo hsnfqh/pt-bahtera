@@ -8,8 +8,10 @@
     
     <!-- Meta SEO -->
     <meta name="description" content="PT. BAHTERA ANUGERAH SENTOSA - Professional Crewing & Manning Services with SIUKAK No. 58.58-R/2024 & SIUPPAK No. 65.21/2016. Your trusted international maritime partner.">
-    <meta name="keywords" content="PT Bahtera Anugerah Sentosa, Crewing Agency Indonesia, Manning Agency, Pelaut Indonesia, SIUKAK, SIUPPAK, Fishing Trawler Crew, Seafarers">
-    <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo-emblem.svg') }}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo-emblem.svg') }}?v=2">
+    <link rel="shortcut icon" type="image/svg+xml" href="{{ asset('images/logo-emblem.svg') }}?v=2">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo-emblem.svg') }}?v=2">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
