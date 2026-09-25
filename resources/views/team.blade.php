@@ -69,7 +69,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             
             <div class="p-8 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 space-y-4 fade-in-section delay-100 flex flex-col justify-between">
                 <div class="space-y-4">
@@ -120,29 +120,6 @@
                         <span class="lang-en-only">License No:</span>
                     </span>
                     <strong class="text-[#061838] font-black bg-white px-2.5 py-1 rounded border border-slate-200">65.21 / 2016</strong>
-                </div>
-            </div>
-
-            <div class="p-8 rounded-3xl bg-white border-2 border-slate-200/80 hover:border-[#FFB800] shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 space-y-4 fade-in-section delay-300 flex flex-col justify-between">
-                <div class="space-y-4">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-black uppercase px-3 py-1 rounded-full bg-[#061838] text-[#FFB800]">
-                            MLC 2006 &bull; STCW
-                        </span>
-                        <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">&check; Compliant</span>
-                    </div>
-                    <h3 class="text-lg font-black text-[#061838]">MLC 2006 &amp; STCW 2010</h3>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        <span class="lang-id-only">Kepatuhan menyeluruh terhadap Maritime Labour Convention (MLC 2006) dan standar kompetensi IMO STCW 2010 Manila Amendments.</span>
-                        <span class="lang-en-only">Full compliance with Maritime Labour Convention (MLC 2006) and IMO STCW 2010 Manila Amendments competency standards.</span>
-                    </p>
-                </div>
-                <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700 flex justify-between items-center">
-                    <span class="font-semibold">
-                        <span class="lang-id-only">Standar:</span>
-                        <span class="lang-en-only">Standard:</span>
-                    </span>
-                    <strong class="text-[#061838] font-black bg-white px-2.5 py-1 rounded border border-slate-200">IMO &amp; ILO MLC 2006</strong>
                 </div>
             </div>
 
