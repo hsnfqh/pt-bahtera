@@ -19,13 +19,13 @@
 
     <div class="relative z-10 w-full max-w-4xl mx-auto px-6 flex flex-col items-center gap-5 py-24 fade-in-section">
 
-        {{-- Main headline — clean gold without shadow --}}
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#FFB800] tracking-tight leading-tight whitespace-nowrap fade-in-section delay-100" style="color: #FFB800 !important;">
+        {{-- Main headline — clean gold, responsive without overflow on mobile --}}
+        <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#FFB800] tracking-tight leading-tight text-center max-w-full break-words fade-in-section delay-100" style="color: #FFB800 !important;">
             PT. BAHTERA ANUGERAH SENTOSA
         </h1>
 
         {{-- Subtitle --}}
-        <p class="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl max-w-3xl leading-tight font-bold fade-in-section delay-200 mt-2">
+        <p class="text-white text-base sm:text-2xl md:text-3xl lg:text-4xl max-w-3xl leading-tight font-bold fade-in-section delay-200 mt-2 text-center">
             <span class="lang-id-only">Integritas adalah Prioritas Kami</span>
             <span class="lang-en-only">Intergrity is Our Priority</span>
         </p>

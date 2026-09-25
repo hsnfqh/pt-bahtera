@@ -70,14 +70,14 @@
                 <div class="w-12 h-12 flex-shrink-0 transition transform group-hover:scale-105 duration-200 bg-white p-1.5 rounded-2xl shadow-md border border-slate-200/80 flex items-center justify-center">
                     <img src="{{ asset('images/logo-emblem.svg') }}" alt="Logo PT. Bahtera Anugerah Sentosa" class="w-full h-full object-contain">
                 </div>
-                <div class="flex flex-col">
-                    <div class="flex items-center space-x-1.5">
-                        <span class="text-[10px] font-black tracking-wider px-1.5 py-0.5 rounded bg-red-600 text-white leading-none shadow-sm">PT</span>
-                        <span class="text-base sm:text-lg font-black tracking-tight text-[#061838]">
+                <div class="flex flex-col min-w-0">
+                    <div class="flex items-center space-x-1 sm:space-x-1.5 flex-wrap">
+                        <span class="text-[9px] sm:text-[10px] font-black tracking-wider px-1 sm:px-1.5 py-0.5 rounded bg-red-600 text-white leading-none shadow-sm">PT</span>
+                        <span class="text-xs sm:text-base lg:text-lg font-black tracking-tight text-[#061838] truncate sm:whitespace-normal">
                             BAHTERA <span class="text-red-700">ANUGERAH</span> SENTOSA
                         </span>
                     </div>
-                    <span class="text-[10px] sm:text-[11px] font-extrabold text-[#061838]/90 tracking-wide">
+                    <span class="text-[9px] sm:text-[11px] font-extrabold text-[#061838]/90 tracking-wide truncate sm:whitespace-normal">
                         <span class="lang-id-only">Agensi Pengawakan &amp; Penyaluran Pelaut Resmi</span>
                         <span class="lang-en-only">Official Maritime Crewing &amp; Manning Agency</span>
                     </span>
