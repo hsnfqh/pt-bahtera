@@ -406,7 +406,7 @@
                         <div>
                             <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block">
                                 <span class="lang-id-only">Surat Izin Usaha Keagenan Awak Kapal</span>
-                                <span class="lang-en-only">Seafarer Manning Agency Business License</span>
+                                <span class="lang-en-only">Ship Manning Agency's License</span>
                             </span>
                             <h3 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">No. 58.58-R / 2024</h3>
                             <p class="text-xs font-semibold text-slate-500 mt-1">
@@ -452,8 +452,8 @@
 
                         <div>
                             <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block">
-                                <span class="lang-id-only">Surat Izin Usaha Perekrutan &amp; Penempatan</span>
-                                <span class="lang-en-only">Seafarer Recruitment &amp; Placement License</span>
+                                <span class="lang-id-only">Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal</span>
+                                <span class="lang-en-only">Recruitment and Placement Seafarers Agency's License</span>
                             </span>
                             <h3 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">No. 65.21 / 2016</h3>
                             <p class="text-xs font-semibold text-slate-500 mt-1">

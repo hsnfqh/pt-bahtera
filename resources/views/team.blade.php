@@ -203,10 +203,16 @@
                             <span class="lang-en-only">&check; Verified</span>
                         </span>
                     </div>
-                    <h3 class="text-lg font-black text-[#061838]">SIUKAK No. 58.58-R Tahun 2024</h3>
+                    <div>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block">
+                            <span class="lang-id-only">Surat Izin Usaha Keagenan Awak Kapal</span>
+                            <span class="lang-en-only">Ship Manning Agency's License</span>
+                        </span>
+                        <h3 class="text-lg font-black text-[#061838] mt-1">SIUKAK No. 58.58-R Tahun 2024</h3>
+                    </div>
                     <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        <span class="lang-id-only">Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal resmi dari Kementerian Ketenagakerjaan RI untuk armada perikanan dan niaga internasional.</span>
-                        <span class="lang-en-only">Official Recruitment &amp; Placement Business License from the Indonesian Ministry of Manpower for international fishing and commercial vessels.</span>
+                        <span class="lang-id-only">Surat Izin Usaha Keagenan Awak Kapal resmi dari Kementerian Ketenagakerjaan RI untuk armada perikanan dan niaga internasional.</span>
+                        <span class="lang-en-only">Official Ship Manning Agency's License from the Indonesian Ministry of Manpower for international fishing and commercial vessels.</span>
                     </p>
                 </div>
                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700 flex justify-between items-center">
@@ -229,10 +235,16 @@
                             <span class="lang-en-only">&check; Verified</span>
                         </span>
                     </div>
-                    <h3 class="text-lg font-black text-[#061838]">SIUPPAK No. 65.21 Tahun 2016</h3>
+                    <div>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block">
+                            <span class="lang-id-only">Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal</span>
+                            <span class="lang-en-only">Recruitment and Placement Seafarers Agency's License</span>
+                        </span>
+                        <h3 class="text-lg font-black text-[#061838] mt-1">SIUPPAK No. 65.21 Tahun 2016</h3>
+                    </div>
                     <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
                         <span class="lang-id-only">Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal dari Direktorat Jenderal Perhubungan Laut, Kementerian Perhubungan RI.</span>
-                        <span class="lang-en-only">Seafarer Recruitment and Placement License issued by Directorate General of Sea Transportation, Indonesian Ministry of Transportation.</span>
+                        <span class="lang-en-only">Recruitment and Placement Seafarers Agency's License issued by Directorate General of Sea Transportation, Indonesian Ministry of Transportation.</span>
                     </p>
                 </div>
                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700 flex justify-between items-center">
