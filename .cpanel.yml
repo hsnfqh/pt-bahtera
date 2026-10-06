@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bahtera1/bahtera/
+    - /bin/cp -R * $DEPLOYPATH
+    - export PUBLICPATH=/home/bahtera1/public_html/
+    - /bin/cp -R public/* $PUBLICPATH
