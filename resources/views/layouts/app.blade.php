@@ -94,6 +94,7 @@
             window.setLanguage(currentLang);
         });
     </script>
+    @stack('styles')
 </head>
 <body class="bg-[#F8FAFC] text-slate-800 antialiased min-h-screen flex flex-col selection:bg-amber-400 selection:text-slate-950">
 

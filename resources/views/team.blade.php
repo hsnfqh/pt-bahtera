@@ -352,19 +352,165 @@
                 </div>
             </div>
 
-            {{-- 7 CERTIFICATES: 4 PADA BARIS 1 & 3 PADA BARIS 2 (TERPISAH RAPI & BISA DISCROLL) --}}
-            <div class="space-y-6">
+            {{-- STYLES KHUSUS UNTUK FORMASI 4-3 DAN DOKUMEN MODAL SCROLLABLE --}}
+            <style>
+            /* 4 - 3 SYMMETRICAL CERTIFICATE LAYOUT */
+            .cert-grid-row-1 {
+                display: grid;
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+                gap: 1.5rem;
+            }
+            @media (min-width: 640px) {
+                .cert-grid-row-1 {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+            }
+            @media (min-width: 1024px) {
+                .cert-grid-row-1 {
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                }
+            }
 
-                {{-- BARIS 1: 4 KARTU SERTIFIKAT --}}
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            .cert-grid-row-2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            .cert-card-col-row2 {
+                width: 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            @media (min-width: 640px) {
+                .cert-card-col-row2 {
+                    width: calc(50% - 0.75rem);
+                    flex: 0 0 calc(50% - 0.75rem);
+                    max-width: calc(50% - 0.75rem);
+                }
+            }
+            @media (min-width: 1024px) {
+                .cert-card-col-row2 {
+                    /* Lebar persis sama dengan tiap kolom pada grid 4-kolom baris 1 */
+                    width: calc((100% - 4.5rem) / 4);
+                    flex: 0 0 calc((100% - 4.5rem) / 4);
+                    max-width: calc((100% - 4.5rem) / 4);
+                }
+            }
+
+            /* MODAL DOCUMENT VIEWER */
+            #certModal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 99999;
+                background: rgba(3, 9, 20, 0.94);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                display: none;
+                align-items: center;
+                justify-content: center;
+                padding: 1.25rem;
+                box-sizing: border-box;
+            }
+            #certModal.modal-open {
+                display: flex !important;
+            }
+
+            .cert-modal-window {
+                width: 100%;
+                max-width: 960px;
+                height: 90vh;
+                max-height: 90vh;
+                background: #061838;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 16px;
+                box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 184, 0, 0.35);
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .cert-modal-header-bar {
+                flex: 0 0 58px;
+                height: 58px;
+                background: #030d20;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 1.25rem;
+                color: #ffffff;
+                z-index: 30;
+                gap: 1rem;
+            }
+
+            .cert-modal-body-scroll {
+                flex: 1 1 auto;
+                min-height: 0;
+                overflow-y: auto;
+                overflow-x: auto;
+                background: #020617;
+                padding: 2.5rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start; /* Dokumen mulai dari atas dengan margin rapi, bisa discroll ke bawah */
+            }
+
+            .cert-paper-container {
+                background: #ffffff;
+                padding: 14px;
+                border-radius: 8px;
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+                width: 100%;
+                max-width: 660px;
+                margin: 0 auto;
+                transition: max-width 0.2s ease, width 0.2s ease;
+            }
+
+            .cert-paper-container img {
+                width: 100%;
+                height: auto;
+                display: block;
+                user-select: none;
+                border-radius: 4px;
+            }
+
+            .cert-modal-footer-bar {
+                flex: 0 0 52px;
+                height: 52px;
+                background: #030d20;
+                border-top: 1px solid rgba(255, 255, 255, 0.12);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 1.25rem;
+                color: #cbd5e1;
+                z-index: 30;
+                gap: 1rem;
+                font-size: 12px;
+            }
+            </style>
+
+            {{-- 7 SERTIFIKAT INTERNASIONAL: 4 PADA BARIS 1 & 3 PADA BARIS 2 --}}
+            <div class="cert-section-wrapper">
+
+                {{-- BARIS 1: 4 KARTU BERJEJER HORIZONTAL --}}
+                <div class="cert-grid-row-1">
                     @foreach(array_slice($certificatesData, 0, 4) as $idx => $cert)
                     <div 
                         class="bg-white rounded-2xl border-2 border-slate-200/90 hover:border-[#FFB800] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col overflow-hidden group cursor-pointer"
                         onclick="openCertModal({{ $idx }})"
                     >
-                        {{-- Preview Gambar Utuh (Rasio Dokumen, Tidak Terpotong) --}}
+                        {{-- Preview Dokumen Utuh Tanpa Terpotong (Rasio Kertas A4) --}}
                         <div class="p-3.5 bg-gradient-to-b from-slate-100 via-slate-50 to-slate-100/90 border-b border-slate-200/80">
-                            <div class="relative w-full aspect-[1/1.38] bg-white rounded-lg shadow-xs group-hover:shadow-md transition-shadow border border-slate-200/90 overflow-hidden flex items-center justify-center p-1.5">
+                            <div class="relative w-full aspect-[1/1.4] bg-white rounded-lg shadow-xs group-hover:shadow-md transition-shadow border border-slate-200/90 overflow-hidden flex items-center justify-center p-1.5">
                                 <img 
                                     src="{{ asset('images/' . $cert['file']) }}" 
                                     alt="{{ $cert['title'] }}" 
@@ -372,18 +518,18 @@
                                     loading="lazy"
                                 />
                                 {{-- Hover Overlay --}}
-                                <div class="absolute inset-0 bg-[#061838]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center backdrop-blur-2xs">
+                                <div class="absolute inset-0 bg-[#061838]/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center">
                                     <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform">
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                                         <span class="lang-id-only">Buka Dokumen</span>
                                         <span class="lang-en-only">Open Document</span>
                                     </span>
-                                    <span class="text-[10px] text-slate-300 font-medium mt-2">Bisa discroll penuh</span>
+                                    <span class="text-[10px] text-amber-200 font-medium mt-2">Bisa discroll penuh</span>
                                 </div>
                             </div>
                         </div>
 
-                        {{-- Informasi Sertifikat --}}
+                        {{-- Metadata Kartu --}}
                         <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3 bg-white">
                             <div class="space-y-1.5">
                                 <div class="flex items-center justify-between">
@@ -424,17 +570,17 @@
                     @endforeach
                 </div>
 
-                {{-- BARIS 2: 3 KARTU SERTIFIKAT (CENTERED DENGAN LEBAR PERSIS SAMA DENGAN BARIS 1) --}}
-                <div class="flex flex-wrap justify-center gap-6">
+                {{-- BARIS 2: 3 KARTU BERJEJER HORIZONTAL DI TENGAH (UKURAN & GAP PERSIS SAMA) --}}
+                <div class="cert-grid-row-2">
                     @foreach(array_slice($certificatesData, 4, 3) as $subIdx => $cert)
                     @php $actualIndex = $subIdx + 4; @endphp
                     <div 
-                        class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-white rounded-2xl border-2 border-slate-200/90 hover:border-[#FFB800] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col overflow-hidden group cursor-pointer"
+                        class="cert-card-col-row2 bg-white rounded-2xl border-2 border-slate-200/90 hover:border-[#FFB800] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col overflow-hidden group cursor-pointer"
                         onclick="openCertModal({{ $actualIndex }})"
                     >
-                        {{-- Preview Gambar Utuh (Rasio Dokumen, Tidak Terpotong) --}}
+                        {{-- Preview Dokumen Utuh Tanpa Terpotong (Rasio Kertas A4) --}}
                         <div class="p-3.5 bg-gradient-to-b from-slate-100 via-slate-50 to-slate-100/90 border-b border-slate-200/80">
-                            <div class="relative w-full aspect-[1/1.38] bg-white rounded-lg shadow-xs group-hover:shadow-md transition-shadow border border-slate-200/90 overflow-hidden flex items-center justify-center p-1.5">
+                            <div class="relative w-full aspect-[1/1.4] bg-white rounded-lg shadow-xs group-hover:shadow-md transition-shadow border border-slate-200/90 overflow-hidden flex items-center justify-center p-1.5">
                                 <img 
                                     src="{{ asset('images/' . $cert['file']) }}" 
                                     alt="{{ $cert['title'] }}" 
@@ -442,18 +588,18 @@
                                     loading="lazy"
                                 />
                                 {{-- Hover Overlay --}}
-                                <div class="absolute inset-0 bg-[#061838]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center backdrop-blur-2xs">
+                                <div class="absolute inset-0 bg-[#061838]/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center">
                                     <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform">
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                                         <span class="lang-id-only">Buka Dokumen</span>
                                         <span class="lang-en-only">Open Document</span>
                                     </span>
-                                    <span class="text-[10px] text-slate-300 font-medium mt-2">Bisa discroll penuh</span>
+                                    <span class="text-[10px] text-amber-200 font-medium mt-2">Bisa discroll penuh</span>
                                 </div>
                             </div>
                         </div>
 
-                        {{-- Informasi Sertifikat --}}
+                        {{-- Metadata Kartu --}}
                         <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3 bg-white">
                             <div class="space-y-1.5">
                                 <div class="flex items-center justify-between">
@@ -501,64 +647,80 @@
     </div>
 </section>
 
-{{-- CERTIFICATE DOCUMENT VIEWER MODAL (BISA DISCROLL PENUH & ZOOMABLE) --}}
-<div id="certModal" class="fixed inset-0 z-50 hidden bg-[#030914]/92 backdrop-blur-md items-center justify-center p-2 sm:p-4 md:p-6" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
-    <div class="relative w-full max-w-4xl h-[94vh] max-h-[94vh] bg-[#0A1628] rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-700/80 flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+{{-- CERTIFICATE DOCUMENT VIEWER MODAL --}}
+<div id="certModal" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
+    <div class="cert-modal-window">
         
-        {{-- Modal Topbar Sticky --}}
-        <div class="flex-shrink-0 px-4 sm:px-6 py-3 bg-[#061838] border-b border-slate-800 flex items-center justify-between text-white z-30 shadow-md">
-            <div class="flex items-center space-x-3 pr-2 overflow-hidden">
+        {{-- Modal Topbar --}}
+        <div class="cert-modal-header-bar">
+            <div class="flex items-center space-x-3 overflow-hidden min-w-0">
                 <span class="px-2.5 py-1 rounded text-[10px] font-black uppercase tracking-wider bg-[#FFB800] text-[#061838] flex-shrink-0">
                     ITC-ILO CERTIFIED
                 </span>
                 <h3 id="modalCertTitle" class="text-xs sm:text-sm md:text-base font-bold text-white truncate"></h3>
             </div>
             
-            <div class="flex items-center space-x-2 flex-shrink-0">
-                <span class="hidden sm:inline-flex items-center gap-1 text-[11px] text-[#FFB800] bg-white/5 px-2.5 py-1 rounded-lg border border-white/10 font-bold">
-                    <svg class="w-3.5 h-3.5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
-                    <span>Scroll Dokumen</span>
-                </span>
+            <div class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+                {{-- In-Viewer Zoom Controls --}}
+                <div class="hidden sm:inline-flex items-center bg-white/10 rounded-lg p-0.5 border border-white/15 text-xs text-white">
+                    <button id="zoomOutBtn" type="button" class="w-7 h-7 flex items-center justify-center hover:bg-white/20 rounded font-bold" title="Perkecil (−)">−</button>
+                    <span id="zoomLevelText" class="px-2 font-mono text-[11px] font-bold text-amber-300 select-none">100%</span>
+                    <button id="zoomInBtn" type="button" class="w-7 h-7 flex items-center justify-center hover:bg-white/20 rounded font-bold" title="Perbesar (+)">+</button>
+                    <button id="zoomResetBtn" type="button" class="px-2 h-7 flex items-center justify-center hover:bg-white/20 rounded text-[11px] font-semibold border-l border-white/15" title="Reset Ukuran">Reset</button>
+                </div>
+
+                {{-- Open Image in New Tab --}}
                 <a id="modalOpenTabBtn" href="#" target="_blank" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors" title="Buka gambar penuh di tab baru">
                     <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                 </a>
-                <button id="closeCertModal" type="button" class="p-2 rounded-xl bg-white/10 hover:bg-rose-600 text-white transition-colors flex-shrink-0" aria-label="Tutup">
-                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+
+                {{-- Close Button --}}
+                <button id="closeCertModal" type="button" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-rose-600 text-white transition-colors flex items-center gap-1.5 font-bold text-xs" aria-label="Tutup">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+                    <span class="hidden sm:inline">Tutup</span>
                 </button>
             </div>
         </div>
 
-        {{-- Scrollable Document Body (Bisa Discroll Vertikal Sepuasnya!) --}}
-        <div id="modalScrollContainer" class="relative flex-1 min-h-0 w-full overflow-y-auto overflow-x-hidden p-4 sm:p-6 md:p-8 flex flex-col items-center bg-slate-950/80">
+        {{-- Scrollable Document Body (Mulai Dari Atas, Scroll Vertikal Penuh) --}}
+        <div id="modalScrollContainer" class="cert-modal-body-scroll">
             
-            {{-- Frame Kertas Sertifikat Resolusi Tinggi --}}
-            <div class="w-full max-w-2xl bg-white rounded-xl shadow-2xl border-4 sm:border-8 border-white overflow-hidden my-auto py-2">
+            {{-- Kertas Dokumen Sertifikat Resmi --}}
+            <div id="certPaperContainer" class="cert-paper-container">
                 <img 
                     id="modalCertImage" 
                     src="" 
                     alt="Dokumen Sertifikat Resmi" 
-                    class="w-full h-auto object-contain select-none block"
+                    loading="eager"
                 />
             </div>
 
-            {{-- Floating Prev / Next Buttons --}}
-            <button id="prevCertBtn" type="button" class="fixed left-3 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#061838]/90 hover:bg-[#FFB800] text-white hover:text-[#061838] shadow-2xl flex items-center justify-center transition-all hover:scale-110 border border-slate-700 z-40" aria-label="Sebelumnya">
+            {{-- Floating Prev / Next Buttons Inside Modal Window --}}
+            <button id="prevCertBtn" type="button" class="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#061838]/90 hover:bg-[#FFB800] text-white hover:text-[#061838] shadow-2xl flex items-center justify-center transition-all hover:scale-110 border border-slate-600 z-40" aria-label="Sebelumnya">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
             </button>
-            <button id="nextCertBtn" type="button" class="fixed right-3 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#061838]/90 hover:bg-[#FFB800] text-white hover:text-[#061838] shadow-2xl flex items-center justify-center transition-all hover:scale-110 border border-slate-700 z-40" aria-label="Selanjutnya">
+            <button id="nextCertBtn" type="button" class="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#061838]/90 hover:bg-[#FFB800] text-white hover:text-[#061838] shadow-2xl flex items-center justify-center transition-all hover:scale-110 border border-slate-600 z-40" aria-label="Selanjutnya">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
             </button>
         </div>
 
         {{-- Modal Footer Sticky --}}
-        <div class="flex-shrink-0 px-4 sm:px-6 py-2.5 sm:py-3 bg-[#061838] border-t border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 sm:gap-2 text-xs text-slate-300 z-30 shadow-md">
-            <div class="flex items-center gap-2">
-                <span id="modalCertCounter" class="font-black text-[#FFB800] bg-slate-800/80 px-2.5 py-0.5 rounded border border-slate-700"></span>
+        <div class="cert-modal-footer-bar">
+            <div class="flex items-center gap-2 overflow-hidden min-w-0">
+                <span id="modalCertCounter" class="font-black text-[#FFB800] bg-slate-800/90 px-2.5 py-0.5 rounded border border-slate-700 flex-shrink-0"></span>
                 <span id="modalCertDesc" class="text-slate-300 font-medium truncate max-w-xs sm:max-w-md"></span>
             </div>
-            <div class="text-[11px] text-slate-400">
-                <span class="lang-id-only">Penerima: <strong class="text-white">Fernanda Safira Fenturini, S.Ak.</strong> (Corporate Secretary)</span>
-                <span class="lang-en-only">Delivered to: <strong class="text-white">Fernanda Safira Fenturini, S.Ak.</strong> (Corporate Secretary)</span>
+            <div class="text-[11px] text-slate-400 flex-shrink-0 hidden sm:block">
+                <span class="lang-id-only">Penerima: <strong class="text-white">Fernanda Safira Fenturini, S.Ak.</strong></span>
+                <span class="lang-en-only">Delivered to: <strong class="text-white">Fernanda Safira Fenturini, S.Ak.</strong></span>
+            </div>
+            <div class="flex items-center gap-2">
+                <button id="footerPrevBtn" type="button" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-xs font-semibold flex items-center gap-1 transition-colors">
+                    &larr; <span class="lang-id-only">Sebelumnya</span><span class="lang-en-only">Prev</span>
+                </button>
+                <button id="footerNextBtn" type="button" class="px-2.5 py-1 rounded-lg bg-[#FFB800] hover:bg-amber-400 text-[#061838] text-xs font-black flex items-center gap-1 transition-colors shadow">
+                    <span class="lang-id-only">Berikutnya</span><span class="lang-en-only">Next</span> &rarr;
+                </button>
             </div>
         </div>
 
@@ -614,8 +776,12 @@
     ];
 
     let currentCertIdx = 0;
+    const defaultPaperWidth = 660;
+    let currentPaperWidth = defaultPaperWidth;
+
     const modal = document.getElementById('certModal');
     const scrollContainer = document.getElementById('modalScrollContainer');
+    const paperContainer = document.getElementById('certPaperContainer');
     const modalImg = document.getElementById('modalCertImage');
     const modalTitle = document.getElementById('modalCertTitle');
     const modalDesc = document.getElementById('modalCertDesc');
@@ -624,6 +790,28 @@
     const closeBtn = document.getElementById('closeCertModal');
     const prevBtn = document.getElementById('prevCertBtn');
     const nextBtn = document.getElementById('nextCertBtn');
+    const footerPrevBtn = document.getElementById('footerPrevBtn');
+    const footerNextBtn = document.getElementById('footerNextBtn');
+
+    const zoomInBtn = document.getElementById('zoomInBtn');
+    const zoomOutBtn = document.getElementById('zoomOutBtn');
+    const zoomResetBtn = document.getElementById('zoomResetBtn');
+    const zoomLevelText = document.getElementById('zoomLevelText');
+
+    function applyZoom(newWidth) {
+        currentPaperWidth = Math.max(380, Math.min(1200, newWidth));
+        if (paperContainer) {
+            paperContainer.style.maxWidth = currentPaperWidth + 'px';
+        }
+        if (zoomLevelText) {
+            const percent = Math.round((currentPaperWidth / defaultPaperWidth) * 100);
+            zoomLevelText.textContent = percent + '%';
+        }
+    }
+
+    if (zoomInBtn) zoomInBtn.addEventListener('click', function(e) { e.stopPropagation(); applyZoom(currentPaperWidth + 120); });
+    if (zoomOutBtn) zoomOutBtn.addEventListener('click', function(e) { e.stopPropagation(); applyZoom(currentPaperWidth - 120); });
+    if (zoomResetBtn) zoomResetBtn.addEventListener('click', function(e) { e.stopPropagation(); applyZoom(defaultPaperWidth); });
 
     function updateModal(idx) {
         currentCertIdx = ((idx % certList.length) + certList.length) % certList.length;
@@ -639,34 +827,43 @@
         // Reset scroll position ke paling atas setiap ganti sertifikat
         if (scrollContainer) {
             scrollContainer.scrollTop = 0;
+            scrollContainer.scrollLeft = 0;
         }
+
+        // Reset zoom ke default
+        applyZoom(defaultPaperWidth);
     }
 
     window.openCertModal = function(idx) {
         if (!modal) return;
         updateModal(idx);
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
+        modal.classList.add('modal-open');
         document.body.style.overflow = 'hidden';
     };
 
     function closeModal() {
         if (!modal) return;
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+        modal.classList.remove('modal-open');
         document.body.style.overflow = '';
     }
 
     if (closeBtn) closeBtn.addEventListener('click', closeModal);
     if (prevBtn) prevBtn.addEventListener('click', function(e) { e.stopPropagation(); updateModal(currentCertIdx - 1); });
     if (nextBtn) nextBtn.addEventListener('click', function(e) { e.stopPropagation(); updateModal(currentCertIdx + 1); });
-    if (modal) modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+    if (footerPrevBtn) footerPrevBtn.addEventListener('click', function(e) { e.stopPropagation(); updateModal(currentCertIdx - 1); });
+    if (footerNextBtn) footerNextBtn.addEventListener('click', function(e) { e.stopPropagation(); updateModal(currentCertIdx + 1); });
+
+    if (modal) modal.addEventListener('click', function(e) { 
+        if (e.target === modal) closeModal(); 
+    });
 
     document.addEventListener('keydown', function(e) {
-        if (!modal || modal.classList.contains('hidden')) return;
+        if (!modal || !modal.classList.contains('modal-open')) return;
         if (e.key === 'Escape') closeModal();
         if (e.key === 'ArrowLeft') updateModal(currentCertIdx - 1);
         if (e.key === 'ArrowRight') updateModal(currentCertIdx + 1);
+        if (e.key === '+' || e.key === '=') applyZoom(currentPaperWidth + 120);
+        if (e.key === '-' || e.key === '_') applyZoom(currentPaperWidth - 120);
     });
 })();
 </script>
