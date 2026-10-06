@@ -39,7 +39,7 @@ class ContactSubmissionMail extends Mailable
 
         return new Envelope(
             from: new Address(
-                config('mail.from.address', 'ahmadhasanfaqih01@gmail.com'),
+                config('mail.from.address', 'ptbahteraanugerahs@gmail.com'),
                 "{$name} (Pelamar PT. BAS)"
             ),
             subject: "[PT. BAS] Pendaftaran / Berkas Baru: {$name} ({$crewType}) - Ref: {$ref}",
