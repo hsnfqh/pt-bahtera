@@ -23,7 +23,7 @@
                 <span class="lang-id-only">Layanan Keagenan Awak Kapal</span>
                 <span class="lang-en-only">Our Crewing Services</span>
             </h2>
-            <div class="text-slate-600 text-xs sm:text-sm leading-relaxed space-y-3 max-w-2xl mx-auto text-justify">
+            <div class="text-slate-600 text-xs sm:text-sm leading-relaxed space-y-3 max-w-2xl mx-auto text-center">
                 <p>
                     <span class="lang-id-only">Kami berspesialisasi dalam perekrutan, seleksi, penempatan, dan penyaluran pelaut yang berkualifikasi untuk berbagai jenis kapal dan operasional maritim.</span>
                     <span class="lang-en-only">We specialize in the recruitment, selection, placement, and deployment of qualified seafarers for various types of vessels and maritime operations.</span>
@@ -278,7 +278,7 @@
                 <span class="lang-id-only">Jenis Kapal</span>
                 <span class="lang-en-only">Vessel Types</span>
             </h2>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto text-justify sm:text-center">
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto text-center">
                 <span class="lang-id-only">Selama bertahun-tahun, kami telah sukses menyalurkan awak kapal yang berkualifikasi untuk berbagai macam armada kapal komersial dan penangkap ikan, meliputi:</span>
                 <span class="lang-en-only">Over the years, we have successfully supplied qualified crew for a wide range of commercial and fishing vessels, including:</span>
             </p>
@@ -396,7 +396,7 @@
 
         <!-- Closing Note Below Vessel Cards -->
         <div class="text-center max-w-3xl mx-auto p-6 sm:p-7 rounded-3xl bg-[#061838]/80 border border-white/10 backdrop-blur-md shadow-xl fade-in-section">
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed font-normal text-justify sm:text-center">
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed font-normal text-center">
                 <span class="lang-id-only">Pengalaman kami yang luas di berbagai jenis kapal memungkinkan kami memahami persyaratan operasional spesifik dari setiap armada dan menyediakan kru yang paling sesuai dengan kebutuhan kapal.</span>
                 <span class="lang-en-only">Our extensive experience across different vessel types allows us to understand the specific operational requirements of each fleet and provide crew who are well-suited to the vessel's needs.</span>
             </p>
@@ -415,7 +415,7 @@
                 <span class="lang-id-only">Pengalaman Internasional</span>
                 <span class="lang-en-only">International Experience</span>
             </h2>
-            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto text-justify sm:text-center">
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto text-center">
                 <span class="lang-id-only">Pelaut kami telah bertugas di atas kapal-kapal yang beroperasi di bawah berbagai bendera internasional dan di berbagai wilayah maritim, meliputi:</span>
                 <span class="lang-en-only">Our seafarers have served onboard vessels operating under various international flags and in different maritime regions, including:</span>
             </p>
@@ -522,7 +522,7 @@
 
         <!-- Closing Note Below Countries Grid -->
         <div class="text-center max-w-3xl mx-auto p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm fade-in-section">
-            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal text-justify sm:text-center">
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal text-center">
                 <span class="lang-id-only">Pengalaman internasional kami telah memperkuat pemahaman kami terhadap berbagai praktik maritim, persyaratan operasional, dan ekspektasi klien.</span>
                 <span class="lang-en-only">Our international experience has strengthened our understanding of different maritime practices, operational requirements, and client expectations.</span>
             </p>
@@ -541,7 +541,7 @@
                 <span class="text-[#061838]">PROVIDING PROFESSIONAL CREW.</span>
             </h2>
             
-            <div class="text-slate-600 text-xs sm:text-sm leading-relaxed space-y-4 max-w-3xl mx-auto text-justify">
+            <div class="text-slate-600 text-xs sm:text-sm leading-relaxed space-y-4 max-w-3xl mx-auto text-center">
                 <p>
                     <span class="lang-id-only">Kami merasa terhormat dapat menjadi mitra keagenan awak kapal terpercaya Anda dan mendukung armada kapal Anda dengan para profesional maritim yang berkualifikasi dan dapat diandalkan.</span>
                     <span class="lang-en-only">We would be honored to become your trusted crewing partner and support your fleet with qualified and dependable maritime professionals.</span>

@@ -545,14 +545,14 @@
                 <span class="lang-id-only">Komitmen Kami</span>
                 <span class="lang-en-only">Our Commitment</span>
             </h2>
-            <div class="text-slate-200 text-sm sm:text-[15px] leading-relaxed max-w-4xl lg:max-w-5xl mx-auto font-normal space-y-4">
-                <div class="lang-id-only space-y-3.5 text-justify">
+            <div class="text-slate-200 text-sm sm:text-[15px] leading-relaxed max-w-3xl lg:max-w-4xl mx-auto font-normal space-y-3.5 text-center">
+                <div class="lang-id-only space-y-3">
                     <p>PT BAHTERA ANUGERAH SENTOSA, kami percaya bahwa sumber daya manusia yang berkualitas adalah fondasi utama dari operasi maritim yang sukses.</p>
                     <p>Misi kami adalah menyediakan pelaut yang kompeten, dapat diandalkan, dan profesional yang berkontribusi terhadap keselamatan, efisiensi, dan produktivitas pada setiap kapal tempat mereka bertugas.</p>
                     <p>Kami terus meningkatkan proses rekrutmen, seleksi, pelatihan, dan manajemen kru kami untuk memastikan pelaut kami siap memenuhi tuntutan industri maritim modern.</p>
                     <p>Kami berkomitmen untuk mempertahankan standar tertinggi dalam kualitas, keselamatan, dan kepatuhan operasional.</p>
                 </div>
-                <div class="lang-en-only space-y-3.5 text-justify">
+                <div class="lang-en-only space-y-3">
                     <p>PT BAHTERA ANUGERAH SENTOSA, we believe that quality people are the foundation of a successful maritime operation.</p>
                     <p>Our mission is to provide competent, dependable, and professional seafarers who contribute to the safety, efficiency, and productivity of every vessel they serve.</p>
                     <p>We continuously improve our recruitment, selection, training, and crew management processes to ensure that our seafarers are prepared to meet the demands of the modern maritime industry.</p>

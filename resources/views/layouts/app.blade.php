@@ -35,7 +35,6 @@
         .text-justify {
             text-align: justify !important;
             text-justify: inter-word !important;
-            hyphens: auto;
         }
 
         /* 100% Reliable Language Switching Rules */

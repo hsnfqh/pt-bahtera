@@ -333,7 +333,7 @@
                     <span class="lang-id-only">Sertifikasi Kompetensi &amp; Pelatihan Internasional</span>
                     <span class="lang-en-only">International Competency &amp; Training Certifications</span>
                 </h3>
-                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto text-justify sm:text-center">
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-3xl mx-auto text-center">
                     <span class="lang-id-only">Sertifikasi pelatihan resmi dari <strong>International Training Centre of the ILO (ITC-ILO)</strong> yang diraih oleh manajemen perusahaan untuk menjamin kepatuhan standar ketenagakerjaan maritim dunia, rekrutmen beretika tanpa pemungutan biaya awak kapal, serta pencegahan kerja paksa.</span>
                     <span class="lang-en-only">Official training credentials from the <strong>International Training Centre of the ILO (ITC-ILO)</strong> earned by company management, ensuring compliance with global maritime labour conventions, ethical zero-fee recruitment, and prevention of forced labour.</span>
                 </p>
