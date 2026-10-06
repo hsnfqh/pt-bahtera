@@ -259,329 +259,239 @@
         </div>
 
         {{-- SUBSECTION: 7 SERTIFIKAT KOMPETENSI INTERNASIONAL (ITC-ILO) --}}
-        <div class="pt-16 border-t border-slate-200/80 space-y-10 fade-in-section">
+        @php
+        $certificatesData = [
+            [
+                'tag' => 'FAIR RECRUITMENT',
+                'badge' => 'ITC-ILO',
+                'title' => 'Establishing Fair Recruitment Processes',
+                'descId' => 'Pelatihan proses rekrutmen beretika, penghapusan biaya bagi pelaut, dan perlindungan hak calon awak kapal.',
+                'descEn' => 'Ethical recruitment processes, elimination of recruitment fees, and seafarer protection.',
+                'file' => 'Establishing Fair Recruitment Processes.jpg',
+            ],
+            [
+                'tag' => 'COMMERCIAL FISHING',
+                'badge' => 'ITC-ILO & 8.7 LAB',
+                'title' => 'Detecting Forced Labour in Commercial Fishing',
+                'descId' => 'Identifikasi dan pencegahan indikasi kerja paksa pada armada perikanan komersial internasional.',
+                'descEn' => 'Detection and prevention of forced labour indicators on commercial fishing vessels.',
+                'file' => 'Detecting Forced Labour in Commercial Fishing.jpg',
+            ],
+            [
+                'tag' => 'LABOUR STANDARDS',
+                'badge' => 'ITC-ILO',
+                'title' => 'Introduction to International Labour Standards',
+                'descId' => 'Pemahaman konvensi dan kerangka hukum ketenagakerjaan internasional ILO secara menyeluruh.',
+                'descEn' => 'Foundational understanding of ILO conventions and international legal labour frameworks.',
+                'file' => 'Introduction to International Labour Standards.jpg',
+            ],
+            [
+                'tag' => 'DECENT WORK',
+                'badge' => 'ITC-ILO eCAMPUS',
+                'title' => 'Business and Decent Work',
+                'descId' => 'Penerapan prinsip kerja layak, perlindungan sosial, dan kondisi kerja manusiawi dalam operasional maritim.',
+                'descEn' => 'Implementing decent work principles and fair working conditions in corporate operations.',
+                'file' => 'Business and Decent Work.jpg',
+            ],
+            [
+                'tag' => 'PAY EQUITY',
+                'badge' => 'EU & UN WOMEN & ILO',
+                'title' => 'Achieving Pay Equity in Your Company',
+                'descId' => 'Program manajerial kesetaraan kompensasi dan sistem upah berkeadilan (WE EMPOWER G7).',
+                'descEn' => 'Managerial training on fair compensation and pay equity systems under WE EMPOWER G7.',
+                'file' => 'ACHIEVING PAY EQUITY IN YOUR COMPANY.jpg',
+            ],
+            [
+                'tag' => 'CHILD LABOUR ERADICATION',
+                'badge' => 'ITC-ILO',
+                'title' => 'End Child Labour Masterclass',
+                'descId' => 'Komitmen tegas perlindungan usia minimum dan pemberantasan pekerja anak dalam rantai pasok maritim.',
+                'descEn' => 'Strict commitment to eradicate child labour and verify minimum maritime working ages.',
+                'file' => 'End Child Labour Masterclass.jpg',
+            ],
+            [
+                'tag' => 'LEGAL EDUCATION',
+                'badge' => 'ITC-ILO',
+                'title' => 'Continuing Legal Education: Labour Standards',
+                'descId' => 'Pendidikan hukum ketenagakerjaan berkelanjutan untuk kepatuhan regulasi maritim global.',
+                'descEn' => 'Continuing legal education in international maritime labor jurisprudence and compliance.',
+                'file' => 'CONTINUING LEGAL EDUCATION 1_ INTRODUCTION TO INTERNATIONAL LABOUR STANDARDS.jpg',
+            ],
+        ];
+        @endphp
+
+        <div class="pt-16 border-t border-slate-200/80 space-y-12 fade-in-section">
             
-            <div class="text-center max-w-3xl mx-auto space-y-3">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#061838]/5 border border-[#061838]/10 text-xs font-black text-[#061838] tracking-widest uppercase">
+            {{-- Header Section --}}
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#061838]/5 border border-[#061838]/10 text-xs font-black text-[#061838] tracking-widest uppercase">
                     <span class="w-2 h-2 rounded-full bg-[#FFB800]"></span>
-                    <span class="lang-id-only">Standar Ketenagakerjaan Global</span>
-                    <span class="lang-en-only">Global Labour Standards</span>
+                    <span class="lang-id-only">Standar Ketenagakerjaan Global &middot; ITC-ILO</span>
+                    <span class="lang-en-only">Global Labour Standards &middot; ITC-ILO</span>
                 </div>
                 <h3 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#061838] tracking-tight uppercase">
                     <span class="lang-id-only">Sertifikasi Kompetensi &amp; Pelatihan Internasional</span>
                     <span class="lang-en-only">International Competency &amp; Training Certifications</span>
                 </h3>
                 <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
-                    <span class="lang-id-only">Sertifikat pelatihan resmi dari <strong>International Training Centre of the ILO (ITC-ILO)</strong> yang diraih oleh manajemen perusahaan untuk menjamin rekrutmen beretika, pencegahan kerja paksa, perlindungan hak pelaut, dan kepatuhan standar maritim global.</span>
-                    <span class="lang-en-only">Official training credentials from the <strong>International Training Centre of the ILO (ITC-ILO)</strong> earned by company management, ensuring ethical recruitment, prevention of forced labour, seafarer protection, and compliance with global maritime standards.</span>
+                    <span class="lang-id-only">Sertifikasi pelatihan resmi dari <strong>International Training Centre of the ILO (ITC-ILO)</strong> yang diraih oleh manajemen perusahaan untuk menjamin kepatuhan standar ketenagakerjaan maritim dunia, rekrutmen beretika tanpa pemungutan biaya awak kapal, serta pencegahan kerja paksa.</span>
+                    <span class="lang-en-only">Official training credentials from the <strong>International Training Centre of the ILO (ITC-ILO)</strong> earned by company management, ensuring compliance with global maritime labour conventions, ethical zero-fee recruitment, and prevention of forced labour.</span>
                 </p>
+
+                {{-- Trust Highlights --}}
+                <div class="pt-2 flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-[11px] font-bold text-slate-600">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">
+                        <span class="text-emerald-600 font-black">&check;</span> 7 Kredensial Terotentikasi
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">
+                        <span class="text-[#0A326E] font-black">&bull;</span> Standar Konvensi ILO
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 shadow-2xs">
+                        <span class="text-amber-600 font-black">&bull;</span> Rekrutmen Beretika &amp; Adil
+                    </span>
+                </div>
             </div>
 
-            {{-- 7 CERTIFICATES: BARIS 1 (4 FOTO) & BARIS 2 (3 FOTO CENTERED) --}}
-            <div class="space-y-8">
-                
+            {{-- 7 CERTIFICATES: 4 PADA BARIS 1 & 3 PADA BARIS 2 (TERPISAH RAPI & BISA DISCROLL) --}}
+            <div class="space-y-6">
+
                 {{-- BARIS 1: 4 KARTU SERTIFIKAT --}}
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-                    {{-- 1. Establishing Fair Recruitment Processes --}}
-                    <div class="group bg-white rounded-2xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col overflow-hidden">
-                        <div class="relative aspect-[1/1.38] bg-slate-100 overflow-hidden cursor-pointer" onclick="openCertModal(0)">
-                            <img 
-                                src="{{ asset('images/Establishing Fair Recruitment Processes.jpg') }}" 
-                                alt="Establishing Fair Recruitment Processes - ITC-ILO" 
-                                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                loading="lazy"
-                            />
-                            <div class="absolute inset-0 bg-[#061838]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 backdrop-blur-2xs">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                                    <span class="lang-id-only">Lihat Dokumen</span>
-                                    <span class="lang-en-only">View Certificate</span>
-                                </span>
+                    @foreach(array_slice($certificatesData, 0, 4) as $idx => $cert)
+                    <div 
+                        class="bg-white rounded-2xl border-2 border-slate-200/90 hover:border-[#FFB800] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col overflow-hidden group cursor-pointer"
+                        onclick="openCertModal({{ $idx }})"
+                    >
+                        {{-- Preview Gambar Utuh (Rasio Dokumen, Tidak Terpotong) --}}
+                        <div class="p-3.5 bg-gradient-to-b from-slate-100 via-slate-50 to-slate-100/90 border-b border-slate-200/80">
+                            <div class="relative w-full aspect-[1/1.38] bg-white rounded-lg shadow-xs group-hover:shadow-md transition-shadow border border-slate-200/90 overflow-hidden flex items-center justify-center p-1.5">
+                                <img 
+                                    src="{{ asset('images/' . $cert['file']) }}" 
+                                    alt="{{ $cert['title'] }}" 
+                                    class="max-w-full max-h-full w-auto h-auto object-contain select-none transition-transform duration-300 group-hover:scale-[1.02]"
+                                    loading="lazy"
+                                />
+                                {{-- Hover Overlay --}}
+                                <div class="absolute inset-0 bg-[#061838]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center backdrop-blur-2xs">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                        <span class="lang-id-only">Buka Dokumen</span>
+                                        <span class="lang-en-only">Open Document</span>
+                                    </span>
+                                    <span class="text-[10px] text-slate-300 font-medium mt-2">Bisa discroll penuh</span>
+                                </div>
                             </div>
-                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-black tracking-wider bg-[#061838]/90 text-[#FFB800] backdrop-blur-xs shadow-xs">
-                                ITC-ILO
-                            </span>
                         </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-2.5 bg-white">
-                            <div>
-                                <span class="text-[10px] font-black uppercase text-amber-700 tracking-wider block">FAIR RECRUITMENT</span>
-                                <h4 class="text-xs sm:text-sm font-black text-[#061838] leading-snug line-clamp-2 mt-0.5">
-                                    Establishing Fair Recruitment Processes
+
+                        {{-- Informasi Sertifikat --}}
+                        <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3 bg-white">
+                            <div class="space-y-1.5">
+                                <div class="flex items-center justify-between">
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-[#061838]/5 text-[#0A326E] border border-[#0A326E]/15">
+                                        {{ $cert['badge'] }}
+                                    </span>
+                                    <span class="text-[10px] font-extrabold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 flex items-center gap-1">
+                                        &check; Verified
+                                    </span>
+                                </div>
+                                <h4 class="text-xs sm:text-sm font-black text-[#061838] group-hover:text-[#0A326E] transition-colors leading-snug line-clamp-2 pt-1">
+                                    {{ $cert['title'] }}
                                 </h4>
-                                <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
-                                    <span class="lang-id-only">Pelatihan proses rekrutmen beretika, bebas biaya rekrutmen, dan perlindungan calon awak kapal.</span>
-                                    <span class="lang-en-only">Ethical recruitment processes, elimination of recruitment fees, and seafarer protection.</span>
+                                <p class="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
+                                    <span class="lang-id-only">{{ $cert['descId'] }}</span>
+                                    <span class="lang-en-only">{{ $cert['descEn'] }}</span>
                                 </p>
                             </div>
-                            <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                                <span class="text-slate-600 font-semibold truncate max-w-[130px]">Fernanda Safira F.</span>
-                                <button type="button" onclick="openCertModal(0)" class="text-[#0A326E] group-hover:text-[#D97706] font-bold inline-flex items-center gap-1 transition-colors">
-                                    <span class="lang-id-only">Detail</span>
-                                    <span class="lang-en-only">Zoom</span>
+
+                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                                <div>
+                                    <span class="text-[10px] uppercase font-bold text-slate-400 block">
+                                        <span class="lang-id-only">Penerima</span>
+                                        <span class="lang-en-only">Recipient</span>
+                                    </span>
+                                    <span class="font-bold text-[#061838] text-[11px] truncate block max-w-[130px]">
+                                        Fernanda Safira F., S.Ak.
+                                    </span>
+                                </div>
+                                <span class="text-xs font-black text-[#0A326E] group-hover:text-[#D97706] inline-flex items-center gap-1 transition-colors">
+                                    <span class="lang-id-only">Lihat</span>
+                                    <span class="lang-en-only">View</span>
                                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </button>
+                                </span>
                             </div>
                         </div>
                     </div>
-
-                    {{-- 2. Detecting Forced Labour in Commercial Fishing --}}
-                    <div class="group bg-white rounded-2xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col overflow-hidden">
-                        <div class="relative aspect-[1/1.38] bg-slate-100 overflow-hidden cursor-pointer" onclick="openCertModal(1)">
-                            <img 
-                                src="{{ asset('images/Detecting Forced Labour in Commercial Fishing.jpg') }}" 
-                                alt="Detecting Forced Labour in Commercial Fishing - ITC-ILO" 
-                                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                loading="lazy"
-                            />
-                            <div class="absolute inset-0 bg-[#061838]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 backdrop-blur-2xs">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                                    <span class="lang-id-only">Lihat Dokumen</span>
-                                    <span class="lang-en-only">View Certificate</span>
-                                </span>
-                            </div>
-                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-black tracking-wider bg-[#061838]/90 text-[#FFB800] backdrop-blur-xs shadow-xs">
-                                ITC-ILO &middot; 8.7 LAB
-                            </span>
-                        </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-2.5 bg-white">
-                            <div>
-                                <span class="text-[10px] font-black uppercase text-amber-700 tracking-wider block">COMMERCIAL FISHING</span>
-                                <h4 class="text-xs sm:text-sm font-black text-[#061838] leading-snug line-clamp-2 mt-0.5">
-                                    Detecting Forced Labour in Commercial Fishing
-                                </h4>
-                                <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
-                                    <span class="lang-id-only">Identifikasi dan pencegahan indikasi kerja paksa pada armada perikanan komersial laut lepas.</span>
-                                    <span class="lang-en-only">Detection and prevention of forced labour indicators on commercial fishing vessels.</span>
-                                </p>
-                            </div>
-                            <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                                <span class="text-slate-600 font-semibold truncate max-w-[130px]">Fernanda Safira F.</span>
-                                <button type="button" onclick="openCertModal(1)" class="text-[#0A326E] group-hover:text-[#D97706] font-bold inline-flex items-center gap-1 transition-colors">
-                                    <span class="lang-id-only">Detail</span>
-                                    <span class="lang-en-only">Zoom</span>
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- 3. Introduction to International Labour Standards --}}
-                    <div class="group bg-white rounded-2xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col overflow-hidden">
-                        <div class="relative aspect-[1/1.38] bg-slate-100 overflow-hidden cursor-pointer" onclick="openCertModal(2)">
-                            <img 
-                                src="{{ asset('images/Introduction to International Labour Standards.jpg') }}" 
-                                alt="Introduction to International Labour Standards - ITC-ILO" 
-                                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                loading="lazy"
-                            />
-                            <div class="absolute inset-0 bg-[#061838]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 backdrop-blur-2xs">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                                    <span class="lang-id-only">Lihat Dokumen</span>
-                                    <span class="lang-en-only">View Certificate</span>
-                                </span>
-                            </div>
-                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-black tracking-wider bg-[#061838]/90 text-[#FFB800] backdrop-blur-xs shadow-xs">
-                                ITC-ILO
-                            </span>
-                        </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-2.5 bg-white">
-                            <div>
-                                <span class="text-[10px] font-black uppercase text-amber-700 tracking-wider block">LABOUR STANDARDS</span>
-                                <h4 class="text-xs sm:text-sm font-black text-[#061838] leading-snug line-clamp-2 mt-0.5">
-                                    Introduction to International Labour Standards
-                                </h4>
-                                <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
-                                    <span class="lang-id-only">Pemahaman konvensi dan kerangka hukum ketenagakerjaan internasional ILO secara menyeluruh.</span>
-                                    <span class="lang-en-only">Foundational understanding of ILO conventions and international legal labour frameworks.</span>
-                                </p>
-                            </div>
-                            <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                                <span class="text-slate-600 font-semibold truncate max-w-[130px]">Fernanda Safira F.</span>
-                                <button type="button" onclick="openCertModal(2)" class="text-[#0A326E] group-hover:text-[#D97706] font-bold inline-flex items-center gap-1 transition-colors">
-                                    <span class="lang-id-only">Detail</span>
-                                    <span class="lang-en-only">Zoom</span>
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- 4. Business and Decent Work --}}
-                    <div class="group bg-white rounded-2xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col overflow-hidden">
-                        <div class="relative aspect-[1/1.38] bg-slate-100 overflow-hidden cursor-pointer" onclick="openCertModal(3)">
-                            <img 
-                                src="{{ asset('images/Business and Decent Work.jpg') }}" 
-                                alt="Business and Decent Work - ITC-ILO" 
-                                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                loading="lazy"
-                            />
-                            <div class="absolute inset-0 bg-[#061838]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 backdrop-blur-2xs">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                                    <span class="lang-id-only">Lihat Dokumen</span>
-                                    <span class="lang-en-only">View Certificate</span>
-                                </span>
-                            </div>
-                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-black tracking-wider bg-[#061838]/90 text-[#FFB800] backdrop-blur-xs shadow-xs">
-                                ITC-ILO eCAMPUS
-                            </span>
-                        </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-2.5 bg-white">
-                            <div>
-                                <span class="text-[10px] font-black uppercase text-amber-700 tracking-wider block">DECENT WORK</span>
-                                <h4 class="text-xs sm:text-sm font-black text-[#061838] leading-snug line-clamp-2 mt-0.5">
-                                    Business and Decent Work
-                                </h4>
-                                <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
-                                    <span class="lang-id-only">Implementasi prinsip pekerjaan yang layak dan kondisi kerja manusiawi dalam operasional maritim.</span>
-                                    <span class="lang-en-only">Implementing decent work principles and fair working conditions in corporate operations.</span>
-                                </p>
-                            </div>
-                            <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                                <span class="text-slate-600 font-semibold truncate max-w-[130px]">Fernanda Safira F.</span>
-                                <button type="button" onclick="openCertModal(3)" class="text-[#0A326E] group-hover:text-[#D97706] font-bold inline-flex items-center gap-1 transition-colors">
-                                    <span class="lang-id-only">Detail</span>
-                                    <span class="lang-en-only">Zoom</span>
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
 
-                {{-- BARIS 2: 3 KARTU SERTIFIKAT (CENTERED PADA DESKTOP) --}}
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-
-                    {{-- 5. Achieving Pay Equity in Your Company --}}
-                    <div class="group bg-white rounded-2xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col overflow-hidden">
-                        <div class="relative aspect-[1/1.38] bg-slate-100 overflow-hidden cursor-pointer" onclick="openCertModal(4)">
-                            <img 
-                                src="{{ asset('images/ACHIEVING PAY EQUITY IN YOUR COMPANY.jpg') }}" 
-                                alt="Achieving Pay Equity in Your Company - ITC-ILO" 
-                                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                loading="lazy"
-                            />
-                            <div class="absolute inset-0 bg-[#061838]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 backdrop-blur-2xs">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                                    <span class="lang-id-only">Lihat Dokumen</span>
-                                    <span class="lang-en-only">View Certificate</span>
-                                </span>
+                {{-- BARIS 2: 3 KARTU SERTIFIKAT (CENTERED DENGAN LEBAR PERSIS SAMA DENGAN BARIS 1) --}}
+                <div class="flex flex-wrap justify-center gap-6">
+                    @foreach(array_slice($certificatesData, 4, 3) as $subIdx => $cert)
+                    @php $actualIndex = $subIdx + 4; @endphp
+                    <div 
+                        class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-white rounded-2xl border-2 border-slate-200/90 hover:border-[#FFB800] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col overflow-hidden group cursor-pointer"
+                        onclick="openCertModal({{ $actualIndex }})"
+                    >
+                        {{-- Preview Gambar Utuh (Rasio Dokumen, Tidak Terpotong) --}}
+                        <div class="p-3.5 bg-gradient-to-b from-slate-100 via-slate-50 to-slate-100/90 border-b border-slate-200/80">
+                            <div class="relative w-full aspect-[1/1.38] bg-white rounded-lg shadow-xs group-hover:shadow-md transition-shadow border border-slate-200/90 overflow-hidden flex items-center justify-center p-1.5">
+                                <img 
+                                    src="{{ asset('images/' . $cert['file']) }}" 
+                                    alt="{{ $cert['title'] }}" 
+                                    class="max-w-full max-h-full w-auto h-auto object-contain select-none transition-transform duration-300 group-hover:scale-[1.02]"
+                                    loading="lazy"
+                                />
+                                {{-- Hover Overlay --}}
+                                <div class="absolute inset-0 bg-[#061838]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-center backdrop-blur-2xs">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                        <span class="lang-id-only">Buka Dokumen</span>
+                                        <span class="lang-en-only">Open Document</span>
+                                    </span>
+                                    <span class="text-[10px] text-slate-300 font-medium mt-2">Bisa discroll penuh</span>
+                                </div>
                             </div>
-                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-black tracking-wider bg-[#061838]/90 text-[#FFB800] backdrop-blur-xs shadow-xs">
-                                EU &middot; UN WOMEN &middot; ILO
-                            </span>
                         </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-2.5 bg-white">
-                            <div>
-                                <span class="text-[10px] font-black uppercase text-amber-700 tracking-wider block">PAY EQUITY</span>
-                                <h4 class="text-xs sm:text-sm font-black text-[#061838] leading-snug line-clamp-2 mt-0.5">
-                                    Achieving Pay Equity in Your Company
+
+                        {{-- Informasi Sertifikat --}}
+                        <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3 bg-white">
+                            <div class="space-y-1.5">
+                                <div class="flex items-center justify-between">
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-[#061838]/5 text-[#0A326E] border border-[#0A326E]/15">
+                                        {{ $cert['badge'] }}
+                                    </span>
+                                    <span class="text-[10px] font-extrabold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 flex items-center gap-1">
+                                        &check; Verified
+                                    </span>
+                                </div>
+                                <h4 class="text-xs sm:text-sm font-black text-[#061838] group-hover:text-[#0A326E] transition-colors leading-snug line-clamp-2 pt-1">
+                                    {{ $cert['title'] }}
                                 </h4>
-                                <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
-                                    <span class="lang-id-only">Program manajerial kesetaraan kompensasi dan sistem upah berkeadilan (WE EMPOWER G7).</span>
-                                    <span class="lang-en-only">Managerial training on fair compensation and pay equity systems under WE EMPOWER G7.</span>
+                                <p class="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
+                                    <span class="lang-id-only">{{ $cert['descId'] }}</span>
+                                    <span class="lang-en-only">{{ $cert['descEn'] }}</span>
                                 </p>
                             </div>
-                            <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                                <span class="text-slate-600 font-semibold truncate max-w-[130px]">Fernanda Safira F.</span>
-                                <button type="button" onclick="openCertModal(4)" class="text-[#0A326E] group-hover:text-[#D97706] font-bold inline-flex items-center gap-1 transition-colors">
-                                    <span class="lang-id-only">Detail</span>
-                                    <span class="lang-en-only">Zoom</span>
+
+                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                                <div>
+                                    <span class="text-[10px] uppercase font-bold text-slate-400 block">
+                                        <span class="lang-id-only">Penerima</span>
+                                        <span class="lang-en-only">Recipient</span>
+                                    </span>
+                                    <span class="font-bold text-[#061838] text-[11px] truncate block max-w-[130px]">
+                                        Fernanda Safira F., S.Ak.
+                                    </span>
+                                </div>
+                                <span class="text-xs font-black text-[#0A326E] group-hover:text-[#D97706] inline-flex items-center gap-1 transition-colors">
+                                    <span class="lang-id-only">Lihat</span>
+                                    <span class="lang-en-only">View</span>
                                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </button>
+                                </span>
                             </div>
                         </div>
                     </div>
-
-                    {{-- 6. End Child Labour Masterclass --}}
-                    <div class="group bg-white rounded-2xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col overflow-hidden">
-                        <div class="relative aspect-[1/1.38] bg-slate-100 overflow-hidden cursor-pointer" onclick="openCertModal(5)">
-                            <img 
-                                src="{{ asset('images/End Child Labour Masterclass.jpg') }}" 
-                                alt="End Child Labour Masterclass - ITC-ILO" 
-                                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                loading="lazy"
-                            />
-                            <div class="absolute inset-0 bg-[#061838]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 backdrop-blur-2xs">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                                    <span class="lang-id-only">Lihat Dokumen</span>
-                                    <span class="lang-en-only">View Certificate</span>
-                                </span>
-                            </div>
-                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-black tracking-wider bg-[#061838]/90 text-[#FFB800] backdrop-blur-xs shadow-xs">
-                                ITC-ILO
-                            </span>
-                        </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-2.5 bg-white">
-                            <div>
-                                <span class="text-[10px] font-black uppercase text-amber-700 tracking-wider block">CHILD PROTECTION</span>
-                                <h4 class="text-xs sm:text-sm font-black text-[#061838] leading-snug line-clamp-2 mt-0.5">
-                                    End Child Labour Masterclass
-                                </h4>
-                                <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
-                                    <span class="lang-id-only">Komitmen tegas penghapusan pekerja anak dan verifikasi usia minimum pelaut secara ketat.</span>
-                                    <span class="lang-en-only">Strict commitment to eradicate child labour and verify minimum maritime working ages.</span>
-                                </p>
-                            </div>
-                            <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                                <span class="text-slate-600 font-semibold truncate max-w-[130px]">Fernanda Safira F.</span>
-                                <button type="button" onclick="openCertModal(5)" class="text-[#0A326E] group-hover:text-[#D97706] font-bold inline-flex items-center gap-1 transition-colors">
-                                    <span class="lang-id-only">Detail</span>
-                                    <span class="lang-en-only">Zoom</span>
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- 7. Continuing Legal Education 1: International Labour Standards --}}
-                    <div class="group bg-white rounded-2xl border-2 border-slate-200/80 hover:border-[#FFB800] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col overflow-hidden">
-                        <div class="relative aspect-[1/1.38] bg-slate-100 overflow-hidden cursor-pointer" onclick="openCertModal(6)">
-                            <img 
-                                src="{{ asset('images/CONTINUING LEGAL EDUCATION 1_ INTRODUCTION TO INTERNATIONAL LABOUR STANDARDS.jpg') }}" 
-                                alt="Continuing Legal Education 1: Introduction to International Labour Standards - ITC-ILO" 
-                                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                loading="lazy"
-                            />
-                            <div class="absolute inset-0 bg-[#061838]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 backdrop-blur-2xs">
-                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FFB800] text-[#061838] font-black text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                                    <span class="lang-id-only">Lihat Dokumen</span>
-                                    <span class="lang-en-only">View Certificate</span>
-                                </span>
-                            </div>
-                            <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[10px] font-black tracking-wider bg-[#061838]/90 text-[#FFB800] backdrop-blur-xs shadow-xs">
-                                ITC-ILO
-                            </span>
-                        </div>
-                        <div class="p-4 flex-1 flex flex-col justify-between space-y-2.5 bg-white">
-                            <div>
-                                <span class="text-[10px] font-black uppercase text-amber-700 tracking-wider block">LEGAL EDUCATION</span>
-                                <h4 class="text-xs sm:text-sm font-black text-[#061838] leading-snug line-clamp-2 mt-0.5">
-                                    Continuing Legal Education: Labour Standards
-                                </h4>
-                                <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
-                                    <span class="lang-id-only">Pendidikan hukum ketenagakerjaan berkelanjutan untuk kepatuhan regulasi maritim internasional.</span>
-                                    <span class="lang-en-only">Continuing legal education in international maritime labor jurisprudence and compliance.</span>
-                                </p>
-                            </div>
-                            <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                                <span class="text-slate-600 font-semibold truncate max-w-[130px]">Fernanda Safira F.</span>
-                                <button type="button" onclick="openCertModal(6)" class="text-[#0A326E] group-hover:text-[#D97706] font-bold inline-flex items-center gap-1 transition-colors">
-                                    <span class="lang-id-only">Detail</span>
-                                    <span class="lang-en-only">Zoom</span>
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
 
             </div>
@@ -591,45 +501,64 @@
     </div>
 </section>
 
-{{-- CERTIFICATE LIGHTBOX MODAL --}}
-<div id="certModal" class="fixed inset-0 z-50 hidden bg-[#061838]/85 backdrop-blur-md items-center justify-center p-3 sm:p-6 transition-all duration-300" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
-    <div class="relative max-w-4xl w-full bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] border border-slate-200 animate-in fade-in zoom-in-95 duration-200">
+{{-- CERTIFICATE DOCUMENT VIEWER MODAL (BISA DISCROLL PENUH & ZOOMABLE) --}}
+<div id="certModal" class="fixed inset-0 z-50 hidden bg-[#030914]/92 backdrop-blur-md items-center justify-center p-2 sm:p-4 md:p-6" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
+    <div class="relative w-full max-w-4xl h-[94vh] max-h-[94vh] bg-[#0A1628] rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-700/80 flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200">
         
-        {{-- Modal Topbar --}}
-        <div class="px-5 sm:px-6 py-3.5 bg-[#061838] text-white flex items-center justify-between border-b border-slate-800">
-            <div class="flex items-center space-x-3 pr-3 overflow-hidden">
-                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-[#FFB800] text-[#061838] flex-shrink-0">
+        {{-- Modal Topbar Sticky --}}
+        <div class="flex-shrink-0 px-4 sm:px-6 py-3 bg-[#061838] border-b border-slate-800 flex items-center justify-between text-white z-30 shadow-md">
+            <div class="flex items-center space-x-3 pr-2 overflow-hidden">
+                <span class="px-2.5 py-1 rounded text-[10px] font-black uppercase tracking-wider bg-[#FFB800] text-[#061838] flex-shrink-0">
                     ITC-ILO CERTIFIED
                 </span>
                 <h3 id="modalCertTitle" class="text-xs sm:text-sm md:text-base font-bold text-white truncate"></h3>
             </div>
-            <button id="closeCertModal" type="button" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors flex-shrink-0" aria-label="Tutup">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-            </button>
-        </div>
-
-        {{-- Modal Image Display --}}
-        <div class="relative flex-1 bg-slate-950/5 p-3 sm:p-6 flex items-center justify-center overflow-auto min-h-[300px]">
-            <img id="modalCertImage" src="" alt="Preview Sertifikat" class="max-h-[64vh] sm:max-h-[70vh] w-auto max-w-full object-contain rounded-lg shadow-lg border border-slate-200 bg-white">
-
-            {{-- Prev / Next Navigation --}}
-            <button id="prevCertBtn" type="button" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/95 hover:bg-[#FFB800] text-[#061838] shadow-xl flex items-center justify-center transition-all hover:scale-110 border border-slate-200 z-10" aria-label="Sebelumnya">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
-            </button>
-            <button id="nextCertBtn" type="button" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/95 hover:bg-[#FFB800] text-[#061838] shadow-xl flex items-center justify-center transition-all hover:scale-110 border border-slate-200 z-10" aria-label="Selanjutnya">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-            </button>
-        </div>
-
-        {{-- Modal Footer --}}
-        <div class="px-5 sm:px-6 py-3 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs">
-            <div class="flex items-center gap-2">
-                <span id="modalCertCounter" class="font-extrabold text-[#061838] bg-white px-2.5 py-1 rounded border border-slate-200"></span>
-                <span id="modalCertDesc" class="text-slate-600 font-medium"></span>
+            
+            <div class="flex items-center space-x-2 flex-shrink-0">
+                <span class="hidden sm:inline-flex items-center gap-1 text-[11px] text-[#FFB800] bg-white/5 px-2.5 py-1 rounded-lg border border-white/10 font-bold">
+                    <svg class="w-3.5 h-3.5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+                    <span>Scroll Dokumen</span>
+                </span>
+                <a id="modalOpenTabBtn" href="#" target="_blank" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors" title="Buka gambar penuh di tab baru">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+                <button id="closeCertModal" type="button" class="p-2 rounded-xl bg-white/10 hover:bg-rose-600 text-white transition-colors flex-shrink-0" aria-label="Tutup">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
             </div>
-            <div class="text-[11px] text-slate-500 font-medium">
-                <span class="lang-id-only">Penerima: <strong class="text-[#061838]">Fernanda Safira Fenturini, S.Ak.</strong> (Corporate Secretary)</span>
-                <span class="lang-en-only">Delivered to: <strong class="text-[#061838]">Fernanda Safira Fenturini, S.Ak.</strong> (Corporate Secretary)</span>
+        </div>
+
+        {{-- Scrollable Document Body (Bisa Discroll Vertikal Sepuasnya!) --}}
+        <div id="modalScrollContainer" class="relative flex-1 min-h-0 w-full overflow-y-auto overflow-x-hidden p-4 sm:p-6 md:p-8 flex flex-col items-center bg-slate-950/80">
+            
+            {{-- Frame Kertas Sertifikat Resolusi Tinggi --}}
+            <div class="w-full max-w-2xl bg-white rounded-xl shadow-2xl border-4 sm:border-8 border-white overflow-hidden my-auto py-2">
+                <img 
+                    id="modalCertImage" 
+                    src="" 
+                    alt="Dokumen Sertifikat Resmi" 
+                    class="w-full h-auto object-contain select-none block"
+                />
+            </div>
+
+            {{-- Floating Prev / Next Buttons --}}
+            <button id="prevCertBtn" type="button" class="fixed left-3 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#061838]/90 hover:bg-[#FFB800] text-white hover:text-[#061838] shadow-2xl flex items-center justify-center transition-all hover:scale-110 border border-slate-700 z-40" aria-label="Sebelumnya">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="nextCertBtn" type="button" class="fixed right-3 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-[#061838]/90 hover:bg-[#FFB800] text-white hover:text-[#061838] shadow-2xl flex items-center justify-center transition-all hover:scale-110 border border-slate-700 z-40" aria-label="Selanjutnya">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </button>
+        </div>
+
+        {{-- Modal Footer Sticky --}}
+        <div class="flex-shrink-0 px-4 sm:px-6 py-2.5 sm:py-3 bg-[#061838] border-t border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 sm:gap-2 text-xs text-slate-300 z-30 shadow-md">
+            <div class="flex items-center gap-2">
+                <span id="modalCertCounter" class="font-black text-[#FFB800] bg-slate-800/80 px-2.5 py-0.5 rounded border border-slate-700"></span>
+                <span id="modalCertDesc" class="text-slate-300 font-medium truncate max-w-xs sm:max-w-md"></span>
+            </div>
+            <div class="text-[11px] text-slate-400">
+                <span class="lang-id-only">Penerima: <strong class="text-white">Fernanda Safira Fenturini, S.Ak.</strong> (Corporate Secretary)</span>
+                <span class="lang-en-only">Delivered to: <strong class="text-white">Fernanda Safira Fenturini, S.Ak.</strong> (Corporate Secretary)</span>
             </div>
         </div>
 
@@ -686,10 +615,12 @@
 
     let currentCertIdx = 0;
     const modal = document.getElementById('certModal');
+    const scrollContainer = document.getElementById('modalScrollContainer');
     const modalImg = document.getElementById('modalCertImage');
     const modalTitle = document.getElementById('modalCertTitle');
     const modalDesc = document.getElementById('modalCertDesc');
     const modalCounter = document.getElementById('modalCertCounter');
+    const modalOpenTabBtn = document.getElementById('modalOpenTabBtn');
     const closeBtn = document.getElementById('closeCertModal');
     const prevBtn = document.getElementById('prevCertBtn');
     const nextBtn = document.getElementById('nextCertBtn');
@@ -703,6 +634,12 @@
         if (modalTitle) modalTitle.textContent = cert.title;
         if (modalDesc) modalDesc.textContent = isEn ? cert.descEn : cert.descId;
         if (modalCounter) modalCounter.textContent = (currentCertIdx + 1) + ' / ' + certList.length;
+        if (modalOpenTabBtn) modalOpenTabBtn.href = cert.image;
+
+        // Reset scroll position ke paling atas setiap ganti sertifikat
+        if (scrollContainer) {
+            scrollContainer.scrollTop = 0;
+        }
     }
 
     window.openCertModal = function(idx) {
