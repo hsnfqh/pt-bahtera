@@ -23,7 +23,7 @@
                 <span class="lang-id-only">Layanan Keagenan Awak Kapal</span>
                 <span class="lang-en-only">Our Crewing Services</span>
             </h2>
-            <div class="text-slate-600 text-xs sm:text-sm leading-relaxed space-y-3 max-w-2xl mx-auto">
+            <div class="text-slate-600 text-xs sm:text-sm leading-relaxed space-y-3 max-w-2xl mx-auto text-justify">
                 <p>
                     <span class="lang-id-only">Kami berspesialisasi dalam perekrutan, seleksi, penempatan, dan penyaluran pelaut yang berkualifikasi untuk berbagai jenis kapal dan operasional maritim.</span>
                     <span class="lang-en-only">We specialize in the recruitment, selection, placement, and deployment of qualified seafarers for various types of vessels and maritime operations.</span>
@@ -32,7 +32,7 @@
                     <span class="lang-id-only">Setiap kandidat dinilai dan diseleksi secara cermat berdasarkan kualifikasi, pengalaman, kompetensi teknis, disiplin, tanggung jawab, dan sikap profesional. Kami meyakini bahwa awak kapal yang tepat sangat penting untuk memastikan operasional setiap kapal berjalan aman, efisien, dan sukses.</span>
                     <span class="lang-en-only">Every candidate is carefully assessed and selected based on their qualifications, experience, technical competence, discipline, responsibility, and professional attitude. We believe that the right crew is essential to ensuring the safe, efficient, and successful operation of every vessel.</span>
                 </p>
-                <p class="font-bold text-[#061838] pt-1">
+                <p class="font-bold text-[#061838] pt-1 text-center">
                     <span class="lang-id-only">Layanan keagenan awak kapal kami meliputi:</span>
                     <span class="lang-en-only">Our crewing services include:</span>
                 </p>
@@ -58,7 +58,7 @@
                             <span class="lang-id-only">Rekrutmen &amp; Seleksi Pelaut</span>
                             <span class="lang-en-only">Seafarer Recruitment &amp; Selection</span>
                         </h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
+                        <p class="text-slate-600 text-xs leading-relaxed text-justify">
                             <span class="lang-id-only">Proses rekrutmen dan seleksi ketat berbasis kompetensi teknis maritim, verifikasi dokumen, serta uji fisik dan mental pelaut komprehensif.</span>
                             <span class="lang-en-only">Rigorous competency-based screening, maritime document verification, and comprehensive physical and psychological fitness tests.</span>
                         </p>
@@ -89,7 +89,7 @@
                             <span class="lang-id-only">Penempatan &amp; Pemberangkatan Kru</span>
                             <span class="lang-en-only">Crew Placement &amp; Deployment</span>
                         </h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
+                        <p class="text-slate-600 text-xs leading-relaxed text-justify">
                             <span class="lang-id-only">Penempatan dan pemberangkatan kru pelaut ke kapal-kapal internasional secara tepat waktu sesuai jadwal operasional pemilik kapal.</span>
                             <span class="lang-en-only">Timely seafarer deployment and embarkation to global merchant and fishing fleets tailored to shipowners' schedules.</span>
                         </p>
@@ -120,7 +120,7 @@
                             <span class="lang-id-only">Dokumentasi &amp; Sertifikasi Kru</span>
                             <span class="lang-en-only">Crew Documentation &amp; Certification</span>
                         </h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
+                        <p class="text-slate-600 text-xs leading-relaxed text-justify">
                             <span class="lang-id-only">Pengurusan lengkap Paspor Pelaut, Seaman Book, sertifikat SIUKAK &amp; SIUPPAK, visa maritim, endorsement negara bendera, dan MCU.</span>
                             <span class="lang-en-only">Full management of Seaman Book, SIUKAK &amp; SIUPPAK certificates, maritime transit visas, flag state endorsements, and certified MCU.</span>
                         </p>
@@ -151,7 +151,7 @@
                             <span class="lang-id-only">Koordinasi &amp; Pengaturan Perjalanan</span>
                             <span class="lang-en-only">Crew Coordination &amp; Travel Arrangement</span>
                         </h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
+                        <p class="text-slate-600 text-xs leading-relaxed text-justify">
                             <span class="lang-id-only">Koordinasi perjalanan mulai dari tiket penerbangan, penjemputan bandara, akomodasi transit, hingga pendampingan sign-on di pelabuhan.</span>
                             <span class="lang-en-only">Seamless travel arrangement from flight ticketing, airport pickups, transit accommodation, to port sign-on liaison.</span>
                         </p>
@@ -182,7 +182,7 @@
                             <span class="lang-id-only">Penggantian &amp; Rotasi Kru</span>
                             <span class="lang-en-only">Crew Replacement &amp; Rotation</span>
                         </h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
+                        <p class="text-slate-600 text-xs leading-relaxed text-justify">
                             <span class="lang-id-only">Perencanaan jadwal rotasi dan penggantian kru secara teratur demi kestabilan dan produktivitas operasi kapal tanpa jeda waktu kosong.</span>
                             <span class="lang-en-only">Systematic crew rotation planning and standby pool management ensuring zero vessel downtime and uninterrupted voyage operations.</span>
                         </p>
@@ -213,7 +213,7 @@
                             <span class="lang-id-only">Dukungan Manajemen Kru</span>
                             <span class="lang-en-only">Crew Management Support</span>
                         </h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
+                        <p class="text-slate-600 text-xs leading-relaxed text-justify">
                             <span class="lang-id-only">Pengelolaan gaji tepat waktu, alokasi remitansi keluarga, asuransi jiwa &amp; kesehatan, serta pemantauan kesejahteraan dan kinerja pelaut.</span>
                             <span class="lang-en-only">Punctual salary processing, family remittance management, life &amp; medical insurance, and seafarer welfare and performance monitoring.</span>
                         </p>
@@ -244,7 +244,7 @@
                             <span class="lang-id-only">Kepatuhan Standar Maritim Internasional</span>
                             <span class="lang-en-only">Compliance with International Maritime Standards</span>
                         </h3>
-                        <p class="text-slate-600 text-xs leading-relaxed">
+                        <p class="text-slate-600 text-xs leading-relaxed text-justify">
                             <span class="lang-id-only">Memastikan seluruh operasi penempatan pelaut memenuhi standar SIUKAK &amp; SIUPPAK secara penuh dan konsisten.</span>
                             <span class="lang-en-only">Ensuring all seafarer deployment operations fully and consistently comply with SIUKAK &amp; SIUPPAK international standards.</span>
                         </p>
@@ -278,7 +278,7 @@
                 <span class="lang-id-only">Jenis Kapal</span>
                 <span class="lang-en-only">Vessel Types</span>
             </h2>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto text-justify sm:text-center">
                 <span class="lang-id-only">Selama bertahun-tahun, kami telah sukses menyalurkan awak kapal yang berkualifikasi untuk berbagai macam armada kapal komersial dan penangkap ikan, meliputi:</span>
                 <span class="lang-en-only">Over the years, we have successfully supplied qualified crew for a wide range of commercial and fishing vessels, including:</span>
             </p>
@@ -396,7 +396,7 @@
 
         <!-- Closing Note Below Vessel Cards -->
         <div class="text-center max-w-3xl mx-auto p-6 sm:p-7 rounded-3xl bg-[#061838]/80 border border-white/10 backdrop-blur-md shadow-xl fade-in-section">
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed font-normal">
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed font-normal text-justify sm:text-center">
                 <span class="lang-id-only">Pengalaman kami yang luas di berbagai jenis kapal memungkinkan kami memahami persyaratan operasional spesifik dari setiap armada dan menyediakan kru yang paling sesuai dengan kebutuhan kapal.</span>
                 <span class="lang-en-only">Our extensive experience across different vessel types allows us to understand the specific operational requirements of each fleet and provide crew who are well-suited to the vessel's needs.</span>
             </p>
@@ -415,7 +415,7 @@
                 <span class="lang-id-only">Pengalaman Internasional</span>
                 <span class="lang-en-only">International Experience</span>
             </h2>
-            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto text-justify sm:text-center">
                 <span class="lang-id-only">Pelaut kami telah bertugas di atas kapal-kapal yang beroperasi di bawah berbagai bendera internasional dan di berbagai wilayah maritim, meliputi:</span>
                 <span class="lang-en-only">Our seafarers have served onboard vessels operating under various international flags and in different maritime regions, including:</span>
             </p>
@@ -522,7 +522,7 @@
 
         <!-- Closing Note Below Countries Grid -->
         <div class="text-center max-w-3xl mx-auto p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm fade-in-section">
-            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal text-justify sm:text-center">
                 <span class="lang-id-only">Pengalaman internasional kami telah memperkuat pemahaman kami terhadap berbagai praktik maritim, persyaratan operasional, dan ekspektasi klien.</span>
                 <span class="lang-en-only">Our international experience has strengthened our understanding of different maritime practices, operational requirements, and client expectations.</span>
             </p>
@@ -541,7 +541,7 @@
                 <span class="text-[#061838]">PROVIDING PROFESSIONAL CREW.</span>
             </h2>
             
-            <div class="text-slate-600 text-xs sm:text-sm leading-relaxed space-y-4 max-w-3xl mx-auto">
+            <div class="text-slate-600 text-xs sm:text-sm leading-relaxed space-y-4 max-w-3xl mx-auto text-justify">
                 <p>
                     <span class="lang-id-only">Kami merasa terhormat dapat menjadi mitra keagenan awak kapal terpercaya Anda dan mendukung armada kapal Anda dengan para profesional maritim yang berkualifikasi dan dapat diandalkan.</span>
                     <span class="lang-en-only">We would be honored to become your trusted crewing partner and support your fleet with qualified and dependable maritime professionals.</span>

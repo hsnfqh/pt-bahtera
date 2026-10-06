@@ -18,7 +18,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         <div class="text-center max-w-3xl mx-auto fade-in-section">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#061838] tracking-tight uppercase">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#061838] tracking-tight uppercase">
                 <span class="lang-id-only">Galeri Kegiatan</span>
                 <span class="lang-en-only">Activity Gallery</span>
             </h2>
@@ -55,7 +55,7 @@
                         <span class="lang-id-only">1. Proses Recruitment</span>
                         <span class="lang-en-only">1. Recruitment Process</span>
                     </h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
+                    <p class="text-xs text-slate-500 leading-relaxed text-justify">
                         <span class="lang-id-only">Seleksi administrasi ketat, verifikasi dokumen pelaut kapal ikan, wawancara kompetensi teknis penangkapan, dan medical check-up menyeluruh bagi calon ABK.</span>
                         <span class="lang-en-only">Rigorous administrative screening, fishing vessel seafarer document verification, technical fishing competency interviews, and full medical check-ups for crew candidates.</span>
                     </p>
@@ -146,7 +146,7 @@
                         <span class="lang-id-only">2. Kegiatan di Kapal</span>
                         <span class="lang-en-only">2. Shipboard Activities</span>
                     </h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
+                    <p class="text-xs text-slate-500 leading-relaxed text-justify">
                         <span class="lang-id-only">Operasional penangkapan ikan di fishing ground, penurunan &amp; penarikan alat tangkap (setting &amp; hauling), penyortiran hasil laut, pembekuan di cold storage, dan pemeliharaan alat tangkap.</span>
                         <span class="lang-en-only">Fishing operations at sea fishing grounds, gear setting &amp; hauling, catch sorting, blast-freezing in cold storage holds, and maintenance of fishing equipment.</span>
                     </p>
@@ -244,7 +244,7 @@
                         <span class="lang-id-only">3. Proses Keberangkatan</span>
                         <span class="lang-en-only">3. Departure Process</span>
                     </h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
+                    <p class="text-xs text-slate-500 leading-relaxed text-justify">
                         <span class="lang-id-only">Pengurusan visa maritim &amp; paspor pelaut, tiket penerbangan, briefing PKLA kapal ikan, pengantaran bandara, hingga koordinasi sign-on di pelabuhan armada internasional.</span>
                         <span class="lang-en-only">Processing maritime visas &amp; seaman books, international flight tickets, fishing crew PKLA briefings, airport escort, and port sign-on coordination with international fishing fleets.</span>
                     </p>

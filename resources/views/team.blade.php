@@ -27,7 +27,7 @@
                 <span class="lang-id-only">Bagan Organisasi Resmi</span>
                 <span class="lang-en-only">Official Organization Chart</span>
             </div>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#061838] tracking-tight uppercase">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#061838] tracking-tight uppercase">
                 <span class="lang-id-only">Struktur Organisasi Perusahaan</span>
                 <span class="lang-en-only">Organization Structure</span>
             </h2>
@@ -180,7 +180,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         <div class="text-center max-w-3xl mx-auto space-y-4 fade-in-section">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#061838] tracking-tight uppercase">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#061838] tracking-tight uppercase">
                 <span class="lang-id-only">Sertifikasi &amp; Lisensi Resmi</span>
                 <span class="lang-en-only">Official Certifications &amp; Licenses</span>
             </h2>
@@ -210,7 +210,7 @@
                         </span>
                         <h3 class="text-lg font-black text-[#061838] mt-1">SIUKAK No. 58.58-R Tahun 2024</h3>
                     </div>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed text-justify">
                         <span class="lang-id-only">Surat Izin Usaha Keagenan Awak Kapal resmi dari Kementerian Ketenagakerjaan RI untuk armada perikanan dan niaga internasional.</span>
                         <span class="lang-en-only">Official Ship Manning Agency's License from the Indonesian Ministry of Manpower for international fishing and commercial vessels.</span>
                     </p>
@@ -242,7 +242,7 @@
                         </span>
                         <h3 class="text-lg font-black text-[#061838] mt-1">SIUPPAK No. 65.21 Tahun 2016</h3>
                     </div>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed text-justify">
                         <span class="lang-id-only">Surat Izin Usaha Perekrutan dan Penempatan Awak Kapal dari Direktorat Jenderal Perhubungan Laut, Kementerian Perhubungan RI.</span>
                         <span class="lang-en-only">Recruitment and Placement Seafarers Agency's License issued by Directorate General of Sea Transportation, Indonesian Ministry of Transportation.</span>
                     </p>
@@ -333,7 +333,7 @@
                     <span class="lang-id-only">Sertifikasi Kompetensi &amp; Pelatihan Internasional</span>
                     <span class="lang-en-only">International Competency &amp; Training Certifications</span>
                 </h3>
-                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto text-justify sm:text-center">
                     <span class="lang-id-only">Sertifikasi pelatihan resmi dari <strong>International Training Centre of the ILO (ITC-ILO)</strong> yang diraih oleh manajemen perusahaan untuk menjamin kepatuhan standar ketenagakerjaan maritim dunia, rekrutmen beretika tanpa pemungutan biaya awak kapal, serta pencegahan kerja paksa.</span>
                     <span class="lang-en-only">Official training credentials from the <strong>International Training Centre of the ILO (ITC-ILO)</strong> earned by company management, ensuring compliance with global maritime labour conventions, ethical zero-fee recruitment, and prevention of forced labour.</span>
                 </p>
@@ -543,7 +543,7 @@
                                 <h4 class="text-xs sm:text-sm font-black text-[#061838] group-hover:text-[#0A326E] transition-colors leading-snug line-clamp-2 pt-1">
                                     {{ $cert['title'] }}
                                 </h4>
-                                <p class="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
+                                <p class="text-[11px] text-slate-500 leading-relaxed line-clamp-2 text-justify">
                                     <span class="lang-id-only">{{ $cert['descId'] }}</span>
                                     <span class="lang-en-only">{{ $cert['descEn'] }}</span>
                                 </p>
@@ -613,7 +613,7 @@
                                 <h4 class="text-xs sm:text-sm font-black text-[#061838] group-hover:text-[#0A326E] transition-colors leading-snug line-clamp-2 pt-1">
                                     {{ $cert['title'] }}
                                 </h4>
-                                <p class="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
+                                <p class="text-[11px] text-slate-500 leading-relaxed line-clamp-2 text-justify">
                                     <span class="lang-id-only">{{ $cert['descId'] }}</span>
                                     <span class="lang-en-only">{{ $cert['descEn'] }}</span>
                                 </p>

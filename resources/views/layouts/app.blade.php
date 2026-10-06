@@ -31,6 +31,13 @@
             font-family: 'Inter', sans-serif;
         }
 
+        /* Clean Consistent Justified Typography */
+        .text-justify {
+            text-align: justify !important;
+            text-justify: inter-word !important;
+            hyphens: auto;
+        }
+
         /* 100% Reliable Language Switching Rules */
         html[data-lang="id"] .lang-en-only {
             display: none !important;
