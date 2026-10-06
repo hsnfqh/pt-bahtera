@@ -524,7 +524,6 @@
                                         <span class="lang-id-only">Buka Dokumen</span>
                                         <span class="lang-en-only">Open Document</span>
                                     </span>
-                                    <span class="text-[10px] text-amber-200 font-medium mt-2">Bisa discroll penuh</span>
                                 </div>
                             </div>
                         </div>
@@ -594,7 +593,6 @@
                                         <span class="lang-id-only">Buka Dokumen</span>
                                         <span class="lang-en-only">Open Document</span>
                                     </span>
-                                    <span class="text-[10px] text-amber-200 font-medium mt-2">Bisa discroll penuh</span>
                                 </div>
                             </div>
                         </div>
